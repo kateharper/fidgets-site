@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#0b0b0f" />
+<meta name="theme-color" content="#0a0a0d" />
 <title>Fidgets — Premium 3D-printed fidgets, made in Sydney</title>
 <meta name="description" content="Premium 3D-printed fidgets designed and made in Sydney. Spinners, sliders, cubes, articulated creatures and more. Pocket-sized, school-friendly, ridiculously satisfying." />
 
@@ -21,9 +21,12 @@
           body: ['Inter', 'system-ui', 'sans-serif'],
         },
         colors: {
-          ink: '#0b0b0f',
-          cream: '#faf6ee',
-          sand: '#f1ebdf',
+          ink:     '#0a0a0d',  // page bg
+          surface: '#13131a',  // cards
+          elevated:'#1c1c25',  // elevated surface
+          hairline:'#26262f',  // borders
+          ivory:   '#ece9e0',  // primary text
+          mist:    '#8a8a96',  // muted text
         }
       }
     }
@@ -32,19 +35,26 @@
 
 <style>
   html { scroll-behavior: smooth; }
-  body { font-family: Inter, system-ui, sans-serif; background: #faf6ee; color: #0b0b0f; -webkit-font-smoothing: antialiased; }
+  body { font-family: Inter, system-ui, sans-serif; background: #0a0a0d; color: #ece9e0; -webkit-font-smoothing: antialiased; }
   .display { font-family: 'Space Grotesk', system-ui, sans-serif; letter-spacing: -0.02em; }
-  .display-tight { font-family: 'Space Grotesk', system-ui, sans-serif; letter-spacing: -0.04em; }
+  .display-tight { font-family: 'Space Grotesk', system-ui, sans-serif; letter-spacing: -0.045em; }
 
-  /* Hero animated gradient */
-  @keyframes gradient-pan {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+  /* Hero — dark mesh gradient with glowing blobs */
+  .hero-mesh {
+    position: relative;
+    background: radial-gradient(at 15% 20%, rgba(124,58,237,0.35) 0px, transparent 45%),
+                radial-gradient(at 85% 30%, rgba(34,211,238,0.20) 0px, transparent 50%),
+                radial-gradient(at 50% 90%, rgba(236,72,153,0.22) 0px, transparent 55%),
+                #0a0a0d;
   }
-  .hero-gradient {
-    background: linear-gradient(120deg, #ffd9e8 0%, #ffe7c2 25%, #d6f0ff 55%, #e8d6ff 100%);
-    background-size: 250% 250%;
-    animation: gradient-pan 18s ease infinite;
+  .hero-mesh::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+    pointer-events: none;
   }
 
   /* Floating animation */
@@ -53,30 +63,87 @@
   @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
   .float-slow { animation: float-slow 7s ease-in-out infinite; }
   .float-fast { animation: float-fast 5s ease-in-out infinite; }
-  .spin-slow { animation: spin-slow 14s linear infinite; }
+  .spin-slow { animation: spin-slow 14s linear infinite; transform-origin: center; }
 
   /* Marquee */
   @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   .marquee-track { animation: marquee 40s linear infinite; }
 
   /* Card hover */
-  .product-card { transition: transform 0.35s cubic-bezier(.2,.8,.2,1), box-shadow 0.35s; }
-  .product-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px -16px rgba(11,11,15,0.18); }
-  .product-card:hover .icon-stage { transform: scale(1.05) rotate(-3deg); }
-  .icon-stage { transition: transform 0.4s cubic-bezier(.2,.8,.2,1); }
+  .product-card {
+    transition: transform 0.35s cubic-bezier(.2,.8,.2,1), border-color 0.3s, box-shadow 0.35s;
+    background: #13131a;
+    border: 1px solid #26262f;
+  }
+  .product-card:hover {
+    transform: translateY(-6px);
+    border-color: #3a3a48;
+    box-shadow: 0 24px 48px -16px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04) inset;
+  }
+  .product-card:hover .stage-zoom { transform: scale(1.06); }
+  .stage-zoom { transition: transform 0.6s cubic-bezier(.2,.8,.2,1); }
 
   /* Buttons */
-  .btn-primary { background: #0b0b0f; color: #faf6ee; }
-  .btn-primary:hover { background: #1f1f29; transform: translateY(-1px); }
-  .btn-primary, .btn-ghost { transition: all 0.2s ease; }
+  .btn-primary {
+    background: #ece9e0; color: #0a0a0d;
+    transition: all 0.2s ease;
+  }
+  .btn-primary:hover { background: #fff; transform: translateY(-1px); }
+  .btn-ghost {
+    background: rgba(255,255,255,0.05); color: #ece9e0;
+    border: 1px solid #26262f;
+    transition: all 0.2s ease;
+  }
+  .btn-ghost:hover { background: rgba(255,255,255,0.10); border-color: #3a3a48; }
+
+  /* Gradient pill button (used on hero CTA + add to cart) */
+  .btn-gradient {
+    background: linear-gradient(135deg, #c084fc 0%, #f472b6 50%, #fb923c 100%);
+    color: #0a0a0d;
+    transition: all 0.2s ease;
+  }
+  .btn-gradient:hover { filter: brightness(1.1); transform: translateY(-1px); }
 
   /* Color swatches */
-  .swatch { width: 18px; height: 18px; border-radius: 999px; box-shadow: inset 0 0 0 2px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.18); }
+  .swatch {
+    width: 16px; height: 16px; border-radius: 999px;
+    box-shadow: inset 0 0 0 1.5px rgba(255,255,255,0.15), 0 1px 2px rgba(0,0,0,0.5);
+  }
+
+  /* Image stage — used for both <img> photos and SVG illustrations */
+  .stage {
+    position: relative;
+    overflow: hidden;
+    background: #1c1c25;
+  }
+  .stage img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: contrast(1.05) saturate(1.05);
+  }
+  .stage svg { width: 60%; height: 60%; }
+  /* glow tint behind SVG illustrations */
+  .stage-glow::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--glow);
+    opacity: 0.55;
+    z-index: 0;
+    mix-blend-mode: screen;
+  }
+  .stage-glow svg { position: relative; z-index: 1; }
+
+  /* photo overlay tint for unification on dark theme */
+  .stage-photo::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(10,10,13,0.55) 100%);
+    pointer-events: none;
+  }
 
   /* Modal */
-  .modal-bg { background: rgba(11,11,15,0.6); backdrop-filter: blur(8px); }
+  .modal-bg { background: rgba(10,10,13,0.85); backdrop-filter: blur(10px); }
 
-  /* Bobbing letter for hero word */
+  /* Letter wiggle */
   @keyframes wiggle {
     0%, 100% { transform: translateY(0) rotate(0); }
     50% { transform: translateY(-6px) rotate(2deg); }
@@ -85,35 +152,52 @@
   .letter-wiggle > span:nth-child(2) { animation-delay: 0.1s; }
   .letter-wiggle > span:nth-child(3) { animation-delay: 0.2s; }
   .letter-wiggle > span:nth-child(4) { animation-delay: 0.3s; }
-  .letter-wiggle > span:nth-child(5) { animation-delay: 0.4s; }
-  .letter-wiggle > span:nth-child(6) { animation-delay: 0.5s; }
-  .letter-wiggle > span:nth-child(7) { animation-delay: 0.6s; }
 
   /* Reveal-on-scroll */
-  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.2,.8,.2,1); }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.2,.8,.2,1); }
   .reveal.in { opacity: 1; transform: translateY(0); }
 
-  /* Subtle dotted pattern */
-  .dot-bg {
-    background-image: radial-gradient(circle, rgba(11,11,15,0.08) 1px, transparent 1px);
-    background-size: 22px 22px;
+  /* Filter pills */
+  .filter-btn { background: rgba(255,255,255,0.04); border: 1px solid #26262f; color: #ece9e0; transition: all 0.2s; }
+  .filter-btn:hover { background: rgba(255,255,255,0.08); }
+  .filter-btn.active { background: #ece9e0; color: #0a0a0d; border-color: #ece9e0; }
+
+  /* Subtle gradient text */
+  .text-gradient {
+    background: linear-gradient(135deg, #c084fc, #f472b6, #fb923c);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+
+  /* details/summary chevron */
+  details summary::-webkit-details-marker { display: none; }
+  details[open] .acc-icon { transform: rotate(45deg); }
+  .acc-icon { transition: transform 0.25s ease; }
+
+  /* Subtle noise overlay */
+  .noise {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.045 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  /* Photo loading placeholder */
+  .stage img { transition: opacity 0.4s ease; }
+  .stage img:not(.loaded) { opacity: 0; }
 </style>
 </head>
-<body class="font-body text-ink">
+<body class="font-body text-ivory bg-ink">
 
 <!-- ============ HEADER ============ -->
-<header class="sticky top-0 z-40 backdrop-blur-md bg-cream/80 border-b border-ink/5">
+<header class="sticky top-0 z-40 backdrop-blur-xl bg-ink/70 border-b border-hairline">
   <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-2 group">
-      <span class="display-tight font-bold text-2xl">fidgets</span>
-      <span class="inline-block w-2.5 h-2.5 rounded-full bg-fuchsia-500 group-hover:bg-amber-400 transition-colors"></span>
+      <span class="display-tight font-bold text-2xl text-ivory">fidgets</span>
+      <span class="inline-block w-2.5 h-2.5 rounded-full bg-fuchsia-400 group-hover:bg-amber-400 transition-colors"></span>
     </a>
-    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-      <a href="#shop" class="hover:opacity-60">Shop</a>
-      <a href="#how" class="hover:opacity-60">How it's made</a>
-      <a href="#faq" class="hover:opacity-60">FAQ</a>
-      <a href="#contact" class="hover:opacity-60">Contact</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ivory/80">
+      <a href="#shop" class="hover:text-ivory transition-colors">Shop</a>
+      <a href="#how" class="hover:text-ivory transition-colors">How it's made</a>
+      <a href="#faq" class="hover:text-ivory transition-colors">FAQ</a>
+      <a href="#contact" class="hover:text-ivory transition-colors">Contact</a>
     </nav>
     <div class="flex items-center gap-3">
       <a href="#shop" class="btn-primary px-4 py-2 rounded-full text-sm font-semibold">Shop now</a>
@@ -124,37 +208,38 @@
 <a id="top"></a>
 
 <!-- ============ HERO ============ -->
-<section class="hero-gradient relative overflow-hidden">
-  <div class="absolute inset-0 dot-bg opacity-40"></div>
+<section class="hero-mesh relative overflow-hidden">
 
   <!-- Floating decorative fidgets -->
-  <svg class="absolute top-20 left-8 md:left-24 w-20 md:w-28 float-slow opacity-90" viewBox="0 0 100 100" aria-hidden="true">
+  <svg class="absolute top-24 left-6 md:left-24 w-20 md:w-32 float-slow opacity-90 z-10" viewBox="0 0 100 100" aria-hidden="true">
     <defs>
       <linearGradient id="g-spin1" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#ec4899"/>
+        <stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#f472b6"/>
       </linearGradient>
     </defs>
-    <g transform="translate(50 50)" class="spin-slow" style="transform-origin: center;">
-      <circle r="9" fill="#0b0b0f"/>
-      <circle cx="0" cy="-30" r="13" fill="url(#g-spin1)"/>
-      <circle cx="26" cy="15" r="13" fill="url(#g-spin1)"/>
-      <circle cx="-26" cy="15" r="13" fill="url(#g-spin1)"/>
+    <g transform="translate(50 50)">
+      <g class="spin-slow" style="transform-origin: 0 0;">
+        <circle r="9" fill="#ece9e0"/>
+        <circle cx="0" cy="-30" r="13" fill="url(#g-spin1)"/>
+        <circle cx="26" cy="15" r="13" fill="url(#g-spin1)"/>
+        <circle cx="-26" cy="15" r="13" fill="url(#g-spin1)"/>
+      </g>
     </g>
   </svg>
 
-  <svg class="absolute top-32 right-6 md:right-32 w-16 md:w-24 float-fast" viewBox="0 0 100 100" aria-hidden="true">
+  <svg class="absolute top-32 right-6 md:right-32 w-16 md:w-24 float-fast z-10" viewBox="0 0 100 100" aria-hidden="true">
     <defs>
       <linearGradient id="g-cube1" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#3b82f6"/>
       </linearGradient>
     </defs>
-    <rect x="20" y="20" width="60" height="60" rx="10" fill="url(#g-cube1)"/>
-    <circle cx="38" cy="38" r="6" fill="#fff" opacity="0.85"/>
-    <circle cx="62" cy="38" r="6" fill="#fff" opacity="0.5"/>
-    <rect x="32" y="56" width="36" height="8" rx="4" fill="#fff" opacity="0.7"/>
+    <rect x="20" y="20" width="60" height="60" rx="12" fill="url(#g-cube1)"/>
+    <circle cx="38" cy="38" r="6" fill="#ece9e0" opacity="0.95"/>
+    <circle cx="62" cy="38" r="6" fill="#ece9e0" opacity="0.55"/>
+    <rect x="32" y="56" width="36" height="8" rx="4" fill="#ece9e0" opacity="0.8"/>
   </svg>
 
-  <svg class="absolute bottom-12 right-12 md:right-44 w-20 md:w-28 float-slow" style="animation-delay: -3s" viewBox="0 0 120 60" aria-hidden="true">
+  <svg class="absolute bottom-16 right-12 md:right-44 w-20 md:w-28 float-slow z-10" style="animation-delay: -3s" viewBox="0 0 120 60" aria-hidden="true">
     <defs>
       <linearGradient id="g-snake1" x1="0" y1="0" x2="1" y2="0">
         <stop offset="0" stop-color="#84cc16"/><stop offset="1" stop-color="#22d3ee"/>
@@ -166,25 +251,24 @@
     </g>
   </svg>
 
-  <div class="relative max-w-7xl mx-auto px-5 md:px-8 pt-16 md:pt-24 pb-24 md:pb-32 text-center">
-    <div class="inline-flex items-center gap-2 bg-white/70 border border-ink/10 rounded-full px-4 py-1.5 text-xs font-semibold mb-8">
-      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-      Designed &amp; printed in Sydney
+  <div class="relative max-w-7xl mx-auto px-5 md:px-8 pt-20 md:pt-28 pb-28 md:pb-36 text-center z-20">
+    <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs font-semibold mb-8 backdrop-blur-sm">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="text-ivory/90">Designed &amp; printed in Sydney</span>
     </div>
-    <h1 class="display-tight font-bold text-6xl md:text-8xl lg:text-9xl leading-[0.9] mb-6">
-      Click. Spin. <span class="letter-wiggle inline-block"><span>P</span><span>o</span><span>p</span>.</span>
+    <h1 class="display-tight font-bold text-6xl md:text-8xl lg:text-9xl leading-[0.88] mb-7">
+      Click. Spin. <span class="letter-wiggle inline-block text-amber-300"><span>P</span><span>o</span><span>p</span>.</span>
     </h1>
-    <p class="display text-xl md:text-2xl font-medium max-w-2xl mx-auto opacity-80 mb-10">
+    <p class="display text-xl md:text-2xl font-medium max-w-2xl mx-auto text-ivory/70 mb-10">
       Premium 3D-printed fidgets, engineered for pockets and pencil cases. Spinners, cubes, sliders, articulated creatures &mdash; the lot.
     </p>
     <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
-      <a href="#shop" class="btn-primary px-8 py-4 rounded-full font-semibold text-base">Shop the range &rarr;</a>
-      <a href="#how" class="btn-ghost px-8 py-4 rounded-full font-semibold text-base bg-white/70 hover:bg-white border border-ink/10">How it's made</a>
+      <a href="#shop" class="btn-gradient px-8 py-4 rounded-full font-bold text-base">Shop the range &rarr;</a>
+      <a href="#how" class="btn-ghost px-8 py-4 rounded-full font-semibold text-base">How it's made</a>
     </div>
 
-    <!-- Pricing chip -->
-    <div class="mt-12 inline-flex items-center gap-3 text-sm text-ink/70 font-medium">
-      <span>From <strong class="text-ink">$6</strong></span>
+    <div class="mt-14 flex items-center justify-center gap-3 text-sm text-ivory/50 font-medium flex-wrap">
+      <span>From <strong class="text-ivory">$6</strong></span>
       <span class="opacity-30">&bull;</span>
       <span>Apple Pay &amp; Google Pay</span>
       <span class="opacity-30">&bull;</span>
@@ -194,68 +278,68 @@
 </section>
 
 <!-- ============ MARQUEE ============ -->
-<section class="bg-ink text-cream py-5 overflow-hidden border-y border-ink">
+<section class="bg-elevated py-5 overflow-hidden border-y border-hairline">
   <div class="flex marquee-track whitespace-nowrap">
-    <div class="display font-semibold text-2xl flex items-center gap-10 pr-10">
-      <span>SPINS LIKE BUTTER</span><span class="opacity-40">&#9733;</span>
-      <span>QUIET IN CLASS</span><span class="opacity-40">&#9733;</span>
-      <span>POCKET-SIZED</span><span class="opacity-40">&#9733;</span>
-      <span>MADE IN SYDNEY</span><span class="opacity-40">&#9733;</span>
-      <span>GLOW IN THE DARK OPTIONS</span><span class="opacity-40">&#9733;</span>
-      <span>SCHOOL-APPROVED</span><span class="opacity-40">&#9733;</span>
+    <div class="display font-semibold text-2xl flex items-center gap-10 pr-10 text-ivory/80">
+      <span>SPINS LIKE BUTTER</span><span class="text-fuchsia-400">&#9733;</span>
+      <span>QUIET IN CLASS</span><span class="text-amber-400">&#9733;</span>
+      <span>POCKET-SIZED</span><span class="text-cyan-400">&#9733;</span>
+      <span>MADE IN SYDNEY</span><span class="text-fuchsia-400">&#9733;</span>
+      <span>GLOW IN THE DARK</span><span class="text-amber-400">&#9733;</span>
+      <span>SCHOOL-APPROVED</span><span class="text-cyan-400">&#9733;</span>
     </div>
-    <div class="display font-semibold text-2xl flex items-center gap-10 pr-10" aria-hidden="true">
-      <span>SPINS LIKE BUTTER</span><span class="opacity-40">&#9733;</span>
-      <span>QUIET IN CLASS</span><span class="opacity-40">&#9733;</span>
-      <span>POCKET-SIZED</span><span class="opacity-40">&#9733;</span>
-      <span>MADE IN SYDNEY</span><span class="opacity-40">&#9733;</span>
-      <span>GLOW IN THE DARK OPTIONS</span><span class="opacity-40">&#9733;</span>
-      <span>SCHOOL-APPROVED</span><span class="opacity-40">&#9733;</span>
+    <div class="display font-semibold text-2xl flex items-center gap-10 pr-10 text-ivory/80" aria-hidden="true">
+      <span>SPINS LIKE BUTTER</span><span class="text-fuchsia-400">&#9733;</span>
+      <span>QUIET IN CLASS</span><span class="text-amber-400">&#9733;</span>
+      <span>POCKET-SIZED</span><span class="text-cyan-400">&#9733;</span>
+      <span>MADE IN SYDNEY</span><span class="text-fuchsia-400">&#9733;</span>
+      <span>GLOW IN THE DARK</span><span class="text-amber-400">&#9733;</span>
+      <span>SCHOOL-APPROVED</span><span class="text-cyan-400">&#9733;</span>
     </div>
   </div>
 </section>
 
 <!-- ============ FEATURES STRIP ============ -->
-<section class="py-14 md:py-20 bg-cream">
+<section class="py-16 md:py-20 bg-ink">
   <div class="max-w-7xl mx-auto px-5 md:px-8 grid md:grid-cols-4 gap-6">
     <div class="reveal">
       <div class="text-3xl mb-3">&#127462;&#127482;</div>
-      <h3 class="display font-semibold text-lg mb-1">Made in Sydney</h3>
-      <p class="text-sm opacity-70">Designed, printed and packed locally. No drop-shipping.</p>
+      <h3 class="display font-semibold text-lg mb-1 text-ivory">Made in Sydney</h3>
+      <p class="text-sm text-mist">Designed, printed and packed locally. No drop-shipping.</p>
     </div>
     <div class="reveal">
       <div class="text-3xl mb-3">&#128296;</div>
-      <h3 class="display font-semibold text-lg mb-1">Premium PLA+ &amp; PETG</h3>
-      <p class="text-sm opacity-70">Tough, satisfying snap. Won&apos;t crack like the cheap stuff.</p>
+      <h3 class="display font-semibold text-lg mb-1 text-ivory">Premium PLA+ &amp; PETG</h3>
+      <p class="text-sm text-mist">Tough, satisfying snap. Won&apos;t crack like the cheap stuff.</p>
     </div>
     <div class="reveal">
       <div class="text-3xl mb-3">&#128241;</div>
-      <h3 class="display font-semibold text-lg mb-1">Tap-to-pay online</h3>
-      <p class="text-sm opacity-70">Apple Pay, Google Pay and card &mdash; checkout in 10 seconds.</p>
+      <h3 class="display font-semibold text-lg mb-1 text-ivory">Tap-to-pay online</h3>
+      <p class="text-sm text-mist">Apple Pay, Google Pay and card &mdash; checkout in 10 seconds.</p>
     </div>
     <div class="reveal">
       <div class="text-3xl mb-3">&#127979;</div>
-      <h3 class="display font-semibold text-lg mb-1">Schoolyard pickup</h3>
-      <p class="text-sm opacity-70">Order online, collect at recess. Or tap to pay in person.</p>
+      <h3 class="display font-semibold text-lg mb-1 text-ivory">Schoolyard pickup</h3>
+      <p class="text-sm text-mist">Order online, collect at recess. Or tap to pay in person.</p>
     </div>
   </div>
 </section>
 
 <!-- ============ SHOP ============ -->
-<section id="shop" class="py-16 md:py-24 bg-cream">
+<section id="shop" class="py-16 md:py-24 bg-ink relative">
   <div class="max-w-7xl mx-auto px-5 md:px-8">
     <div class="flex items-end justify-between flex-wrap gap-4 mb-10">
       <div>
-        <p class="display font-medium text-sm uppercase tracking-widest opacity-60 mb-2">The collection</p>
-        <h2 class="display-tight font-bold text-4xl md:text-6xl">Pick your fidget.</h2>
+        <p class="display font-medium text-sm uppercase tracking-widest text-mist mb-2">The collection</p>
+        <h2 class="display-tight font-bold text-4xl md:text-6xl text-ivory">Pick your fidget.</h2>
       </div>
       <div class="flex flex-wrap gap-2" id="filters">
-        <button class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold bg-ink text-cream" data-filter="all">All</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white border border-ink/10 hover:bg-sand" data-filter="spinner">Spinners</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white border border-ink/10 hover:bg-sand" data-filter="cube">Cubes</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white border border-ink/10 hover:bg-sand" data-filter="articulated">Articulated</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white border border-ink/10 hover:bg-sand" data-filter="slider">Sliders &amp; Rings</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white border border-ink/10 hover:bg-sand" data-filter="puzzle">Puzzles &amp; Chains</button>
+        <button class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" data-filter="all">All</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold" data-filter="spinner">Spinners</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold" data-filter="cube">Cubes</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold" data-filter="articulated">Articulated</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold" data-filter="slider">Sliders &amp; Rings</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold" data-filter="puzzle">Puzzles &amp; Chains</button>
       </div>
     </div>
 
@@ -264,96 +348,100 @@
 </section>
 
 <!-- ============ HOW IT'S MADE ============ -->
-<section id="how" class="py-20 md:py-28 bg-ink text-cream relative overflow-hidden">
-  <div class="absolute inset-0 dot-bg opacity-10"></div>
+<section id="how" class="py-20 md:py-28 bg-elevated relative overflow-hidden border-y border-hairline">
+  <div class="absolute inset-0 noise opacity-30 pointer-events-none"></div>
+  <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full" style="background: radial-gradient(circle, rgba(236,72,153,0.15), transparent 60%);"></div>
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full" style="background: radial-gradient(circle, rgba(124,58,237,0.18), transparent 60%);"></div>
   <div class="relative max-w-7xl mx-auto px-5 md:px-8 grid md:grid-cols-2 gap-14 items-center">
     <div>
-      <p class="display font-medium text-sm uppercase tracking-widest opacity-60 mb-3">How it&apos;s made</p>
-      <h2 class="display-tight font-bold text-4xl md:text-6xl mb-6">From CAD to your pocket.</h2>
-      <p class="text-lg opacity-80 mb-8 max-w-lg">Every fidget is designed, printed, and quality-checked in Sydney. We use premium PLA+ and PETG filament for parts that snap, click and spin like they should &mdash; and won&apos;t shatter when they hit the school floor.</p>
-      <ul class="space-y-3 text-base">
-        <li class="flex gap-3"><span class="display font-bold text-amber-300">01</span> Modelled in Fusion 360 with print-in-place hinges and joints.</li>
-        <li class="flex gap-3"><span class="display font-bold text-amber-300">02</span> Printed at 0.16mm layer height for buttery smooth surfaces.</li>
-        <li class="flex gap-3"><span class="display font-bold text-amber-300">03</span> Hand-tested before it ships. If it doesn&apos;t spin right, it doesn&apos;t go out.</li>
+      <p class="display font-medium text-sm uppercase tracking-widest text-mist mb-3">How it&apos;s made</p>
+      <h2 class="display-tight font-bold text-4xl md:text-6xl mb-6 text-ivory">From CAD to your pocket.</h2>
+      <p class="text-lg text-ivory/75 mb-8 max-w-lg">Every fidget is designed, printed, and quality-checked in Sydney. We use premium PLA+ and PETG filament for parts that snap, click and spin like they should &mdash; and won&apos;t shatter when they hit the school floor.</p>
+      <ul class="space-y-3 text-base text-ivory/85">
+        <li class="flex gap-3"><span class="display font-bold text-amber-300 text-base shrink-0">01</span> Modelled in Fusion 360 with print-in-place hinges and joints.</li>
+        <li class="flex gap-3"><span class="display font-bold text-amber-300 text-base shrink-0">02</span> Printed at 0.16mm layer height for buttery smooth surfaces.</li>
+        <li class="flex gap-3"><span class="display font-bold text-amber-300 text-base shrink-0">03</span> Hand-tested before it ships. If it doesn&apos;t spin right, it doesn&apos;t go out.</li>
       </ul>
     </div>
     <div class="relative aspect-square max-w-md mx-auto">
-      <!-- Stylised printer / fidget illustration -->
       <svg viewBox="0 0 400 400" class="w-full h-full">
         <defs>
           <linearGradient id="g-printer" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#ec4899"/>
           </linearGradient>
         </defs>
-        <rect x="60" y="60" width="280" height="280" rx="32" fill="none" stroke="#faf6ee" stroke-opacity="0.2" stroke-width="2"/>
-        <rect x="100" y="100" width="200" height="200" rx="20" fill="url(#g-printer)" opacity="0.18"/>
-        <g transform="translate(200 200)" class="spin-slow" style="transform-origin: center;">
-          <circle r="14" fill="#faf6ee"/>
-          <circle cx="0" cy="-60" r="22" fill="url(#g-printer)"/>
-          <circle cx="52" cy="30" r="22" fill="url(#g-printer)"/>
-          <circle cx="-52" cy="30" r="22" fill="url(#g-printer)"/>
+        <rect x="60" y="60" width="280" height="280" rx="32" fill="none" stroke="#ece9e0" stroke-opacity="0.18" stroke-width="2"/>
+        <rect x="100" y="100" width="200" height="200" rx="20" fill="url(#g-printer)" opacity="0.16"/>
+        <g transform="translate(200 200)">
+          <g class="spin-slow" style="transform-origin: 0 0;">
+            <circle r="14" fill="#ece9e0"/>
+            <circle cx="0" cy="-60" r="22" fill="url(#g-printer)"/>
+            <circle cx="52" cy="30" r="22" fill="url(#g-printer)"/>
+            <circle cx="-52" cy="30" r="22" fill="url(#g-printer)"/>
+          </g>
         </g>
-        <text x="200" y="370" text-anchor="middle" font-family="Space Grotesk" font-weight="700" font-size="14" fill="#faf6ee" opacity="0.5">FIDGETS &middot; SYDNEY</text>
+        <text x="200" y="370" text-anchor="middle" font-family="Space Grotesk" font-weight="700" font-size="14" fill="#ece9e0" opacity="0.4">FIDGETS &middot; SYDNEY</text>
       </svg>
     </div>
   </div>
 </section>
 
 <!-- ============ FAQ ============ -->
-<section id="faq" class="py-20 md:py-28 bg-cream">
+<section id="faq" class="py-20 md:py-28 bg-ink">
   <div class="max-w-3xl mx-auto px-5 md:px-8">
-    <p class="display font-medium text-sm uppercase tracking-widest opacity-60 mb-3">Quick answers</p>
-    <h2 class="display-tight font-bold text-4xl md:text-5xl mb-10">FAQ.</h2>
-    <div class="space-y-4">
-      <details class="group bg-white rounded-2xl p-5 border border-ink/5 open:shadow-lg open:border-ink/10">
-        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg">Are these allowed at school? <span class="opacity-40 group-open:rotate-45 transition-transform">+</span></summary>
-        <p class="mt-3 opacity-80">Most are. Stick to the quiet ones (sliders, cubes, articulated creatures) and you&apos;re sweet. Spinners get noisy if you go full power, so use indoor voice.</p>
+    <p class="display font-medium text-sm uppercase tracking-widest text-mist mb-3">Quick answers</p>
+    <h2 class="display-tight font-bold text-4xl md:text-5xl mb-10 text-ivory">FAQ.</h2>
+    <div class="space-y-3">
+      <details class="group bg-surface rounded-2xl p-5 border border-hairline open:border-hairline/80 hover:border-ivory/20 transition-colors">
+        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg text-ivory">Are these allowed at school? <span class="acc-icon text-mist text-2xl">+</span></summary>
+        <p class="mt-3 text-ivory/70">Most are. Stick to the quiet ones (sliders, cubes, articulated creatures) and you&apos;re sweet. Spinners get noisy if you go full power, so use indoor voice.</p>
       </details>
-      <details class="group bg-white rounded-2xl p-5 border border-ink/5 open:shadow-lg open:border-ink/10">
-        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg">How do I pay? <span class="opacity-40 group-open:rotate-45 transition-transform">+</span></summary>
-        <p class="mt-3 opacity-80">Online: Apple Pay, Google Pay or card via Stripe. In person at school: tap your card or phone on the Square Terminal. Done in seconds.</p>
+      <details class="group bg-surface rounded-2xl p-5 border border-hairline hover:border-ivory/20 transition-colors">
+        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg text-ivory">How do I pay? <span class="acc-icon text-mist text-2xl">+</span></summary>
+        <p class="mt-3 text-ivory/70">Online: Apple Pay, Google Pay or card via Stripe. In person at school: tap your card or phone on the Square Terminal. Done in seconds.</p>
       </details>
-      <details class="group bg-white rounded-2xl p-5 border border-ink/5 open:shadow-lg open:border-ink/10">
-        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg">Can I pick a colour? <span class="opacity-40 group-open:rotate-45 transition-transform">+</span></summary>
-        <p class="mt-3 opacity-80">Yes &mdash; every fidget has 4-6 colour options. Glow-in-the-dark is +$2 and worth it.</p>
+      <details class="group bg-surface rounded-2xl p-5 border border-hairline hover:border-ivory/20 transition-colors">
+        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg text-ivory">Can I pick a colour? <span class="acc-icon text-mist text-2xl">+</span></summary>
+        <p class="mt-3 text-ivory/70">Yes &mdash; every fidget has 4-6 colour options. Glow-in-the-dark is +$2 and worth it.</p>
       </details>
-      <details class="group bg-white rounded-2xl p-5 border border-ink/5 open:shadow-lg open:border-ink/10">
-        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg">What if it breaks? <span class="opacity-40 group-open:rotate-45 transition-transform">+</span></summary>
-        <p class="mt-3 opacity-80">Bring it back &mdash; if it&apos;s a print failure I&apos;ll replace it free. If you ran it over with a scooter, that&apos;s on you.</p>
+      <details class="group bg-surface rounded-2xl p-5 border border-hairline hover:border-ivory/20 transition-colors">
+        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg text-ivory">What if it breaks? <span class="acc-icon text-mist text-2xl">+</span></summary>
+        <p class="mt-3 text-ivory/70">Bring it back &mdash; if it&apos;s a print failure I&apos;ll replace it free. If you ran it over with a scooter, that&apos;s on you.</p>
       </details>
-      <details class="group bg-white rounded-2xl p-5 border border-ink/5 open:shadow-lg open:border-ink/10">
-        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg">Custom orders? <span class="opacity-40 group-open:rotate-45 transition-transform">+</span></summary>
-        <p class="mt-3 opacity-80">Email me. If I can model it, I can print it. Bulk orders for class gifts or birthday parties get a discount.</p>
+      <details class="group bg-surface rounded-2xl p-5 border border-hairline hover:border-ivory/20 transition-colors">
+        <summary class="flex justify-between items-center cursor-pointer display font-semibold text-lg text-ivory">Custom orders? <span class="acc-icon text-mist text-2xl">+</span></summary>
+        <p class="mt-3 text-ivory/70">Email me. If I can model it, I can print it. Bulk orders for class gifts or birthday parties get a discount.</p>
       </details>
     </div>
   </div>
 </section>
 
 <!-- ============ CONTACT / FOOTER ============ -->
-<section id="contact" class="py-20 bg-gradient-to-br from-fuchsia-100 via-amber-50 to-sky-100">
-  <div class="max-w-3xl mx-auto px-5 md:px-8 text-center">
-    <h2 class="display-tight font-bold text-4xl md:text-6xl mb-4">Got a question?</h2>
-    <p class="text-lg opacity-80 mb-8">DM me, email, or grab one in person at recess.</p>
-    <a href="mailto:hello@fidgets.example" class="btn-primary inline-block px-8 py-4 rounded-full font-semibold">Email Tom &rarr;</a>
+<section id="contact" class="py-20 relative overflow-hidden bg-ink border-t border-hairline">
+  <div class="absolute inset-0 hero-mesh opacity-50"></div>
+  <div class="relative max-w-3xl mx-auto px-5 md:px-8 text-center">
+    <h2 class="display-tight font-bold text-4xl md:text-6xl mb-4 text-ivory">Got a question?</h2>
+    <p class="text-lg text-ivory/70 mb-8">DM me, email, or grab one in person at recess.</p>
+    <a href="mailto:hello@fidgets.example" class="btn-gradient inline-block px-8 py-4 rounded-full font-bold">Email Tom &rarr;</a>
   </div>
 </section>
 
-<footer class="bg-ink text-cream py-10">
+<footer class="bg-ink py-10 border-t border-hairline">
   <div class="max-w-7xl mx-auto px-5 md:px-8 flex flex-wrap items-center justify-between gap-4 text-sm">
-    <div class="flex items-center gap-2">
-      <span class="display font-bold text-xl">fidgets</span>
-      <span class="opacity-40">&middot; Sydney, Australia</span>
+    <div class="flex items-center gap-2 text-ivory/80">
+      <span class="display font-bold text-xl text-ivory">fidgets</span>
+      <span class="text-mist">&middot; Sydney, Australia</span>
     </div>
-    <div class="opacity-50">&copy; <span id="year"></span> Fidgets. Made by Tom.</div>
+    <div class="text-mist">&copy; <span id="year"></span> Fidgets. Made by Tom.</div>
   </div>
 </footer>
 
-<!-- ============ MODAL (used for buy-not-yet-configured + about info) ============ -->
+<!-- ============ MODAL ============ -->
 <div id="modal" class="fixed inset-0 modal-bg hidden items-center justify-center p-5 z-50">
-  <div class="bg-cream rounded-3xl max-w-md w-full p-8 relative">
-    <button onclick="closeModal()" class="absolute top-4 right-4 text-2xl opacity-50 hover:opacity-100" aria-label="Close">&times;</button>
-    <h3 id="modal-title" class="display-tight font-bold text-2xl mb-3">Coming soon</h3>
-    <p id="modal-body" class="opacity-80 mb-5"></p>
+  <div class="bg-surface border border-hairline rounded-3xl max-w-md w-full p-8 relative">
+    <button onclick="closeModal()" class="absolute top-4 right-4 text-2xl text-mist hover:text-ivory" aria-label="Close">&times;</button>
+    <h3 id="modal-title" class="display-tight font-bold text-2xl mb-3 text-ivory">Coming soon</h3>
+    <p id="modal-body" class="text-ivory/70 mb-5"></p>
     <button onclick="closeModal()" class="btn-primary px-6 py-3 rounded-full font-semibold w-full">Got it</button>
   </div>
 </div>
@@ -362,13 +450,12 @@
 <script>
 // =============================================================
 //  PRODUCT CATALOGUE
-//  To enable real checkout, paste your Stripe Payment Link URL
-//  into each product's `pay` field. Without one, the "Buy" button
-//  shows a friendly placeholder modal.
-//  Get Payment Links at https://dashboard.stripe.com/payment-links
+//  - `image`  → real photo URL (Pexels / Wikimedia, hot-linkable, free)
+//  - `glow`   → CSS gradient used for SVG-only product cards
+//  - `pay`    → set Stripe Payment Link in STRIPE_PAYMENT_LINKS map below
 // =============================================================
 const COLORS = {
-  galaxy:   { name: 'Galaxy purple',     hex: '#7c3aed' },
+  galaxy:   { name: 'Galaxy purple',     hex: '#8b5cf6' },
   lava:     { name: 'Lava orange',       hex: '#f97316' },
   slime:    { name: 'Slime green',       hex: '#84cc16' },
   bubble:   { name: 'Bubblegum pink',    hex: '#ec4899' },
@@ -381,76 +468,194 @@ const COLORS = {
 };
 
 const products = [
-  { id: 'spinner-3', name: 'Three-Arm Spinner', cat: 'spinner', price: 8, blurb: 'The classic. Triple-bearing, buttery spin.', colors: ['galaxy','lava','slime','sky','midnight'], grad: ['#a855f7','#ec4899'], icon: 'spinner3' },
-  { id: 'spinner-6', name: 'Six-Arm Mega Spinner', cat: 'spinner', price: 12, blurb: 'More arms, longer spin. Whirring satisfaction.', colors: ['midnight','sky','lava','glow'], grad: ['#0ea5e9','#6366f1'], icon: 'spinner6' },
-  { id: 'star-spinner', name: 'Star Spinner', cat: 'spinner', price: 9, blurb: 'Five-pointed, weighted tips, hypnotic.', colors: ['sun','bubble','ice','glow'], grad: ['#fbbf24','#f97316'], icon: 'star' },
-  { id: 'fidget-cube', name: 'Print-in-Place Fidget Cube', cat: 'cube', price: 15, blurb: 'Six sides of buttons, dials and switches.', colors: ['midnight','galaxy','sky','slime','bubble'], grad: ['#22d3ee','#3b82f6'], icon: 'cube' },
-  { id: 'infinity-cube', name: 'Infinity Cube', cat: 'cube', price: 13, blurb: 'Folds and unfolds forever. The desk classic.', colors: ['ice','midnight','galaxy','lava'], grad: ['#94a3b8','#475569'], icon: 'infinity' },
-  { id: 'gear-cube', name: 'Gear Cube', cat: 'cube', price: 14, blurb: 'Interlocking gears. Click-click-click.', colors: ['sun','sky','bubble','midnight'], grad: ['#facc15','#f97316'], icon: 'gear' },
-  { id: 'dragon', name: 'Articulated Dragon', cat: 'articulated', price: 18, blurb: 'Big flexi dragon &mdash; the showstopper.', colors: ['galaxy','slime','lava','glow','midnight'], grad: ['#16a34a','#65a30d'], icon: 'dragon' },
-  { id: 'snake', name: 'Articulated Snake', cat: 'articulated', price: 10, blurb: 'Wiggle, drape, wear as a bracelet.', colors: ['slime','lava','bubble','sky'], grad: ['#84cc16','#22d3ee'], icon: 'snake' },
-  { id: 'octopus', name: 'Articulated Octopus', cat: 'articulated', price: 14, blurb: 'Eight tentacles of squishy print-in-place fun.', colors: ['bubble','galaxy','sky','glow'], grad: ['#ec4899','#a855f7'], icon: 'octopus' },
-  { id: 'axolotl', name: 'Articulated Axolotl', cat: 'articulated', price: 14, blurb: 'Smiley pink axolotl with floppy gills.', colors: ['bubble','ice','galaxy','sun'], grad: ['#f9a8d4','#ec4899'], icon: 'axolotl' },
-  { id: 'worm', name: 'Wiggle Worm', cat: 'articulated', price: 7, blurb: 'Pocket-sized stress relief. Free wiggles.', colors: ['slime','bubble','sun','sky'], grad: ['#fbbf24','#84cc16'], icon: 'worm' },
-  { id: 'lizard', name: 'Mini Lizard', cat: 'articulated', price: 9, blurb: 'Tiny flexi lizard. Fits in any pencil case.', colors: ['slime','lava','sky','galaxy'], grad: ['#22d3ee','#16a34a'], icon: 'lizard' },
-  { id: 'slider', name: 'Magnetic-Feel Slider', cat: 'slider', price: 12, blurb: 'Smooth as silk. Slides from one end to the other.', colors: ['midnight','ice','sky','galaxy'], grad: ['#1e293b','#0ea5e9'], icon: 'slider' },
-  { id: 'gyro-ring', name: 'Gyro Ring', cat: 'slider', price: 9, blurb: 'Spins on your finger. Discreet desk fidget.', colors: ['midnight','galaxy','lava','ruby'], grad: ['#7c3aed','#e11d48'], icon: 'ring' },
-  { id: 'rolling-maze', name: 'Rolling Ball Maze', cat: 'slider', price: 15, blurb: 'Tilt and twist to roll the ball through.', colors: ['sky','sun','bubble','glow'], grad: ['#38bdf8','#a855f7'], icon: 'maze' },
-  { id: 'hex-flexi', name: 'Hex Flexi', cat: 'puzzle', price: 8, blurb: 'Hexagonal mesh that folds into a thousand shapes.', colors: ['galaxy','slime','sky','lava'], grad: ['#a855f7','#22d3ee'], icon: 'hex' },
-  { id: 'magic-snake', name: 'Magic Snake', cat: 'puzzle', price: 12, blurb: 'Twist 24 segments into anything you can imagine.', colors: ['ruby','sun','sky','midnight'], grad: ['#e11d48','#facc15'], icon: 'magicsnake' },
-  { id: 'twist-puzzle', name: 'Twist Puzzle', cat: 'puzzle', price: 10, blurb: 'Tangle-style endless loop. Always something to twist.', colors: ['bubble','slime','galaxy','ice'], grad: ['#ec4899','#84cc16'], icon: 'twist' },
-  { id: 'chain', name: 'Trichinopoly Chain', cat: 'puzzle', price: 11, blurb: 'Interlocking links. Drape, swing, click.', colors: ['midnight','ice','galaxy','sun'], grad: ['#475569','#facc15'], icon: 'chain' },
-  { id: 'heart', name: 'Heart Pop', cat: 'puzzle', price: 7, blurb: 'Pocket-sized squishy heart. Hand it to a mate.', colors: ['bubble','ruby','galaxy','sun'], grad: ['#ec4899','#e11d48'], icon: 'heart' },
+  // SPINNERS — all have real photos
+  {
+    id: 'spinner-3', name: 'Three-Arm Spinner', cat: 'spinner', price: 8,
+    blurb: 'The classic. Triple-bearing, buttery spin.',
+    colors: ['galaxy','lava','slime','sky','midnight'],
+    image: 'https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'spinner-6', name: 'Six-Arm Mega Spinner', cat: 'spinner', price: 12,
+    blurb: 'More arms, longer spin. Whirring satisfaction.',
+    colors: ['midnight','sky','lava','glow'],
+    image: 'https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'star-spinner', name: 'Star Spinner', cat: 'spinner', price: 9,
+    blurb: 'Five-pointed, weighted tips, hypnotic.',
+    colors: ['sun','bubble','ice','glow'],
+    image: 'https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'metal-spinner', name: 'Heavy Metal Spinner', cat: 'spinner', price: 14,
+    blurb: 'Premium metallic finish. Spins for an eternity.',
+    colors: ['midnight','ice','sun'],
+    image: 'https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+
+  // CUBES — fidget-cube and infinity have photos
+  {
+    id: 'fidget-cube', name: 'Print-in-Place Fidget Cube', cat: 'cube', price: 15,
+    blurb: 'Six sides of buttons, dials and switches.',
+    colors: ['midnight','galaxy','sky','slime','bubble'],
+    image: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg',
+  },
+  {
+    id: 'infinity-cube', name: 'Infinity Cube', cat: 'cube', price: 13,
+    blurb: 'Folds and unfolds forever. The desk classic.',
+    colors: ['ice','midnight','galaxy','lava'],
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg',
+  },
+  {
+    id: 'gear-cube', name: 'Gear Cube', cat: 'cube', price: 14,
+    blurb: 'Interlocking gears. Click-click-click.',
+    colors: ['sun','sky','bubble','midnight'],
+    image: 'https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+
+  // ARTICULATED — premium dark SVG cards
+  {
+    id: 'dragon', name: 'Articulated Dragon', cat: 'articulated', price: 18,
+    blurb: 'Big flexi dragon &mdash; the showstopper.',
+    colors: ['galaxy','slime','lava','glow','midnight'],
+    glow: 'radial-gradient(circle at 30% 30%, rgba(132,204,22,0.5), transparent 60%), radial-gradient(circle at 80% 70%, rgba(34,211,238,0.4), transparent 60%)',
+    icon: 'dragon',
+  },
+  {
+    id: 'snake', name: 'Articulated Snake', cat: 'articulated', price: 10,
+    blurb: 'Wiggle, drape, wear as a bracelet.',
+    colors: ['slime','lava','bubble','sky'],
+    glow: 'radial-gradient(circle at 30% 30%, rgba(132,204,22,0.5), transparent 60%), radial-gradient(circle at 80% 70%, rgba(34,211,238,0.45), transparent 60%)',
+    icon: 'snake',
+  },
+  {
+    id: 'octopus', name: 'Articulated Octopus', cat: 'articulated', price: 14,
+    blurb: 'Eight tentacles of squishy print-in-place fun.',
+    colors: ['bubble','galaxy','sky','glow'],
+    glow: 'radial-gradient(circle at 50% 30%, rgba(236,72,153,0.55), transparent 60%), radial-gradient(circle at 80% 80%, rgba(139,92,246,0.5), transparent 60%)',
+    icon: 'octopus',
+  },
+  {
+    id: 'axolotl', name: 'Articulated Axolotl', cat: 'articulated', price: 14,
+    blurb: 'Smiley pink axolotl with floppy gills.',
+    colors: ['bubble','ice','galaxy','sun'],
+    glow: 'radial-gradient(circle at 30% 40%, rgba(244,114,182,0.6), transparent 60%), radial-gradient(circle at 80% 60%, rgba(252,211,77,0.4), transparent 60%)',
+    icon: 'axolotl',
+  },
+  {
+    id: 'worm', name: 'Wiggle Worm', cat: 'articulated', price: 7,
+    blurb: 'Pocket-sized stress relief. Free wiggles.',
+    colors: ['slime','bubble','sun','sky'],
+    glow: 'radial-gradient(circle at 30% 50%, rgba(252,211,77,0.55), transparent 60%), radial-gradient(circle at 80% 40%, rgba(132,204,22,0.5), transparent 60%)',
+    icon: 'worm',
+  },
+  {
+    id: 'lizard', name: 'Mini Lizard', cat: 'articulated', price: 9,
+    blurb: 'Tiny flexi lizard. Fits in any pencil case.',
+    colors: ['slime','lava','sky','galaxy'],
+    glow: 'radial-gradient(circle at 30% 30%, rgba(34,211,238,0.5), transparent 60%), radial-gradient(circle at 80% 70%, rgba(22,163,74,0.5), transparent 60%)',
+    icon: 'lizard',
+  },
+
+  // SLIDERS — slider has a photo (black metal spinner stands in nicely), ring + maze are SVG
+  {
+    id: 'slider', name: 'Magnetic-Feel Slider', cat: 'slider', price: 12,
+    blurb: 'Smooth as silk. Slides from one end to the other.',
+    colors: ['midnight','ice','sky','galaxy'],
+    image: 'https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'gyro-ring', name: 'Gyro Ring', cat: 'slider', price: 9,
+    blurb: 'Spins on your finger. Discreet desk fidget.',
+    colors: ['midnight','galaxy','lava','ruby'],
+    glow: 'radial-gradient(circle at 50% 50%, rgba(139,92,246,0.55), transparent 60%), radial-gradient(circle at 80% 30%, rgba(225,29,72,0.4), transparent 60%)',
+    icon: 'ring',
+  },
+  {
+    id: 'rolling-maze', name: 'Rolling Ball Maze', cat: 'slider', price: 15,
+    blurb: 'Tilt and twist to roll the ball through.',
+    colors: ['sky','sun','bubble','glow'],
+    glow: 'radial-gradient(circle at 30% 30%, rgba(56,189,248,0.5), transparent 60%), radial-gradient(circle at 80% 70%, rgba(236,72,153,0.45), transparent 60%)',
+    icon: 'maze',
+  },
+
+  // PUZZLES — chain has a photo, others are SVG
+  {
+    id: 'hex-flexi', name: 'Hex Flexi', cat: 'puzzle', price: 8,
+    blurb: 'Hexagonal mesh that folds into a thousand shapes.',
+    colors: ['galaxy','slime','sky','lava'],
+    glow: 'radial-gradient(circle at 30% 30%, rgba(139,92,246,0.55), transparent 60%), radial-gradient(circle at 80% 70%, rgba(34,211,238,0.5), transparent 60%)',
+    icon: 'hex',
+  },
+  {
+    id: 'magic-snake', name: 'Magic Snake', cat: 'puzzle', price: 12,
+    blurb: 'Twist 24 segments into anything you can imagine.',
+    colors: ['ruby','sun','sky','midnight'],
+    glow: 'radial-gradient(circle at 30% 50%, rgba(225,29,72,0.55), transparent 60%), radial-gradient(circle at 80% 40%, rgba(252,211,77,0.5), transparent 60%)',
+    icon: 'magicsnake',
+  },
+  {
+    id: 'twist-puzzle', name: 'Twist Puzzle', cat: 'puzzle', price: 10,
+    blurb: 'Tangle-style endless loop. Always something to twist.',
+    colors: ['bubble','slime','galaxy','ice'],
+    glow: 'radial-gradient(circle at 30% 30%, rgba(236,72,153,0.55), transparent 60%), radial-gradient(circle at 80% 70%, rgba(132,204,22,0.5), transparent 60%)',
+    icon: 'twist',
+  },
+  {
+    id: 'chain', name: 'Bike-Chain Fidget', cat: 'puzzle', price: 11,
+    blurb: 'Interlocking links. Drape, swing, click.',
+    colors: ['midnight','ice','galaxy','sun'],
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg',
+  },
 ];
 
 // =============================================================
-//  SVG ICON LIBRARY
+//  SVG ICONS — refined for dark cards (cream fills, accent details)
 // =============================================================
 const icons = {
-  spinner3: `<g transform="translate(60 60)"><circle r="9" fill="rgba(255,255,255,0.95)"/><circle cx="0" cy="-32" r="14" fill="rgba(255,255,255,0.85)"/><circle cx="28" cy="16" r="14" fill="rgba(255,255,255,0.85)"/><circle cx="-28" cy="16" r="14" fill="rgba(255,255,255,0.85)"/></g>`,
-  spinner6: `<g transform="translate(60 60)"><circle r="8" fill="rgba(255,255,255,0.95)"/>${[0,60,120,180,240,300].map(a=>`<circle cx="${28*Math.cos(a*Math.PI/180)}" cy="${28*Math.sin(a*Math.PI/180)}" r="11" fill="rgba(255,255,255,0.85)"/>`).join('')}</g>`,
-  star: `<polygon points="60,15 70,45 102,45 76,63 86,93 60,75 34,93 44,63 18,45 50,45" fill="rgba(255,255,255,0.92)"/>`,
-  cube: `<rect x="22" y="22" width="76" height="76" rx="14" fill="rgba(255,255,255,0.92)"/><circle cx="42" cy="44" r="6" fill="rgba(11,11,15,0.55)"/><circle cx="78" cy="44" r="6" fill="rgba(11,11,15,0.3)"/><rect x="36" y="68" width="48" height="10" rx="5" fill="rgba(11,11,15,0.55)"/>`,
-  infinity: `<rect x="18" y="36" width="50" height="50" rx="10" fill="rgba(255,255,255,0.92)"/><rect x="52" y="22" width="50" height="50" rx="10" fill="rgba(255,255,255,0.7)"/>`,
-  gear: `<g transform="translate(60 60)"><circle r="22" fill="rgba(255,255,255,0.92)"/><circle r="9" fill="rgba(11,11,15,0.6)"/>${[0,45,90,135,180,225,270,315].map(a=>`<rect x="-5" y="-38" width="10" height="12" rx="2" fill="rgba(255,255,255,0.92)" transform="rotate(${a})"/>`).join('')}</g>`,
-  dragon: `<g fill="rgba(255,255,255,0.92)"><path d="M14 80 Q30 55 50 75 Q70 95 90 70 Q105 55 112 65 L108 78 Q92 88 80 78 Q60 100 42 82 Q26 70 14 80 Z"/><circle cx="100" cy="62" r="3" fill="rgba(11,11,15,0.7)"/></g>`,
-  snake: `<g fill="rgba(255,255,255,0.92)"><circle cx="14" cy="60" r="9"/><circle cx="32" cy="50" r="10"/><circle cx="52" cy="62" r="10"/><circle cx="72" cy="50" r="10"/><circle cx="92" cy="62" r="10"/><circle cx="108" cy="55" r="8"/></g>`,
-  octopus: `<g fill="rgba(255,255,255,0.92)"><ellipse cx="60" cy="42" rx="26" ry="22"/><path d="M40 56 Q34 80 22 92"/><path d="M50 60 Q42 84 38 100" stroke="rgba(255,255,255,0.92)" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M60 64 Q60 86 60 102" stroke="rgba(255,255,255,0.92)" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M70 60 Q78 84 82 100" stroke="rgba(255,255,255,0.92)" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M80 56 Q86 80 98 92" stroke="rgba(255,255,255,0.92)" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="52" cy="40" r="3" fill="rgba(11,11,15,0.7)"/><circle cx="68" cy="40" r="3" fill="rgba(11,11,15,0.7)"/></g>`,
-  axolotl: `<g fill="rgba(255,255,255,0.92)"><ellipse cx="60" cy="62" rx="34" ry="22"/><path d="M30 50 Q22 42 18 50 Q22 58 30 56 Z"/><path d="M30 62 Q18 60 14 68 Q22 74 32 70 Z"/><path d="M30 74 Q22 80 22 88 Q30 88 34 80 Z"/><circle cx="74" cy="58" r="3" fill="rgba(11,11,15,0.7)"/><circle cx="86" cy="58" r="3" fill="rgba(11,11,15,0.7)"/><path d="M76 70 Q82 76 88 70" stroke="rgba(11,11,15,0.6)" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>`,
-  worm: `<path d="M14 76 Q26 56 42 70 Q58 86 74 64 Q90 44 106 60" stroke="rgba(255,255,255,0.92)" stroke-width="14" fill="none" stroke-linecap="round"/>`,
-  lizard: `<g fill="rgba(255,255,255,0.92)"><ellipse cx="62" cy="60" rx="26" ry="14"/><circle cx="86" cy="56" r="9"/><path d="M40 60 Q26 56 16 64"/><path d="M52 50 Q44 38 38 38"/><path d="M72 50 Q78 38 84 38"/><path d="M52 72 Q44 86 38 86"/><path d="M72 72 Q78 86 84 86"/><circle cx="88" cy="54" r="2.5" fill="rgba(11,11,15,0.7)"/></g>`,
-  slider: `<rect x="14" y="46" width="92" height="28" rx="14" fill="rgba(255,255,255,0.92)"/><circle cx="40" cy="60" r="10" fill="rgba(11,11,15,0.55)"/>`,
-  ring: `<circle cx="60" cy="60" r="34" fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="10"/><circle cx="60" cy="60" r="20" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="6"/>`,
-  maze: `<circle cx="60" cy="60" r="36" fill="rgba(255,255,255,0.92)"/><path d="M40 50 H80 V60 H50 V70 H80" stroke="rgba(11,11,15,0.55)" stroke-width="3" fill="none"/><circle cx="44" cy="74" r="4" fill="rgba(11,11,15,0.55)"/>`,
-  hex: `<g fill="rgba(255,255,255,0.92)"><polygon points="60,16 88,32 88,64 60,80 32,64 32,32"/><polygon points="60,32 76,40 76,56 60,64 44,56 44,40" fill="rgba(11,11,15,0.4)"/></g>`,
-  magicsnake: `<g fill="rgba(255,255,255,0.92)"><polygon points="14,70 30,54 46,70 30,86"/><polygon points="46,70 62,54 78,70 62,86"/><polygon points="78,70 94,54 110,70 94,86"/></g>`,
-  twist: `<path d="M30 60 Q30 30 60 30 Q90 30 90 60 Q90 90 60 90 Q30 90 30 60 Z" stroke="rgba(255,255,255,0.92)" stroke-width="10" fill="none"/><path d="M40 60 Q40 40 60 40 Q80 40 80 60" stroke="rgba(255,255,255,0.65)" stroke-width="8" fill="none"/>`,
-  chain: `<g fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="6"><ellipse cx="30" cy="60" rx="14" ry="9"/><ellipse cx="55" cy="60" rx="14" ry="9"/><ellipse cx="80" cy="60" rx="14" ry="9"/><ellipse cx="105" cy="60" rx="12" ry="8"/></g>`,
-  heart: `<path d="M60 92 L24 56 Q12 44 24 32 Q36 20 48 32 L60 44 L72 32 Q84 20 96 32 Q108 44 96 56 Z" fill="rgba(255,255,255,0.92)"/>`,
+  dragon: `<g fill="#ece9e0"><ellipse cx="92" cy="42" rx="20" ry="16"/><path d="M76 50 Q60 64 50 50 Q40 36 26 52 Q16 64 12 80 Q22 84 30 76 Q42 64 52 78 Q62 92 76 80 Q86 70 96 76 Q104 80 110 70 L106 60 Q98 60 92 64"/><circle cx="98" cy="38" r="2.8" fill="#0a0a0d"/><path d="M86 28 L92 18 L98 28 Z M100 26 L106 16 L112 26 Z"/><path d="M100 44 Q108 44 110 50 L102 50 Z" fill="#0a0a0d" opacity="0.4"/></g>`,
+  snake: `<g fill="#ece9e0"><circle cx="14" cy="60" r="9"/><circle cx="32" cy="50" r="10"/><circle cx="52" cy="62" r="10"/><circle cx="72" cy="50" r="10"/><circle cx="92" cy="62" r="10"/><circle cx="108" cy="55" r="8"/><circle cx="14" cy="60" r="2.5" fill="#0a0a0d"/></g>`,
+  octopus: `<g fill="#ece9e0"><ellipse cx="60" cy="42" rx="28" ry="22"/><path d="M40 56 Q34 80 22 92" stroke="#ece9e0" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M50 60 Q42 84 38 100" stroke="#ece9e0" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M60 64 Q60 86 60 102" stroke="#ece9e0" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M70 60 Q78 84 82 100" stroke="#ece9e0" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M80 56 Q86 80 98 92" stroke="#ece9e0" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="52" cy="40" r="3" fill="#0a0a0d"/><circle cx="68" cy="40" r="3" fill="#0a0a0d"/></g>`,
+  axolotl: `<g fill="#ece9e0"><ellipse cx="60" cy="62" rx="34" ry="22"/><path d="M30 50 Q22 42 18 50 Q22 58 30 56 Z"/><path d="M30 62 Q18 60 14 68 Q22 74 32 70 Z"/><path d="M30 74 Q22 80 22 88 Q30 88 34 80 Z"/><circle cx="74" cy="58" r="3" fill="#0a0a0d"/><circle cx="86" cy="58" r="3" fill="#0a0a0d"/><path d="M76 70 Q82 76 88 70" stroke="#0a0a0d" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>`,
+  worm: `<path d="M14 76 Q26 56 42 70 Q58 86 74 64 Q90 44 106 60" stroke="#ece9e0" stroke-width="14" fill="none" stroke-linecap="round"/>`,
+  lizard: `<g fill="#ece9e0"><ellipse cx="62" cy="60" rx="26" ry="14"/><circle cx="86" cy="56" r="9"/><path d="M40 60 Q26 56 16 64" stroke="#ece9e0" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M52 50 Q44 38 38 38" stroke="#ece9e0" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M72 50 Q78 38 84 38" stroke="#ece9e0" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M52 72 Q44 86 38 86" stroke="#ece9e0" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M72 72 Q78 86 84 86" stroke="#ece9e0" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="88" cy="54" r="2.5" fill="#0a0a0d"/></g>`,
+  ring: `<circle cx="60" cy="60" r="34" fill="none" stroke="#ece9e0" stroke-width="10"/><circle cx="60" cy="60" r="20" fill="none" stroke="#ece9e0" stroke-width="6" opacity="0.55"/>`,
+  maze: `<circle cx="60" cy="60" r="36" fill="#ece9e0"/><path d="M40 50 H80 V60 H50 V70 H80" stroke="#0a0a0d" stroke-width="3" fill="none"/><circle cx="44" cy="74" r="4" fill="#0a0a0d"/>`,
+  hex: `<g fill="#ece9e0"><polygon points="60,16 88,32 88,64 60,80 32,64 32,32"/><polygon points="60,32 76,40 76,56 60,64 44,56 44,40" fill="#0a0a0d" opacity="0.7"/></g>`,
+  magicsnake: `<g fill="#ece9e0"><polygon points="14,70 30,54 46,70 30,86"/><polygon points="46,70 62,54 78,70 62,86"/><polygon points="78,70 94,54 110,70 94,86"/></g>`,
+  twist: `<path d="M30 60 Q30 30 60 30 Q90 30 90 60 Q90 90 60 90 Q30 90 30 60 Z" stroke="#ece9e0" stroke-width="10" fill="none"/><path d="M40 60 Q40 40 60 40 Q80 40 80 60" stroke="#ece9e0" stroke-width="8" fill="none" opacity="0.55"/>`,
 };
 
 // =============================================================
 //  RENDER PRODUCT GRID
 // =============================================================
-function svgFor(p) {
-  return `<svg viewBox="0 0 120 120" class="w-full h-full">${icons[p.icon] || icons.cube}</svg>`;
+function stageHTML(p) {
+  if (p.image) {
+    return `<div class="stage stage-photo aspect-square">
+      <img src="${p.image}" alt="${p.name}" class="stage-zoom" loading="lazy" onload="this.classList.add('loaded')" />
+    </div>`;
+  }
+  return `<div class="stage stage-glow aspect-square stage-zoom" style="--glow:${p.glow}">
+    <div class="absolute inset-0 flex items-center justify-center"><svg viewBox="0 0 120 120" width="60%" height="60%">${icons[p.icon] || ''}</svg></div>
+  </div>`;
 }
 
 function renderProducts(filter='all') {
   const grid = document.getElementById('product-grid');
   const list = filter === 'all' ? products : products.filter(p => p.cat === filter);
   grid.innerHTML = list.map(p => `
-    <article class="product-card bg-white rounded-3xl border border-ink/5 overflow-hidden flex flex-col" data-id="${p.id}">
-      <div class="aspect-square relative flex items-center justify-center" style="background: linear-gradient(135deg, ${p.grad[0]}, ${p.grad[1]});">
-        <div class="icon-stage w-3/5 h-3/5">${svgFor(p)}</div>
-        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wide">${p.cat}</div>
+    <article class="product-card rounded-3xl overflow-hidden flex flex-col" data-id="${p.id}">
+      <div class="relative">
+        ${stageHTML(p)}
+        <div class="absolute top-4 left-4 bg-ink/80 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider text-ivory">${p.cat}</div>
       </div>
       <div class="p-5 flex-1 flex flex-col">
         <div class="flex items-start justify-between gap-3 mb-2">
-          <h3 class="display font-bold text-lg leading-tight">${p.name}</h3>
-          <div class="display font-bold text-lg whitespace-nowrap">$${p.price}</div>
+          <h3 class="display font-bold text-lg leading-tight text-ivory">${p.name}</h3>
+          <div class="display font-bold text-lg whitespace-nowrap text-gradient">$${p.price}</div>
         </div>
-        <p class="text-sm opacity-70 mb-4 flex-1">${p.blurb}</p>
+        <p class="text-sm text-mist mb-4 flex-1">${p.blurb}</p>
         <div class="flex items-center gap-1.5 mb-4" aria-label="Available colours">
           ${p.colors.map(c => `<span class="swatch" style="background:${COLORS[c].hex}" title="${COLORS[c].name}"></span>`).join('')}
         </div>
@@ -459,23 +664,19 @@ function renderProducts(filter='all') {
     </article>
   `).join('');
 
-  // Re-attach reveal observer to new cards
   document.querySelectorAll('.product-card').forEach(el => observer.observe(el));
 }
 
 // =============================================================
-//  CHECKOUT (Stripe Payment Links)
+//  CHECKOUT (Stripe Payment Links — paste real URLs to enable)
 // =============================================================
 const STRIPE_PAYMENT_LINKS = {
-  // 'spinner-3': 'https://buy.stripe.com/...',  <-- paste each here when Stripe is set up
+  // 'spinner-3': 'https://buy.stripe.com/...',
 };
 
 function buy(productId) {
   const link = STRIPE_PAYMENT_LINKS[productId];
-  if (link) {
-    window.location.href = link;
-    return;
-  }
+  if (link) { window.location.href = link; return; }
   const p = products.find(x => x.id === productId);
   showModal(
     `Almost ready &mdash; ${p.name}`,
@@ -488,12 +689,8 @@ function buy(productId) {
 // =============================================================
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => {
-      b.classList.remove('active','bg-ink','text-cream');
-      b.classList.add('bg-white','border','border-ink/10');
-    });
-    btn.classList.add('active','bg-ink','text-cream');
-    btn.classList.remove('bg-white');
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
     renderProducts(btn.dataset.filter);
   });
 });
@@ -505,17 +702,13 @@ function showModal(title, body) {
   document.getElementById('modal-title').innerHTML = title;
   document.getElementById('modal-body').innerHTML = body;
   const m = document.getElementById('modal');
-  m.classList.remove('hidden');
-  m.classList.add('flex');
+  m.classList.remove('hidden'); m.classList.add('flex');
 }
 function closeModal() {
   const m = document.getElementById('modal');
-  m.classList.add('hidden');
-  m.classList.remove('flex');
+  m.classList.add('hidden'); m.classList.remove('flex');
 }
-document.getElementById('modal').addEventListener('click', (e) => {
-  if (e.target.id === 'modal') closeModal();
-});
+document.getElementById('modal').addEventListener('click', (e) => { if (e.target.id === 'modal') closeModal(); });
 
 // =============================================================
 //  REVEAL ON SCROLL
