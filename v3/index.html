@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fidgets — pick your variant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: Inter, system-ui, sans-serif; background: #0a0a0d; color: #ece9e0; -webkit-font-smoothing: antialiased; }
+  .display { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.025em; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; }
+  .vcard { transition: all 0.35s cubic-bezier(.2,.8,.2,1); border: 1px solid #26262f; }
+  .vcard:hover { transform: translateY(-6px); box-shadow: 0 28px 56px -20px rgba(0,0,0,0.7); }
+  .vcard-a { background: #000; }
+  .vcard-a:hover { border-color: #04a1ff; }
+  .vcard-b { background: #faf7f2; color: #15110d; }
+  .vcard-b:hover { border-color: #c2410c; }
+  .vcard-c { background: radial-gradient(at 30% 20%, rgba(124,58,237,0.25), transparent 55%), radial-gradient(at 70% 80%, rgba(236,72,153,0.20), transparent 60%), #13131a; }
+  .vcard-c:hover { border-color: #f472b6; }
+  .vlabel-a { color: #04a1ff; }
+  .vlabel-b { color: #c2410c; }
+  .vlabel-c { color: #f472b6; }
+  .vbtn-a { background: #04a1ff; color: #000; }
+  .vbtn-b { background: #15110d; color: #faf7f2; }
+  .vbtn-c { background: linear-gradient(135deg, #c084fc, #f472b6, #fb923c); color: #0a0a0d; }
+  .vbtn { transition: all 0.2s ease; font-weight: 600; }
+  .vbtn:hover { transform: translateY(-1px); filter: brightness(1.1); }
+</style>
+</head>
+<body>
+
+<header class="max-w-[1280px] mx-auto px-6 pt-10 pb-6 flex items-center justify-between">
+  <div class="flex items-center gap-2">
+    <span class="display font-bold text-2xl">fidgets</span>
+    <span class="mono text-fuchsia-300">/ V3 / PICK ONE</span>
+  </div>
+  <a href="../" class="mono text-white/60 hover:text-white">← BACK TO V2</a>
+</header>
+
+<section class="max-w-[1280px] mx-auto px-6 pt-12 pb-20">
+  <p class="mono text-fuchsia-300 mb-4">// HEY SIMON</p>
+  <h1 class="display font-bold text-5xl md:text-7xl leading-[0.95] mb-6 max-w-3xl">Three directions.<br />One picks the domain.</h1>
+  <p class="text-lg text-white/65 max-w-2xl mb-10">
+    Each variant uses the same 27 products + 5 bundles. They differ in <em>tone</em>: Variant A leans tech (INCYT-style), Variant B leans editorial (LX-style), Variant C is a polished dark with multi-colour accents. Click into each, scroll the shop, then tell me which one wins.
+  </p>
+
+  <p class="text-sm text-amber-300/90 mb-10 bg-amber-300/5 border border-amber-300/20 rounded-lg p-4 max-w-2xl">
+    <strong>Note on the domain:</strong> <code class="bg-black/30 px-1.5 py-0.5 rounded">fidgetsgalore.com</code> is available — but no .com domain costs 5¢. Realistic first-year price is <strong>~AUD 12–18</strong>, plus <strong>~AUD 10–12 for WHOIS / domain privacy</strong>. I can't actually purchase the domain (need your card + registrar account), but I'll provide one-click registrar links once you pick a variant. The .com.au and .au versions are all already registered by squatters.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-5 mb-14">
+
+    <a href="a/" class="vcard vcard-a rounded-2xl p-7 block">
+      <div class="mono vlabel-a mb-3">// VARIANT A</div>
+      <h2 class="display font-bold text-3xl mb-2">Tech.</h2>
+      <p class="text-sm text-white/55 mb-6">INCYT-inspired. True black, electric blue accent, Inter + JetBrains Mono. Massive negative space, single accent colour, premium-tech feel.</p>
+      <ul class="text-xs text-white/40 space-y-1 mb-6">
+        <li>· Pure black background</li>
+        <li>· Electric blue (#04a1ff) — single accent</li>
+        <li>· Tabular monospace details</li>
+        <li>· No gradients, no glow</li>
+      </ul>
+      <span class="vbtn vbtn-a inline-block px-5 py-2 rounded text-sm">Open Variant A &rarr;</span>
+    </a>
+
+    <a href="b/" class="vcard vcard-b rounded-2xl p-7 block">
+      <div class="mono vlabel-b mb-3">// VARIANT B</div>
+      <h2 class="display font-bold text-3xl mb-2" style="font-family: 'Fraunces', serif; font-weight: 900;">Editorial.</h2>
+      <p class="text-sm opacity-65 mb-6">LX-inspired. Off-white paper, warm ink, terracotta accent. Fraunces serif headlines. Asymmetric grids, generous whitespace, magazine feel.</p>
+      <ul class="text-xs opacity-50 space-y-1 mb-6">
+        <li>· Warm off-white (#faf7f2)</li>
+        <li>· Terracotta (#c2410c) accent</li>
+        <li>· Fraunces serif display</li>
+        <li>· Plate-numbered editorial layout</li>
+      </ul>
+      <span class="vbtn vbtn-b inline-block px-5 py-2 rounded-full text-sm">Open Variant B &rarr;</span>
+    </a>
+
+    <a href="c/" class="vcard vcard-c rounded-2xl p-7 block">
+      <div class="mono vlabel-c mb-3">// VARIANT C</div>
+      <h2 class="display font-bold text-3xl mb-2">Premium dark.</h2>
+      <p class="text-sm text-white/55 mb-6">Refined v2. Charcoal with multi-colour gradient mesh hero, animated decorative fidgets, vibrant glow tints on cards. Most playful of the three.</p>
+      <ul class="text-xs text-white/40 space-y-1 mb-6">
+        <li>· Charcoal + gradient mesh</li>
+        <li>· Violet → pink → orange gradient</li>
+        <li>· Animated floating spinner / cube</li>
+        <li>· Marquee strip, glow card tints</li>
+      </ul>
+      <span class="vbtn vbtn-c inline-block px-5 py-2 rounded-full text-sm">Open Variant C &rarr;</span>
+    </a>
+
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-5 text-sm">
+    <a href="pricing.html" class="block rounded-xl border border-white/10 hover:border-white/30 p-5 bg-white/5 transition">
+      <div class="mono text-fuchsia-300 mb-2">// REFERENCE</div>
+      <div class="display font-semibold text-lg mb-1">Pricing table</div>
+      <div class="text-white/60">All 27 fidgets, filament weight + cost, competitor low/avg/high, our price. Prices set at competitor average per your spec.</div>
+    </a>
+    <a href="../" class="block rounded-xl border border-white/10 hover:border-white/30 p-5 bg-white/5 transition">
+      <div class="mono text-fuchsia-300 mb-2">// REFERENCE</div>
+      <div class="display font-semibold text-lg mb-1">v2 (current)</div>
+      <div class="text-white/60">The dark version we shipped earlier — for comparison against the three new directions above.</div>
+    </a>
+    <a href="https://github.com/kateharper/fidgets-site" class="block rounded-xl border border-white/10 hover:border-white/30 p-5 bg-white/5 transition">
+      <div class="mono text-fuchsia-300 mb-2">// REPO</div>
+      <div class="display font-semibold text-lg mb-1">github.com/kateharper/fidgets-site</div>
+      <div class="text-white/60">Source code. All variants live in /v3/{a,b,c}.</div>
+    </a>
+  </div>
+</section>
+
+</body>
+</html>

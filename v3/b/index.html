@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#faf7f2" />
+<title>Fidgets · Variant B — Editorial</title>
+<meta name="description" content="Premium 3D-printed fidgets, designed and made in Sydney." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      fontFamily: {
+        display: ['Fraunces', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        ink:    '#15110d',     // near-black warm
+        paper:  '#faf7f2',     // off-white
+        sand:   '#f1ebdf',
+        line:   '#e5dfd3',
+        line2:  '#d6cfc0',
+        muted:  '#7c7268',
+        terra:  '#c2410c',     // accent: terracotta
+        terra2: '#9a3412',
+      }
+    }}
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, system-ui, sans-serif; background: #faf7f2; color: #15110d; -webkit-font-smoothing: antialiased; }
+  .display { font-family: 'Fraunces', serif; font-feature-settings: "ss01"; letter-spacing: -0.025em; }
+  .display-italic { font-family: 'Fraunces', serif; font-style: italic; }
+  .tag { font-family: Inter, sans-serif; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; }
+
+  /* product cards: photo-dominant, minimal */
+  .pcard { background: #ffffff; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid #e5dfd3; }
+  .pcard:hover { transform: translateY(-3px); box-shadow: 0 12px 32px -16px rgba(21,17,13,0.18); }
+  .pcard-img { background: #f1ebdf; }
+  .pcard-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.4s; }
+  .pcard-img img.loaded { opacity: 1; }
+  .pcard-svg { width: 55%; height: 55%; }
+
+  /* svg-stage: warm tinted background for SVG cards */
+  .svg-stage { background: linear-gradient(135deg, #f1ebdf 0%, #e5dfd3 100%); position: relative; }
+  .svg-stage::after {
+    content: ''; position: absolute; inset: 0;
+    background: var(--glow);
+    opacity: 0.20;
+    pointer-events: none;
+  }
+  .svg-stage svg { position: relative; z-index: 1; filter: drop-shadow(0 4px 8px rgba(21,17,13,0.12)); }
+  .pcard-svg path, .pcard-svg circle, .pcard-svg ellipse, .pcard-svg polygon { /* SVG fills handled in icons */ }
+
+  /* buttons */
+  .btn { transition: all 0.2s ease; font-weight: 500; font-size: 14px; }
+  .btn-fill { background: #15110d; color: #faf7f2; }
+  .btn-fill:hover { background: #2a221b; transform: translateY(-1px); }
+  .btn-terra { background: #c2410c; color: #faf7f2; }
+  .btn-terra:hover { background: #9a3412; transform: translateY(-1px); }
+  .btn-line { border: 1px solid #15110d; color: #15110d; background: transparent; }
+  .btn-line:hover { background: #15110d; color: #faf7f2; }
+
+  .sw { width: 14px; height: 14px; border-radius: 999px; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.12); }
+
+  .fpill { border: 1px solid #d6cfc0; background: transparent; color: #15110d; transition: all 0.2s; font-size: 13px; }
+  .fpill:hover { background: #f1ebdf; border-color: #15110d; }
+  .fpill.on { background: #15110d; color: #faf7f2; border-color: #15110d; }
+
+  /* hero image grid */
+  .hero-img { background: linear-gradient(135deg, #c2410c 0%, #9a3412 100%); }
+
+  /* details */
+  details summary::-webkit-details-marker { display: none; }
+  details[open] .x { transform: rotate(45deg); }
+  .x { transition: transform 0.2s; }
+
+  /* underline link */
+  .ulink { background-image: linear-gradient(currentColor, currentColor); background-size: 100% 1px; background-repeat: no-repeat; background-position: 0 100%; padding-bottom: 2px; }
+
+  /* bundle accents */
+  .accent-fuchsia { --accent: #be185d; --accent-bg: #fdf2f8; }
+  .accent-lime    { --accent: #4d7c0f; --accent-bg: #f7fee7; }
+  .accent-sky     { --accent: #0369a1; --accent-bg: #f0f9ff; }
+  .accent-amber   { --accent: #b45309; --accent-bg: #fffbeb; }
+  .accent-violet  { --accent: #6d28d9; --accent-bg: #faf5ff; }
+
+  /* reveal */
+  .reveal { opacity: 0; transform: translateY(16px); transition: all 0.7s cubic-bezier(.2,.8,.2,1); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* large editorial drop cap */
+  .dropcap::first-letter { font-family: 'Fraunces', serif; font-weight: 900; font-size: 4em; line-height: 0.85; float: left; padding: 4px 8px 0 0; color: #c2410c; }
+
+  /* SVG icons get warm fill */
+  .pcard-svg [data-fill="primary"] { fill: #15110d; }
+  .pcard-svg [data-fill="accent"]  { fill: #c2410c; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-40 backdrop-blur-md bg-paper/90 border-b border-line">
+  <div class="max-w-[1280px] mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-baseline gap-2">
+      <span class="display font-black text-2xl">Fidgets</span>
+      <span class="tag text-terra">EST 2026 · SYDNEY</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm">
+      <a href="#shop" class="hover:text-terra">Shop</a>
+      <a href="#bundles" class="hover:text-terra">Bundles</a>
+      <a href="#how" class="hover:text-terra">Studio</a>
+      <a href="../pricing.html" class="hover:text-terra">Pricing</a>
+      <a href="../" class="hover:text-terra">← Compare</a>
+    </nav>
+    <a href="#shop" class="btn btn-fill px-4 py-2 rounded-full text-sm">Shop now</a>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- HERO — editorial split -->
+<section class="relative">
+  <div class="max-w-[1280px] mx-auto px-6 pt-16 md:pt-24 pb-16 md:pb-24 grid md:grid-cols-12 gap-8 items-end">
+    <div class="md:col-span-7">
+      <p class="tag text-terra mb-6">№ 01 — A NEW BRAND OF FIDGET</p>
+      <h1 class="display font-black text-6xl md:text-7xl lg:text-[7.5rem] leading-[0.9] mb-8">
+        Things to <span class="display-italic">play</span> with,<br />engineered <span class="display-italic">to last</span>.
+      </h1>
+      <p class="text-lg md:text-xl text-ink/75 max-w-xl leading-relaxed">
+        Twenty-seven 3D-printed fidgets — designed in Sydney, printed at home, hand-tested before they leave the studio. No drop-shipping. No factory plastic.
+      </p>
+      <div class="mt-10 flex gap-3">
+        <a href="#shop" class="btn btn-terra px-7 py-3.5 rounded-full">Browse the shop</a>
+        <a href="#bundles" class="btn btn-line px-7 py-3.5 rounded-full">View bundles</a>
+      </div>
+    </div>
+    <div class="md:col-span-5">
+      <div class="aspect-[4/5] rounded-xl overflow-hidden hero-img relative">
+        <img src="https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Fidget spinner" class="w-full h-full object-cover mix-blend-luminosity opacity-90"/>
+      </div>
+      <p class="tag text-muted mt-3">Pl. 1 — Three-Arm Spinner, white PLA+, 35g</p>
+    </div>
+  </div>
+
+  <!-- runner -->
+  <div class="border-y border-line bg-sand py-4">
+    <div class="max-w-[1280px] mx-auto px-6 grid md:grid-cols-4 gap-6 text-sm">
+      <div class="flex items-center gap-2"><span class="tag text-terra">01</span><span>Made in Sydney</span></div>
+      <div class="flex items-center gap-2"><span class="tag text-terra">02</span><span>Premium PLA+ &amp; PETG</span></div>
+      <div class="flex items-center gap-2"><span class="tag text-terra">03</span><span>Apple Pay &amp; Google Pay</span></div>
+      <div class="flex items-center gap-2"><span class="tag text-terra">04</span><span>Schoolyard pickup</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUNDLES -->
+<section id="bundles" class="py-20 md:py-28 bg-paper">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="grid md:grid-cols-12 gap-8 items-end mb-12">
+      <div class="md:col-span-7">
+        <p class="tag text-terra mb-3">№ 02 — BUNDLES</p>
+        <h2 class="display font-black text-4xl md:text-6xl leading-tight">Five packs, five reasons<br /><span class="display-italic">to save</span>.</h2>
+      </div>
+      <p class="md:col-span-5 text-ink/70">Curated combinations for the serious fidgeter. Discounts apply automatically — no codes, no fuss.</p>
+    </div>
+    <div id="bundle-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop" class="py-20 md:py-28 bg-sand">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="grid md:grid-cols-12 gap-6 items-end mb-12">
+      <div class="md:col-span-7">
+        <p class="tag text-terra mb-3">№ 03 — THE SHOP</p>
+        <h2 class="display font-black text-4xl md:text-6xl leading-tight">Twenty-seven fidgets,<br />one studio.</h2>
+      </div>
+      <div class="md:col-span-5 flex flex-wrap gap-2 md:justify-end" id="filters"></div>
+    </div>
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="how" class="py-20 md:py-28 bg-paper border-y border-line">
+  <div class="max-w-[1280px] mx-auto px-6 grid md:grid-cols-12 gap-12 items-start">
+    <div class="md:col-span-5">
+      <p class="tag text-terra mb-3">№ 04 — STUDIO</p>
+      <h2 class="display font-black text-4xl md:text-5xl leading-tight mb-6">From CAD<br /><span class="display-italic">to your pocket</span>.</h2>
+    </div>
+    <div class="md:col-span-7">
+      <p class="dropcap text-lg leading-relaxed text-ink/85 mb-8">Every fidget begins as a parametric model in Fusion 360 and ends as something small enough to lose in a pencil case. In between sits a five-step process: design, slice, print, test, ship. Nothing leaves the studio that hasn't been spun, clicked or twisted by hand.</p>
+      <ul class="grid md:grid-cols-2 gap-y-5 gap-x-8 text-sm">
+        <li><span class="tag text-terra block mb-1">01 / DESIGN</span><span class="text-ink/80">Modelled with print-in-place hinges — assembly-free.</span></li>
+        <li><span class="tag text-terra block mb-1">02 / SLICE</span><span class="text-ink/80">Tuned profiles per material — PLA+ for impact.</span></li>
+        <li><span class="tag text-terra block mb-1">03 / PRINT</span><span class="text-ink/80">0.16 mm layers on a calibrated Bambu X1C.</span></li>
+        <li><span class="tag text-terra block mb-1">04 / TEST</span><span class="text-ink/80">Spin, click, drop — three rounds of quality checks.</span></li>
+        <li><span class="tag text-terra block mb-1">05 / SHIP</span><span class="text-ink/80">Hand-packed and posted Sydney-wide.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-20 md:py-28">
+  <div class="max-w-[800px] mx-auto px-6">
+    <p class="tag text-terra mb-3">№ 05 — QUESTIONS</p>
+    <h2 class="display font-black text-4xl md:text-5xl mb-10">Frequently asked.</h2>
+    <div class="divide-y divide-line border-y border-line">
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer display text-xl font-medium">Are these allowed at school? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-ink/70 leading-relaxed">Most are. Stick to the quiet ones (sliders, cubes, articulated creatures). Spinners get noisy if you go full power, so use indoor voice.</p></details>
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer display text-xl font-medium">How do I pay? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-ink/70 leading-relaxed">Online: Apple Pay, Google Pay or card via Stripe. In person at school: tap on the Square Terminal.</p></details>
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer display text-xl font-medium">Can I pick a colour? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-ink/70 leading-relaxed">Yes — every fidget has 4–6 colour options. Glow-in-the-dark is +$2.</p></details>
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer display text-xl font-medium">What if it breaks? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-ink/70 leading-relaxed">Bring it back — print failures are replaced free. Scooter accidents are on you.</p></details>
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer display text-xl font-medium">Custom orders? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-ink/70 leading-relaxed">Email me. If I can model it, I can print it. Bulk orders get a discount.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 md:py-28 bg-ink text-paper">
+  <div class="max-w-[800px] mx-auto px-6 text-center">
+    <p class="tag text-terra mb-4">— GET IN TOUCH —</p>
+    <h2 class="display font-black text-4xl md:text-6xl mb-6 leading-tight">Got a <span class="display-italic">question</span>?</h2>
+    <p class="text-paper/70 mb-8">DM, email, or grab one in person at recess.</p>
+    <a href="mailto:hello@fidgets.example" class="btn btn-terra inline-block px-8 py-3.5 rounded-full">Email Tom &rarr;</a>
+  </div>
+</section>
+
+<footer class="bg-paper py-12 border-t border-line">
+  <div class="max-w-[1280px] mx-auto px-6 flex flex-wrap items-center justify-between gap-4 text-sm">
+    <div class="flex items-baseline gap-2"><span class="display font-black text-xl">Fidgets</span><span class="tag text-muted">SYD/AU</span></div>
+    <div class="text-muted">© <span id="year"></span> · Made by Tom in Sydney.</div>
+  </div>
+</footer>
+
+<script src="../products.js"></script>
+<script src="../shared.js"></script>
+<script>
+  // Variant B: warm two-tone SVG icons (ink + terracotta accent)
+  const FILL = '#15110d';
+  const ACC  = '#c2410c';
+  const icons = {
+    dragon: `<g fill="${FILL}"><ellipse cx="92" cy="42" rx="20" ry="16"/><path d="M76 50 Q60 64 50 50 Q40 36 26 52 Q16 64 12 80 Q22 84 30 76 Q42 64 52 78 Q62 92 76 80 Q86 70 96 76 Q104 80 110 70 L106 60 Q98 60 92 64"/><circle cx="98" cy="38" r="2.8" fill="#faf7f2"/><path d="M86 28 L92 18 L98 28 Z" fill="${ACC}"/><path d="M100 26 L106 16 L112 26 Z" fill="${ACC}"/></g>`,
+    snake: `<g fill="${FILL}"><circle cx="14" cy="60" r="9"/><circle cx="32" cy="50" r="10"/><circle cx="52" cy="62" r="10"/><circle cx="72" cy="50" r="10"/><circle cx="92" cy="62" r="10"/><circle cx="108" cy="55" r="8"/><circle cx="14" cy="60" r="2.5" fill="#faf7f2"/></g>`,
+    octopus: `<g><ellipse cx="60" cy="42" rx="28" ry="22" fill="${FILL}"/><path d="M40 56 Q34 80 22 92" stroke="${FILL}" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M50 60 Q42 84 38 100" stroke="${FILL}" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M60 64 Q60 86 60 102" stroke="${FILL}" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M70 60 Q78 84 82 100" stroke="${FILL}" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M80 56 Q86 80 98 92" stroke="${FILL}" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="52" cy="40" r="3" fill="${ACC}"/><circle cx="68" cy="40" r="3" fill="${ACC}"/></g>`,
+    axolotl: `<g fill="${FILL}"><ellipse cx="60" cy="62" rx="34" ry="22"/><path d="M30 50 Q22 42 18 50 Q22 58 30 56 Z"/><path d="M30 62 Q18 60 14 68 Q22 74 32 70 Z"/><path d="M30 74 Q22 80 22 88 Q30 88 34 80 Z"/><circle cx="74" cy="58" r="3" fill="${ACC}"/><circle cx="86" cy="58" r="3" fill="${ACC}"/><path d="M76 70 Q82 76 88 70" stroke="${ACC}" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>`,
+    worm: `<path d="M14 76 Q26 56 42 70 Q58 86 74 64 Q90 44 106 60" stroke="${FILL}" stroke-width="14" fill="none" stroke-linecap="round"/>`,
+    lizard: `<g fill="${FILL}"><ellipse cx="62" cy="60" rx="26" ry="14"/><circle cx="86" cy="56" r="9"/><path d="M40 60 Q26 56 16 64" stroke="${FILL}" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M52 50 Q44 38 38 38" stroke="${FILL}" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M72 50 Q78 38 84 38" stroke="${FILL}" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M52 72 Q44 86 38 86" stroke="${FILL}" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M72 72 Q78 86 84 86" stroke="${FILL}" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="88" cy="54" r="2.5" fill="${ACC}"/></g>`,
+    maze: `<circle cx="60" cy="60" r="36" fill="${FILL}"/><path d="M40 50 H80 V60 H50 V70 H80" stroke="#faf7f2" stroke-width="3" fill="none"/><circle cx="44" cy="74" r="4" fill="${ACC}"/>`,
+    hex: `<g fill="${FILL}"><polygon points="60,16 88,32 88,64 60,80 32,64 32,32"/><polygon points="60,32 76,40 76,56 60,64 44,56 44,40" fill="${ACC}" opacity="0.85"/></g>`,
+    magicsnake: `<g fill="${FILL}"><polygon points="14,70 30,54 46,70 30,86"/><polygon points="46,70 62,54 78,70 62,86" fill="${ACC}"/><polygon points="78,70 94,54 110,70 94,86"/></g>`,
+    twist: `<path d="M30 60 Q30 30 60 30 Q90 30 90 60 Q90 90 60 90 Q30 90 30 60 Z" stroke="${FILL}" stroke-width="10" fill="none"/><path d="M40 60 Q40 40 60 40 Q80 40 80 60" stroke="${ACC}" stroke-width="8" fill="none"/>`,
+    spiral: `<path d="M60 60 m-32 0 a 32 32 0 1 1 64 0 a 26 26 0 1 1 -52 0 a 20 20 0 1 1 40 0 a 14 14 0 1 1 -28 0 a 8 8 0 1 1 16 0" stroke="${FILL}" stroke-width="4" fill="none" stroke-linecap="round"/>`,
+  };
+  window.__ICONS__ = icons;
+  window.__VARIANT__ = 'b';
+  initVariant();
+</script>
+</body>
+</html>

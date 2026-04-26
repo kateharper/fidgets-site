@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fidgets — pricing &amp; cost breakdown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: Inter, system-ui, sans-serif; background: #0a0a0d; color: #ece9e0; -webkit-font-smoothing: antialiased; }
+  .display { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.025em; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  table { border-collapse: collapse; }
+  th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #1a1a20; }
+  th { background: #13131a; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; color: #8a8a96; font-weight: 500; position: sticky; top: 0; }
+  tr:hover td { background: rgba(255,255,255,0.025); }
+  .num { font-family: 'JetBrains Mono', monospace; font-size: 13px; text-align: right; }
+  .cat { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; color: #f472b6; letter-spacing: 0.08em; }
+  .price-out { color: #fbbf24; font-weight: 600; }
+  .margin { color: #84cc16; }
+  .new { color: #04a1ff; font-family: 'JetBrains Mono', monospace; font-size: 10px; }
+  .sourced { color: #f472b6; font-family: 'JetBrains Mono', monospace; font-size: 10px; }
+</style>
+</head>
+<body>
+
+<header class="max-w-[1280px] mx-auto px-6 pt-10 pb-6 flex items-center justify-between">
+  <div class="flex items-center gap-2">
+    <a href="./" class="display font-bold text-2xl">fidgets</a>
+    <span class="mono text-fuchsia-300">/ PRICING</span>
+  </div>
+  <a href="./" class="mono text-white/60 hover:text-white text-xs">← BACK TO VARIANTS</a>
+</header>
+
+<main class="max-w-[1280px] mx-auto px-6 pb-20">
+  <section class="pt-8 pb-12">
+    <p class="mono text-fuchsia-300 mb-3">// REFERENCE TABLE</p>
+    <h1 class="display font-bold text-5xl md:text-6xl mb-6">All 27 fidgets · pricing breakdown.</h1>
+    <p class="text-white/65 max-w-3xl mb-6 leading-relaxed">
+      Every product on the site, with its filament weight, raw material cost, the Australian competitor pricing range I researched, and the price we set on the site. <strong class="text-amber-300">Per your spec, our price = competitor average</strong> (rounded to the nearest dollar). Margins are gross — they don't account for printer time, electricity, packaging or shipping.
+    </p>
+    <div class="grid md:grid-cols-4 gap-4 mt-8 mb-2 text-sm">
+      <div class="bg-panel/50 border border-line p-4 rounded-lg" style="background:#13131a; border-color:#26262f">
+        <div class="mono text-xs text-white/50 mb-1">FILAMENT</div>
+        <div class="text-2xl font-bold display">$0.030</div>
+        <div class="text-white/60 text-xs mt-1">per gram (premium PLA+, AU)</div>
+      </div>
+      <div class="bg-panel/50 border border-line p-4 rounded-lg" style="background:#13131a; border-color:#26262f">
+        <div class="mono text-xs text-white/50 mb-1">PRODUCTS</div>
+        <div class="text-2xl font-bold display">27</div>
+        <div class="text-white/60 text-xs mt-1">26 printed · 1 sewn (blanket)</div>
+      </div>
+      <div class="bg-panel/50 border border-line p-4 rounded-lg" style="background:#13131a; border-color:#26262f">
+        <div class="mono text-xs text-white/50 mb-1">PRICE RANGE</div>
+        <div class="text-2xl font-bold display">$8 – $45</div>
+        <div class="text-white/60 text-xs mt-1">avg: $16.30</div>
+      </div>
+      <div class="bg-panel/50 border border-line p-4 rounded-lg" style="background:#13131a; border-color:#26262f">
+        <div class="mono text-xs text-white/50 mb-1">AVG GROSS MARGIN</div>
+        <div class="text-2xl font-bold display text-lime-400" id="avg-margin">—</div>
+        <div class="text-white/60 text-xs mt-1">price minus filament cost</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="overflow-x-auto rounded-xl border border-line" style="border-color:#26262f">
+    <table class="w-full text-sm">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Cat</th>
+          <th class="text-right">Filament (g)</th>
+          <th class="text-right">Filament cost</th>
+          <th class="text-right">Comp. low</th>
+          <th class="text-right">Comp. avg</th>
+          <th class="text-right">Comp. high</th>
+          <th class="text-right">Our price</th>
+          <th class="text-right">Margin</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </section>
+
+  <section class="mt-12 pt-8 border-t" style="border-color:#26262f">
+    <p class="mono text-fuchsia-300 mb-3">// BUNDLES</p>
+    <h2 class="display font-bold text-3xl mb-6">Bundle pricing</h2>
+    <div class="overflow-x-auto rounded-xl border border-line" style="border-color:#26262f">
+      <table class="w-full text-sm">
+        <thead>
+          <tr>
+            <th>Bundle</th>
+            <th>Contents</th>
+            <th class="text-right">Retail value</th>
+            <th class="text-right">Bundle price</th>
+            <th class="text-right">You save</th>
+          </tr>
+        </thead>
+        <tbody id="bundles"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mt-12 pt-8 border-t text-sm text-white/65 max-w-3xl space-y-3" style="border-color:#26262f">
+    <p class="mono text-fuchsia-300 mb-3">// METHODOLOGY</p>
+    <p><strong class="text-white">Filament weight</strong> — estimated print weight (in grams) based on typical 3D-printed fidget designs at 15-20% infill. Will vary ±20% depending on size variant chosen.</p>
+    <p><strong class="text-white">Filament cost</strong> — calculated at AUD $0.030/g, the going rate for premium PLA+ at Australian retailers (~$30/kg). Excludes electricity (~$0.50/h × print hours), printer wear, packaging, time.</p>
+    <p><strong class="text-white">Competitor pricing</strong> — researched from Etsy AU, Fun Fidgets, Kaiko Fidgets, Sensory Tools Australia, The Sensory Store, Sensory Assist and Amazon AU on 2026-04-26. Low = entry-level seller, Avg = median list price across 5+ similar products, High = premium variant (large size / metal / glow / collector tier).</p>
+    <p><strong class="text-white">Our price</strong> — set at competitor average per your directive, rounded to the nearest dollar. This is mid-market; Tom can shift up if word-of-mouth supports premium positioning, or down to undercut.</p>
+    <p><strong class="text-white">Sourced item</strong> — the Sensory Fidget Blanket is sewn fabric, not 3D-printed. It's listed for completeness but the production economics are different — Tom would either buy wholesale and resell, or source handmade.</p>
+  </section>
+</main>
+
+<script src="products.js"></script>
+<script>
+  const fmt = n => '$' + (Number.isFinite(n) ? n.toFixed(2) : '—');
+  const fmt0 = n => '$' + Math.round(n);
+  const tbody = document.getElementById('rows');
+  let totalMargin = 0, count = 0;
+  tbody.innerHTML = window.PRODUCTS.map(p => {
+    const newTag = ['spinner-ring','spiky-roller','spiral-cone','twisting-egg','gear-fidget','clicker','fidget-blanket'].includes(p.id) ? ' <span class="new">NEW</span>' : '';
+    const sourcedTag = p.sourced ? ' <span class="sourced">SEWN</span>' : '';
+    if (!p.sourced) { totalMargin += p.margin; count++; }
+    return `<tr>
+      <td><strong>${p.name}</strong>${newTag}${sourcedTag}</td>
+      <td><span class="cat">${p.cat}</span></td>
+      <td class="num">${p.sourced ? '—' : p.filament_g + 'g'}</td>
+      <td class="num">${p.sourced ? '—' : fmt(p.filament_cost)}</td>
+      <td class="num">${fmt0(p.comp_low)}</td>
+      <td class="num text-white/85">${fmt0(p.comp_avg)}</td>
+      <td class="num">${fmt0(p.comp_high)}</td>
+      <td class="num price-out">${fmt0(p.price)}</td>
+      <td class="num margin">${p.sourced ? '—' : fmt(p.margin)}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('avg-margin').textContent = '$' + (totalMargin / count).toFixed(2);
+
+  const bbody = document.getElementById('bundles');
+  bbody.innerHTML = window.BUNDLES.map(b => `<tr>
+    <td><strong>${b.name}</strong>${b.pop ? ` <span class="new">${b.pop}</span>` : ''}</td>
+    <td>${b.contents}</td>
+    <td class="num">$${b.retail}</td>
+    <td class="num price-out">$${b.price}</td>
+    <td class="num margin">$${b.retail - b.price}</td>
+  </tr>`).join('');
+</script>
+</body>
+</html>
