@@ -1,0 +1,5082 @@
+{
+  "idempotency_key": "fidgets-import-2026-04-27-v1",
+  "batches": [
+    {
+      "objects": [
+        {
+          "type": "CATEGORY",
+          "id": "#cat-loss",
+          "category_data": {
+            "name": "Starter Fidgets ($3-4)"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#cat-regular",
+          "category_data": {
+            "name": "Regular Fidgets"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#cat-premium",
+          "category_data": {
+            "name": "Premium (Subscriber-only)"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#cat-bundle",
+          "category_data": {
+            "name": "Bundles & Packs"
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-mini-spinner",
+          "item_data": {
+            "name": "Mini Spinner",
+            "description": "Pocket-sized 2-arm spinner. The \"try Tom's fidgets\" intro.",
+            "category_id": "#cat-loss",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Jade White",
+                  "sku": "FDG-MINISPINNER-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Bambu Black",
+                  "sku": "FDG-MINISPINNER-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Bambu Red",
+                  "sku": "FDG-MINISPINNER-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-MINISPINNER-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-MINISPINNER-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-MINISPINNER-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Magenta",
+                  "sku": "FDG-MINISPINNER-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-purple",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Royal Purple",
+                  "sku": "FDG-MINISPINNER-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Glow Mint",
+                  "sku": "FDG-MINISPINNER-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-spinner-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-mini-spinner",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-MINISPINNER-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-tiny-worm",
+          "item_data": {
+            "name": "Tiny Worm",
+            "description": "A 4cm wiggly worm. First fidget for first-time customers.",
+            "category_id": "#cat-loss",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Jade White",
+                  "sku": "FDG-TINYWORM-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Bambu Black",
+                  "sku": "FDG-TINYWORM-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Bambu Red",
+                  "sku": "FDG-TINYWORM-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-TINYWORM-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-TINYWORM-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-TINYWORM-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Magenta",
+                  "sku": "FDG-TINYWORM-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-purple",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Royal Purple",
+                  "sku": "FDG-TINYWORM-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Glow Mint",
+                  "sku": "FDG-TINYWORM-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-tiny-worm-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-tiny-worm",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-TINYWORM-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-mini-clicker",
+          "item_data": {
+            "name": "Mini Clicker",
+            "description": "Single-button clicker. Perfectly satisfying. $4 to get hooked.",
+            "category_id": "#cat-loss",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Jade White",
+                  "sku": "FDG-MINICLICKER-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Bambu Black",
+                  "sku": "FDG-MINICLICKER-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Bambu Red",
+                  "sku": "FDG-MINICLICKER-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-MINICLICKER-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-MINICLICKER-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-MINICLICKER-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Magenta",
+                  "sku": "FDG-MINICLICKER-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-purple",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Royal Purple",
+                  "sku": "FDG-MINICLICKER-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Glow Mint",
+                  "sku": "FDG-MINICLICKER-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 600,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-mini-clicker-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-mini-clicker",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-MINICLICKER-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 600,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-spinner-3",
+          "item_data": {
+            "name": "Three-Arm Spinner",
+            "description": "The classic. Triple-bearing, buttery spin.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Jade White",
+                  "sku": "FDG-SPINNER3-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Bambu Black",
+                  "sku": "FDG-SPINNER3-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Bambu Red",
+                  "sku": "FDG-SPINNER3-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-SPINNER3-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-SPINNER3-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-SPINNER3-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Magenta",
+                  "sku": "FDG-SPINNER3-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-purple",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Royal Purple",
+                  "sku": "FDG-SPINNER3-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Glow Mint",
+                  "sku": "FDG-SPINNER3-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-3-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-3",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-SPINNER3-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-spinner-6",
+          "item_data": {
+            "name": "Six-Arm Mega Spinner",
+            "description": "More arms, longer spin. Whirring satisfaction.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Jade White",
+                  "sku": "FDG-SPINNER6-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Bambu Black",
+                  "sku": "FDG-SPINNER6-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Bambu Red",
+                  "sku": "FDG-SPINNER6-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-SPINNER6-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-SPINNER6-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-SPINNER6-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Magenta",
+                  "sku": "FDG-SPINNER6-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-purple",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Royal Purple",
+                  "sku": "FDG-SPINNER6-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Glow Mint",
+                  "sku": "FDG-SPINNER6-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1600,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-6-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-6",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-SPINNER6-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1600,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-star-spinner",
+          "item_data": {
+            "name": "Star Spinner",
+            "description": "Five-pointed, weighted tips, hypnotic.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Jade White",
+                  "sku": "FDG-STARSPINNER-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Bambu Black",
+                  "sku": "FDG-STARSPINNER-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Bambu Red",
+                  "sku": "FDG-STARSPINNER-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-STARSPINNER-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-STARSPINNER-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-STARSPINNER-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Magenta",
+                  "sku": "FDG-STARSPINNER-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-purple",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Royal Purple",
+                  "sku": "FDG-STARSPINNER-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Glow Mint",
+                  "sku": "FDG-STARSPINNER-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-star-spinner-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-star-spinner",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-STARSPINNER-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-metal-spinner",
+          "item_data": {
+            "name": "Metallic-Finish Spinner",
+            "description": "Silk metallic filament. Looks like polished steel.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Jade White",
+                  "sku": "FDG-METALSPINNER-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Bambu Black",
+                  "sku": "FDG-METALSPINNER-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Bambu Red",
+                  "sku": "FDG-METALSPINNER-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-METALSPINNER-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-METALSPINNER-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-METALSPINNER-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Magenta",
+                  "sku": "FDG-METALSPINNER-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-purple",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Royal Purple",
+                  "sku": "FDG-METALSPINNER-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Glow Mint",
+                  "sku": "FDG-METALSPINNER-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-metal-spinner-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-metal-spinner",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-METALSPINNER-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-fidget-cube",
+          "item_data": {
+            "name": "Print-in-Place Fidget Cube",
+            "description": "Six sides of buttons, dials and switches.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Jade White",
+                  "sku": "FDG-FIDGETCUBE-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Bambu Black",
+                  "sku": "FDG-FIDGETCUBE-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Bambu Red",
+                  "sku": "FDG-FIDGETCUBE-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-FIDGETCUBE-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-FIDGETCUBE-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-FIDGETCUBE-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Magenta",
+                  "sku": "FDG-FIDGETCUBE-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-purple",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Royal Purple",
+                  "sku": "FDG-FIDGETCUBE-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Glow Mint",
+                  "sku": "FDG-FIDGETCUBE-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-cube-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-cube",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-FIDGETCUBE-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2200,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-infinity-cube",
+          "item_data": {
+            "name": "Infinity Cube",
+            "description": "Folds and unfolds forever. The desk classic.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Jade White",
+                  "sku": "FDG-INFINITYCUBE-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Bambu Black",
+                  "sku": "FDG-INFINITYCUBE-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Bambu Red",
+                  "sku": "FDG-INFINITYCUBE-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-INFINITYCUBE-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-INFINITYCUBE-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-INFINITYCUBE-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Magenta",
+                  "sku": "FDG-INFINITYCUBE-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-purple",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Royal Purple",
+                  "sku": "FDG-INFINITYCUBE-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Glow Mint",
+                  "sku": "FDG-INFINITYCUBE-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-infinity-cube-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-infinity-cube",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-INFINITYCUBE-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-gear-cube",
+          "item_data": {
+            "name": "Gear Cube",
+            "description": "Interlocking gears. Click-click-click.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Jade White",
+                  "sku": "FDG-GEARCUBE-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Bambu Black",
+                  "sku": "FDG-GEARCUBE-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Bambu Red",
+                  "sku": "FDG-GEARCUBE-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-GEARCUBE-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-GEARCUBE-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-GEARCUBE-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Magenta",
+                  "sku": "FDG-GEARCUBE-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-purple",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Royal Purple",
+                  "sku": "FDG-GEARCUBE-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Glow Mint",
+                  "sku": "FDG-GEARCUBE-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-cube-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-gear-cube",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-GEARCUBE-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-dragon",
+          "item_data": {
+            "name": "Articulated Dragon",
+            "description": "Big flexi dragon \u2014 the showstopper.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Jade White",
+                  "sku": "FDG-DRAGON-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Bambu Black",
+                  "sku": "FDG-DRAGON-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Bambu Red",
+                  "sku": "FDG-DRAGON-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-DRAGON-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-DRAGON-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-DRAGON-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Magenta",
+                  "sku": "FDG-DRAGON-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-purple",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Royal Purple",
+                  "sku": "FDG-DRAGON-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Glow Mint",
+                  "sku": "FDG-DRAGON-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-dragon-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-dragon",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-DRAGON-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3200,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-snake",
+          "item_data": {
+            "name": "Articulated Snake",
+            "description": "Wiggle, drape, wear as a bracelet.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Jade White",
+                  "sku": "FDG-SNAKE-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Bambu Black",
+                  "sku": "FDG-SNAKE-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Bambu Red",
+                  "sku": "FDG-SNAKE-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-SNAKE-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-SNAKE-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-SNAKE-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Magenta",
+                  "sku": "FDG-SNAKE-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-purple",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Royal Purple",
+                  "sku": "FDG-SNAKE-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Glow Mint",
+                  "sku": "FDG-SNAKE-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-snake-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-snake",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-SNAKE-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-octopus",
+          "item_data": {
+            "name": "Articulated Octopus",
+            "description": "Eight tentacles of squishy print-in-place fun.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Jade White",
+                  "sku": "FDG-OCTOPUS-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Bambu Black",
+                  "sku": "FDG-OCTOPUS-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Bambu Red",
+                  "sku": "FDG-OCTOPUS-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-OCTOPUS-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-OCTOPUS-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-OCTOPUS-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Magenta",
+                  "sku": "FDG-OCTOPUS-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-purple",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Royal Purple",
+                  "sku": "FDG-OCTOPUS-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Glow Mint",
+                  "sku": "FDG-OCTOPUS-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-octopus-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-octopus",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-OCTOPUS-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2100,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-axolotl",
+          "item_data": {
+            "name": "Articulated Axolotl",
+            "description": "Smiley pink axolotl with floppy gills.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Jade White",
+                  "sku": "FDG-AXOLOTL-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Bambu Black",
+                  "sku": "FDG-AXOLOTL-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Bambu Red",
+                  "sku": "FDG-AXOLOTL-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-AXOLOTL-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-AXOLOTL-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-AXOLOTL-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Magenta",
+                  "sku": "FDG-AXOLOTL-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-purple",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Royal Purple",
+                  "sku": "FDG-AXOLOTL-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Glow Mint",
+                  "sku": "FDG-AXOLOTL-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-axolotl-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-axolotl",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-AXOLOTL-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1900,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-worm",
+          "item_data": {
+            "name": "Wiggle Worm",
+            "description": "Pocket-sized stress relief. Free wiggles.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Jade White",
+                  "sku": "FDG-WORM-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Bambu Black",
+                  "sku": "FDG-WORM-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Bambu Red",
+                  "sku": "FDG-WORM-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-WORM-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-WORM-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-WORM-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Magenta",
+                  "sku": "FDG-WORM-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-purple",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Royal Purple",
+                  "sku": "FDG-WORM-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Glow Mint",
+                  "sku": "FDG-WORM-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-worm-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-worm",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-WORM-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-lizard",
+          "item_data": {
+            "name": "Mini Lizard",
+            "description": "Tiny flexi lizard. Fits in any pencil case.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Jade White",
+                  "sku": "FDG-LIZARD-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Bambu Black",
+                  "sku": "FDG-LIZARD-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Bambu Red",
+                  "sku": "FDG-LIZARD-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-LIZARD-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-LIZARD-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-LIZARD-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Magenta",
+                  "sku": "FDG-LIZARD-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-purple",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Royal Purple",
+                  "sku": "FDG-LIZARD-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Glow Mint",
+                  "sku": "FDG-LIZARD-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-lizard-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-lizard",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-LIZARD-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-slider",
+          "item_data": {
+            "name": "Magnetic-Feel Slider",
+            "description": "Smooth as silk. Slides from one end to the other.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Jade White",
+                  "sku": "FDG-SLIDER-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Bambu Black",
+                  "sku": "FDG-SLIDER-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Bambu Red",
+                  "sku": "FDG-SLIDER-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-SLIDER-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-SLIDER-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-SLIDER-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Magenta",
+                  "sku": "FDG-SLIDER-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-purple",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Royal Purple",
+                  "sku": "FDG-SLIDER-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Glow Mint",
+                  "sku": "FDG-SLIDER-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-slider-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-slider",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-SLIDER-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-gyro-ring",
+          "item_data": {
+            "name": "Gyro Ring",
+            "description": "Spins on your finger. Discreet desk fidget.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Jade White",
+                  "sku": "FDG-GYRORING-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Bambu Black",
+                  "sku": "FDG-GYRORING-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Bambu Red",
+                  "sku": "FDG-GYRORING-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-GYRORING-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-GYRORING-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-GYRORING-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Magenta",
+                  "sku": "FDG-GYRORING-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-purple",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Royal Purple",
+                  "sku": "FDG-GYRORING-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1100,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Glow Mint",
+                  "sku": "FDG-GYRORING-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gyro-ring-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-gyro-ring",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-GYRORING-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-spinner-ring",
+          "item_data": {
+            "name": "Spinner Fidget Ring",
+            "description": "Wearable spinner. Looks like jewellery.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Jade White",
+                  "sku": "FDG-SPINNERRING-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Bambu Black",
+                  "sku": "FDG-SPINNERRING-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Bambu Red",
+                  "sku": "FDG-SPINNERRING-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-SPINNERRING-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-SPINNERRING-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-SPINNERRING-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Magenta",
+                  "sku": "FDG-SPINNERRING-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-purple",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Royal Purple",
+                  "sku": "FDG-SPINNERRING-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Glow Mint",
+                  "sku": "FDG-SPINNERRING-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spinner-ring-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-spinner-ring",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-SPINNERRING-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-rolling-maze",
+          "item_data": {
+            "name": "Rolling Ball Maze",
+            "description": "Tilt and twist to roll the ball through.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Jade White",
+                  "sku": "FDG-ROLLINGMAZE-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Bambu Black",
+                  "sku": "FDG-ROLLINGMAZE-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Bambu Red",
+                  "sku": "FDG-ROLLINGMAZE-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-ROLLINGMAZE-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-ROLLINGMAZE-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-ROLLINGMAZE-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Magenta",
+                  "sku": "FDG-ROLLINGMAZE-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-purple",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Royal Purple",
+                  "sku": "FDG-ROLLINGMAZE-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Glow Mint",
+                  "sku": "FDG-ROLLINGMAZE-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-rolling-maze-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-rolling-maze",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-ROLLINGMAZE-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2000,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-spiky-roller",
+          "item_data": {
+            "name": "Spiky Sensory Roller",
+            "description": "Tactile spikes for high-input sensory feedback.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Jade White",
+                  "sku": "FDG-SPIKYROLLER-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Bambu Black",
+                  "sku": "FDG-SPIKYROLLER-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Bambu Red",
+                  "sku": "FDG-SPIKYROLLER-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-SPIKYROLLER-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-SPIKYROLLER-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-SPIKYROLLER-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Magenta",
+                  "sku": "FDG-SPIKYROLLER-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-purple",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Royal Purple",
+                  "sku": "FDG-SPIKYROLLER-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Glow Mint",
+                  "sku": "FDG-SPIKYROLLER-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiky-roller-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-spiky-roller",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-SPIKYROLLER-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-spiral-cone",
+          "item_data": {
+            "name": "Spiral Cone",
+            "description": "Print-in-place spiral that twirls between your fingers.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Jade White",
+                  "sku": "FDG-SPIRALCONE-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Bambu Black",
+                  "sku": "FDG-SPIRALCONE-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Bambu Red",
+                  "sku": "FDG-SPIRALCONE-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-SPIRALCONE-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-SPIRALCONE-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-SPIRALCONE-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Magenta",
+                  "sku": "FDG-SPIRALCONE-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-purple",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Royal Purple",
+                  "sku": "FDG-SPIRALCONE-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Glow Mint",
+                  "sku": "FDG-SPIRALCONE-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-spiral-cone-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-spiral-cone",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-SPIRALCONE-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-hex-flexi",
+          "item_data": {
+            "name": "Hex Flexi",
+            "description": "Hexagonal mesh that folds into a thousand shapes.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Jade White",
+                  "sku": "FDG-HEXFLEXI-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Bambu Black",
+                  "sku": "FDG-HEXFLEXI-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Bambu Red",
+                  "sku": "FDG-HEXFLEXI-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-HEXFLEXI-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-HEXFLEXI-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-HEXFLEXI-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Magenta",
+                  "sku": "FDG-HEXFLEXI-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-purple",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Royal Purple",
+                  "sku": "FDG-HEXFLEXI-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Glow Mint",
+                  "sku": "FDG-HEXFLEXI-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-hex-flexi-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-hex-flexi",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-HEXFLEXI-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-magic-snake",
+          "item_data": {
+            "name": "Magic Snake",
+            "description": "Twist 24 segments into anything you can imagine.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Jade White",
+                  "sku": "FDG-MAGICSNAKE-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Bambu Black",
+                  "sku": "FDG-MAGICSNAKE-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Bambu Red",
+                  "sku": "FDG-MAGICSNAKE-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-MAGICSNAKE-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-MAGICSNAKE-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-MAGICSNAKE-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Magenta",
+                  "sku": "FDG-MAGICSNAKE-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-purple",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Royal Purple",
+                  "sku": "FDG-MAGICSNAKE-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Glow Mint",
+                  "sku": "FDG-MAGICSNAKE-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1600,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-magic-snake-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-magic-snake",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-MAGICSNAKE-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1600,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-twist-puzzle",
+          "item_data": {
+            "name": "Twist Puzzle",
+            "description": "Tangle-style endless loop. Always something to twist.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Jade White",
+                  "sku": "FDG-TWISTPUZZLE-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Bambu Black",
+                  "sku": "FDG-TWISTPUZZLE-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Bambu Red",
+                  "sku": "FDG-TWISTPUZZLE-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-TWISTPUZZLE-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-TWISTPUZZLE-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-TWISTPUZZLE-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Magenta",
+                  "sku": "FDG-TWISTPUZZLE-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-purple",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Royal Purple",
+                  "sku": "FDG-TWISTPUZZLE-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Glow Mint",
+                  "sku": "FDG-TWISTPUZZLE-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twist-puzzle-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-twist-puzzle",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-TWISTPUZZLE-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1400,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-chain",
+          "item_data": {
+            "name": "Bike-Chain Fidget",
+            "description": "Interlocking links. Drape, swing, click.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Jade White",
+                  "sku": "FDG-CHAIN-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Bambu Black",
+                  "sku": "FDG-CHAIN-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Bambu Red",
+                  "sku": "FDG-CHAIN-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-CHAIN-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-CHAIN-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-CHAIN-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Magenta",
+                  "sku": "FDG-CHAIN-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-purple",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Royal Purple",
+                  "sku": "FDG-CHAIN-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Glow Mint",
+                  "sku": "FDG-CHAIN-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-chain-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-chain",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-CHAIN-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-twisting-egg",
+          "item_data": {
+            "name": "Twisting Egg",
+            "description": "Egg-shaped twist puzzle. Smoother than a Rubik's cube.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Jade White",
+                  "sku": "FDG-TWISTINGEGG-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Bambu Black",
+                  "sku": "FDG-TWISTINGEGG-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Bambu Red",
+                  "sku": "FDG-TWISTINGEGG-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-TWISTINGEGG-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-TWISTINGEGG-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-TWISTINGEGG-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Magenta",
+                  "sku": "FDG-TWISTINGEGG-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-purple",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Royal Purple",
+                  "sku": "FDG-TWISTINGEGG-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Glow Mint",
+                  "sku": "FDG-TWISTINGEGG-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-twisting-egg-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-twisting-egg",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-TWISTINGEGG-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1700,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-gear-fidget",
+          "item_data": {
+            "name": "Pocket Gear Fidget",
+            "description": "Three interlocking gears in a card-sized frame.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Jade White",
+                  "sku": "FDG-GEARFIDGET-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Bambu Black",
+                  "sku": "FDG-GEARFIDGET-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Bambu Red",
+                  "sku": "FDG-GEARFIDGET-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-GEARFIDGET-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-GEARFIDGET-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-GEARFIDGET-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Magenta",
+                  "sku": "FDG-GEARFIDGET-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-purple",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Royal Purple",
+                  "sku": "FDG-GEARFIDGET-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1300,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Glow Mint",
+                  "sku": "FDG-GEARFIDGET-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-gear-fidget-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-gear-fidget",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-GEARFIDGET-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-clicker",
+          "item_data": {
+            "name": "Clicker Fidget",
+            "description": "Mechanical-keyboard click on demand.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-jade_white",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Jade White",
+                  "sku": "FDG-CLICKER-JADE",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-bambu_black",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Bambu Black",
+                  "sku": "FDG-CLICKER-BLAK",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-bambu_red",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Bambu Red",
+                  "sku": "FDG-CLICKER-REDD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-CLICKER-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-CLICKER-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-mistletoe",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Mistletoe Green",
+                  "sku": "FDG-CLICKER-MIST",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Magenta",
+                  "sku": "FDG-CLICKER-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-purple",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Royal Purple",
+                  "sku": "FDG-CLICKER-PURP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1000,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-glow_green",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Glow Mint",
+                  "sku": "FDG-CLICKER-GLOW",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-clicker-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-clicker",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-CLICKER-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1200,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-fidget-blanket",
+          "item_data": {
+            "name": "Sensory Fidget Blanket",
+            "description": "Sewn lap blanket with zips, beads, ribbons and buttons. Calming.",
+            "category_id": "#cat-regular",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-blanket-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-blanket",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-FIDGETBLANKE-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4700,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-blanket-cyan_blue",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-blanket",
+                  "name": "Cyan Blue",
+                  "sku": "FDG-FIDGETBLANKE-CYAN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-blanket-magenta",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-blanket",
+                  "name": "Magenta",
+                  "sku": "FDG-FIDGETBLANKE-MGNT",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4500,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-fidget-blanket-cyber_yellow",
+                "item_variation_data": {
+                  "item_id": "#item-fidget-blanket",
+                  "name": "Cyber Yellow",
+                  "sku": "FDG-FIDGETBLANKE-YELO",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/17219698/pexels-photo-17219698.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-a-spinner",
+          "item_data": {
+            "name": "Aluminium-Effect Heavy Spinner",
+            "description": "Silk Aluminium PLA. Heavy, mirror finish, 4-minute spin.",
+            "category_id": "#cat-premium",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-spinner-silk_aluminium",
+                "item_variation_data": {
+                  "item_id": "#item-a-spinner",
+                  "name": "Silk Aluminium",
+                  "sku": "FDG-ASPINNER-ALUM",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-spinner-silk_brass",
+                "item_variation_data": {
+                  "item_id": "#item-a-spinner",
+                  "name": "Silk Brass",
+                  "sku": "FDG-ASPINNER-BRAS",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-spinner-silk_copper",
+                "item_variation_data": {
+                  "item_id": "#item-a-spinner",
+                  "name": "Silk Copper",
+                  "sku": "FDG-ASPINNER-COPP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-spinner-marble_swirl",
+                "item_variation_data": {
+                  "item_id": "#item-a-spinner",
+                  "name": "Marble Swirl",
+                  "sku": "FDG-ASPINNER-MARB",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-spinner-wood_walnut",
+                "item_variation_data": {
+                  "item_id": "#item-a-spinner",
+                  "name": "Walnut Wood-fill",
+                  "sku": "FDG-ASPINNER-WOOD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-spinner-carbon_fibre",
+                "item_variation_data": {
+                  "item_id": "#item-a-spinner",
+                  "name": "Carbon Fibre",
+                  "sku": "FDG-ASPINNER-CARB",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4800,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/34710649/pexels-photo-34710649.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-a-cube",
+          "item_data": {
+            "name": "Brass-Finish Heavy Cube",
+            "description": "Silk Brass filament, weighted infill. The desk-trophy fidget.",
+            "category_id": "#cat-premium",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-cube-silk_aluminium",
+                "item_variation_data": {
+                  "item_id": "#item-a-cube",
+                  "name": "Silk Aluminium",
+                  "sku": "FDG-ACUBE-ALUM",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 5200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-cube-silk_brass",
+                "item_variation_data": {
+                  "item_id": "#item-a-cube",
+                  "name": "Silk Brass",
+                  "sku": "FDG-ACUBE-BRAS",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 5200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-cube-silk_copper",
+                "item_variation_data": {
+                  "item_id": "#item-a-cube",
+                  "name": "Silk Copper",
+                  "sku": "FDG-ACUBE-COPP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 5200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-cube-marble_swirl",
+                "item_variation_data": {
+                  "item_id": "#item-a-cube",
+                  "name": "Marble Swirl",
+                  "sku": "FDG-ACUBE-MARB",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 5200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-cube-wood_walnut",
+                "item_variation_data": {
+                  "item_id": "#item-a-cube",
+                  "name": "Walnut Wood-fill",
+                  "sku": "FDG-ACUBE-WOOD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 5200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-cube-carbon_fibre",
+                "item_variation_data": {
+                  "item_id": "#item-a-cube",
+                  "name": "Carbon Fibre",
+                  "sku": "FDG-ACUBE-CARB",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 5200,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-a-pyramid",
+          "item_data": {
+            "name": "Galaxy Marble Pyramid",
+            "description": "Galaxy Marble filament. Tetrahedron silhouette, swirled finish.",
+            "category_id": "#cat-premium",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-pyramid-marble_swirl",
+                "item_variation_data": {
+                  "item_id": "#item-a-pyramid",
+                  "name": "Marble Swirl",
+                  "sku": "FDG-APYRAMID-MARB",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-pyramid-galaxy",
+                "item_variation_data": {
+                  "item_id": "#item-a-pyramid",
+                  "name": "Galaxy Purple",
+                  "sku": "FDG-APYRAMID-GLXY",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4400,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-pyramid-silk_aluminium",
+                "item_variation_data": {
+                  "item_id": "#item-a-pyramid",
+                  "name": "Silk Aluminium",
+                  "sku": "FDG-APYRAMID-ALUM",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-pyramid-carbon_fibre",
+                "item_variation_data": {
+                  "item_id": "#item-a-pyramid",
+                  "name": "Carbon Fibre",
+                  "sku": "FDG-APYRAMID-CARB",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4200,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/33270189/pexels-photo-33270189.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-a-worry",
+          "item_data": {
+            "name": "Walnut Worry Stone",
+            "description": "Walnut Wood-fill PLA. Pebble silhouette, oil-rubbed finish.",
+            "category_id": "#cat-premium",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-worry-wood_walnut",
+                "item_variation_data": {
+                  "item_id": "#item-a-worry",
+                  "name": "Walnut Wood-fill",
+                  "sku": "FDG-AWORRY-WOOD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-worry-silk_brass",
+                "item_variation_data": {
+                  "item_id": "#item-a-worry",
+                  "name": "Silk Brass",
+                  "sku": "FDG-AWORRY-BRAS",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-worry-silk_copper",
+                "item_variation_data": {
+                  "item_id": "#item-a-worry",
+                  "name": "Silk Copper",
+                  "sku": "FDG-AWORRY-COPP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3800,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-worry-carbon_fibre",
+                "item_variation_data": {
+                  "item_id": "#item-a-worry",
+                  "name": "Carbon Fibre",
+                  "sku": "FDG-AWORRY-CARB",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3800,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-a-comb",
+          "item_data": {
+            "name": "Brass Butterfly Comb",
+            "description": "Real metal butterfly form \u2014 hair-comb teeth, no blade. Outsourced solid brass. Legal everywhere.",
+            "category_id": "#cat-premium",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-comb-silk_brass",
+                "item_variation_data": {
+                  "item_id": "#item-a-comb",
+                  "name": "Silk Brass",
+                  "sku": "FDG-ACOMB-BRAS",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 7200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-comb-silk_copper",
+                "item_variation_data": {
+                  "item_id": "#item-a-comb",
+                  "name": "Silk Copper",
+                  "sku": "FDG-ACOMB-COPP",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 7200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-comb-silk_aluminium",
+                "item_variation_data": {
+                  "item_id": "#item-a-comb",
+                  "name": "Silk Aluminium",
+                  "sku": "FDG-ACOMB-ALUM",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 7200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-comb-wood_walnut",
+                "item_variation_data": {
+                  "item_id": "#item-a-comb",
+                  "name": "Walnut Wood-fill",
+                  "sku": "FDG-ACOMB-WOOD",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 7200,
+                    "currency": "AUD"
+                  }
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-a-comb-carbon_fibre",
+                "item_variation_data": {
+                  "item_id": "#item-a-comb",
+                  "name": "Carbon Fibre",
+                  "sku": "FDG-ACOMB-CARB",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 7200,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ],
+            "ecom_image_uris": [
+              "https://images.pexels.com/photos/34710662/pexels-photo-34710662.jpeg?auto=compress&cs=tinysrgb&w=800"
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-bundle-starter",
+          "item_data": {
+            "name": "Starter Pack",
+            "description": "Pick 1 spinner + 1 cube + 1 articulated. Saves $4 on individual prices. Retail value $34, you save $4.",
+            "category_id": "#cat-bundle",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-bundle-starter",
+                "item_variation_data": {
+                  "item_id": "#item-bundle-starter",
+                  "name": "Bundle",
+                  "sku": "FDG-BDL-STAR",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3000,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-bundle-articulated",
+          "item_data": {
+            "name": "Articulated Trio",
+            "description": "Any 3 articulated creatures. Plus 50% off your next order. Retail value $50, you save $15.",
+            "category_id": "#cat-bundle",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-bundle-articulated",
+                "item_variation_data": {
+                  "item_id": "#item-bundle-articulated",
+                  "name": "Bundle",
+                  "sku": "FDG-BDL-ARTI",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-bundle-spinner-stack",
+          "item_data": {
+            "name": "Spinner Stack",
+            "description": "Three spinners \u2014 mix and match the four spinner styles. Retail value $31, you save $6.",
+            "category_id": "#cat-bundle",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-bundle-spinner-stack",
+                "item_variation_data": {
+                  "item_id": "#item-bundle-spinner-stack",
+                  "name": "Bundle",
+                  "sku": "FDG-BDL-SPIN",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2500,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-bundle-class-pack",
+          "item_data": {
+            "name": "Class Pack",
+            "description": "Five fidgets for the gang. Birthday party loot bags sorted. Retail value $55, you save $15.",
+            "category_id": "#cat-bundle",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-bundle-class-pack",
+                "item_variation_data": {
+                  "item_id": "#item-bundle-class-pack",
+                  "name": "Bundle",
+                  "sku": "FDG-BDL-CLAS",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 4000,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#item-bundle-mega",
+          "item_data": {
+            "name": "Mega Pack",
+            "description": "Pick any 8 fidgets. Best $/fidget on the site. Retail value $120, you save $40.",
+            "category_id": "#cat-bundle",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#var-bundle-mega",
+                "item_variation_data": {
+                  "item_id": "#item-bundle-mega",
+                  "name": "Bundle",
+                  "sku": "FDG-BDL-MEGA",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 8000,
+                    "currency": "AUD"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

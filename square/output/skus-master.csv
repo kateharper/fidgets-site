@@ -1,0 +1,325 @@
+sku,product,tier,category,colour,colour_tier,hex,price_aud,image
+FDG-MINISPINNER-JADE,Mini Spinner,LOSS,spinner,Jade White,basic,#f5f5f0,3,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINISPINNER-BLAK,Mini Spinner,LOSS,spinner,Bambu Black,basic,#1a1a1d,3,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINISPINNER-REDD,Mini Spinner,LOSS,spinner,Bambu Red,basic,#c12e1f,3,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINISPINNER-YELO,Mini Spinner,LOSS,spinner,Cyber Yellow,basic,#e4bd68,3,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINISPINNER-CYAN,Mini Spinner,LOSS,spinner,Cyan Blue,basic,#0086d6,3,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINISPINNER-MIST,Mini Spinner,LOSS,spinner,Mistletoe Green,basic,#3f8e43,3,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINISPINNER-MGNT,Mini Spinner,LOSS,spinner,Magenta,basic,#ec008c,3,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINISPINNER-PURP,Mini Spinner,LOSS,spinner,Royal Purple,basic,#5e43b7,3,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINISPINNER-GLOW,Mini Spinner,LOSS,spinner,Glow Mint,special,#a3e635,5,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINISPINNER-GLXY,Mini Spinner,LOSS,spinner,Galaxy Purple,special,#7c3aed,5,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-TINYWORM-JADE,Tiny Worm,LOSS,articulated,Jade White,basic,#f5f5f0,3,(SVG illustration)
+FDG-TINYWORM-BLAK,Tiny Worm,LOSS,articulated,Bambu Black,basic,#1a1a1d,3,(SVG illustration)
+FDG-TINYWORM-REDD,Tiny Worm,LOSS,articulated,Bambu Red,basic,#c12e1f,3,(SVG illustration)
+FDG-TINYWORM-YELO,Tiny Worm,LOSS,articulated,Cyber Yellow,basic,#e4bd68,3,(SVG illustration)
+FDG-TINYWORM-CYAN,Tiny Worm,LOSS,articulated,Cyan Blue,basic,#0086d6,3,(SVG illustration)
+FDG-TINYWORM-MIST,Tiny Worm,LOSS,articulated,Mistletoe Green,basic,#3f8e43,3,(SVG illustration)
+FDG-TINYWORM-MGNT,Tiny Worm,LOSS,articulated,Magenta,basic,#ec008c,3,(SVG illustration)
+FDG-TINYWORM-PURP,Tiny Worm,LOSS,articulated,Royal Purple,basic,#5e43b7,3,(SVG illustration)
+FDG-TINYWORM-GLOW,Tiny Worm,LOSS,articulated,Glow Mint,special,#a3e635,5,(SVG illustration)
+FDG-TINYWORM-GLXY,Tiny Worm,LOSS,articulated,Galaxy Purple,special,#7c3aed,5,(SVG illustration)
+FDG-MINICLICKER-JADE,Mini Clicker,LOSS,gadget,Jade White,basic,#f5f5f0,4,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINICLICKER-BLAK,Mini Clicker,LOSS,gadget,Bambu Black,basic,#1a1a1d,4,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINICLICKER-REDD,Mini Clicker,LOSS,gadget,Bambu Red,basic,#c12e1f,4,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINICLICKER-YELO,Mini Clicker,LOSS,gadget,Cyber Yellow,basic,#e4bd68,4,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINICLICKER-CYAN,Mini Clicker,LOSS,gadget,Cyan Blue,basic,#0086d6,4,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINICLICKER-MIST,Mini Clicker,LOSS,gadget,Mistletoe Green,basic,#3f8e43,4,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINICLICKER-MGNT,Mini Clicker,LOSS,gadget,Magenta,basic,#ec008c,4,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINICLICKER-PURP,Mini Clicker,LOSS,gadget,Royal Purple,basic,#5e43b7,4,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINICLICKER-GLOW,Mini Clicker,LOSS,gadget,Glow Mint,special,#a3e635,6,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-MINICLICKER-GLXY,Mini Clicker,LOSS,gadget,Galaxy Purple,special,#7c3aed,6,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=600
+FDG-SPINNER3-JADE,Three-Arm Spinner,REGULAR,spinner,Jade White,basic,#f5f5f0,9,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER3-BLAK,Three-Arm Spinner,REGULAR,spinner,Bambu Black,basic,#1a1a1d,9,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER3-REDD,Three-Arm Spinner,REGULAR,spinner,Bambu Red,basic,#c12e1f,9,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER3-YELO,Three-Arm Spinner,REGULAR,spinner,Cyber Yellow,basic,#e4bd68,9,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER3-CYAN,Three-Arm Spinner,REGULAR,spinner,Cyan Blue,basic,#0086d6,9,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER3-MIST,Three-Arm Spinner,REGULAR,spinner,Mistletoe Green,basic,#3f8e43,9,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER3-MGNT,Three-Arm Spinner,REGULAR,spinner,Magenta,basic,#ec008c,9,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER3-PURP,Three-Arm Spinner,REGULAR,spinner,Royal Purple,basic,#5e43b7,9,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER3-GLOW,Three-Arm Spinner,REGULAR,spinner,Glow Mint,special,#a3e635,11,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER3-GLXY,Three-Arm Spinner,REGULAR,spinner,Galaxy Purple,special,#7c3aed,11,https://images.pexels.com/photos/422290/pexels-photo-422290.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-JADE,Six-Arm Mega Spinner,REGULAR,spinner,Jade White,basic,#f5f5f0,14,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-BLAK,Six-Arm Mega Spinner,REGULAR,spinner,Bambu Black,basic,#1a1a1d,14,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-REDD,Six-Arm Mega Spinner,REGULAR,spinner,Bambu Red,basic,#c12e1f,14,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-YELO,Six-Arm Mega Spinner,REGULAR,spinner,Cyber Yellow,basic,#e4bd68,14,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-CYAN,Six-Arm Mega Spinner,REGULAR,spinner,Cyan Blue,basic,#0086d6,14,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-MIST,Six-Arm Mega Spinner,REGULAR,spinner,Mistletoe Green,basic,#3f8e43,14,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-MGNT,Six-Arm Mega Spinner,REGULAR,spinner,Magenta,basic,#ec008c,14,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-PURP,Six-Arm Mega Spinner,REGULAR,spinner,Royal Purple,basic,#5e43b7,14,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-GLOW,Six-Arm Mega Spinner,REGULAR,spinner,Glow Mint,special,#a3e635,16,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNER6-GLXY,Six-Arm Mega Spinner,REGULAR,spinner,Galaxy Purple,special,#7c3aed,16,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-JADE,Star Spinner,REGULAR,spinner,Jade White,basic,#f5f5f0,11,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-BLAK,Star Spinner,REGULAR,spinner,Bambu Black,basic,#1a1a1d,11,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-REDD,Star Spinner,REGULAR,spinner,Bambu Red,basic,#c12e1f,11,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-YELO,Star Spinner,REGULAR,spinner,Cyber Yellow,basic,#e4bd68,11,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-CYAN,Star Spinner,REGULAR,spinner,Cyan Blue,basic,#0086d6,11,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-MIST,Star Spinner,REGULAR,spinner,Mistletoe Green,basic,#3f8e43,11,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-MGNT,Star Spinner,REGULAR,spinner,Magenta,basic,#ec008c,11,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-PURP,Star Spinner,REGULAR,spinner,Royal Purple,basic,#5e43b7,11,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-GLOW,Star Spinner,REGULAR,spinner,Glow Mint,special,#a3e635,13,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-STARSPINNER-GLXY,Star Spinner,REGULAR,spinner,Galaxy Purple,special,#7c3aed,13,https://images.pexels.com/photos/34710663/pexels-photo-34710663.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-JADE,Metallic-Finish Spinner,REGULAR,spinner,Jade White,basic,#f5f5f0,18,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-BLAK,Metallic-Finish Spinner,REGULAR,spinner,Bambu Black,basic,#1a1a1d,18,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-REDD,Metallic-Finish Spinner,REGULAR,spinner,Bambu Red,basic,#c12e1f,18,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-YELO,Metallic-Finish Spinner,REGULAR,spinner,Cyber Yellow,basic,#e4bd68,18,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-CYAN,Metallic-Finish Spinner,REGULAR,spinner,Cyan Blue,basic,#0086d6,18,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-MIST,Metallic-Finish Spinner,REGULAR,spinner,Mistletoe Green,basic,#3f8e43,18,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-MGNT,Metallic-Finish Spinner,REGULAR,spinner,Magenta,basic,#ec008c,18,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-PURP,Metallic-Finish Spinner,REGULAR,spinner,Royal Purple,basic,#5e43b7,18,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-GLOW,Metallic-Finish Spinner,REGULAR,spinner,Glow Mint,special,#a3e635,20,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-METALSPINNER-GLXY,Metallic-Finish Spinner,REGULAR,spinner,Galaxy Purple,special,#7c3aed,20,https://images.pexels.com/photos/33633049/pexels-photo-33633049.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-FIDGETCUBE-JADE,Print-in-Place Fidget Cube,REGULAR,cube,Jade White,basic,#f5f5f0,20,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-FIDGETCUBE-BLAK,Print-in-Place Fidget Cube,REGULAR,cube,Bambu Black,basic,#1a1a1d,20,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-FIDGETCUBE-REDD,Print-in-Place Fidget Cube,REGULAR,cube,Bambu Red,basic,#c12e1f,20,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-FIDGETCUBE-YELO,Print-in-Place Fidget Cube,REGULAR,cube,Cyber Yellow,basic,#e4bd68,20,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-FIDGETCUBE-CYAN,Print-in-Place Fidget Cube,REGULAR,cube,Cyan Blue,basic,#0086d6,20,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-FIDGETCUBE-MIST,Print-in-Place Fidget Cube,REGULAR,cube,Mistletoe Green,basic,#3f8e43,20,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-FIDGETCUBE-MGNT,Print-in-Place Fidget Cube,REGULAR,cube,Magenta,basic,#ec008c,20,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-FIDGETCUBE-PURP,Print-in-Place Fidget Cube,REGULAR,cube,Royal Purple,basic,#5e43b7,20,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-FIDGETCUBE-GLOW,Print-in-Place Fidget Cube,REGULAR,cube,Glow Mint,special,#a3e635,22,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-FIDGETCUBE-GLXY,Print-in-Place Fidget Cube,REGULAR,cube,Galaxy Purple,special,#7c3aed,22,https://upload.wikimedia.org/wikipedia/commons/c/c7/Print_in_place_Fidget_Cube.jpg
+FDG-INFINITYCUBE-JADE,Infinity Cube,REGULAR,cube,Jade White,basic,#f5f5f0,15,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-INFINITYCUBE-BLAK,Infinity Cube,REGULAR,cube,Bambu Black,basic,#1a1a1d,15,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-INFINITYCUBE-REDD,Infinity Cube,REGULAR,cube,Bambu Red,basic,#c12e1f,15,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-INFINITYCUBE-YELO,Infinity Cube,REGULAR,cube,Cyber Yellow,basic,#e4bd68,15,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-INFINITYCUBE-CYAN,Infinity Cube,REGULAR,cube,Cyan Blue,basic,#0086d6,15,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-INFINITYCUBE-MIST,Infinity Cube,REGULAR,cube,Mistletoe Green,basic,#3f8e43,15,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-INFINITYCUBE-MGNT,Infinity Cube,REGULAR,cube,Magenta,basic,#ec008c,15,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-INFINITYCUBE-PURP,Infinity Cube,REGULAR,cube,Royal Purple,basic,#5e43b7,15,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-INFINITYCUBE-GLOW,Infinity Cube,REGULAR,cube,Glow Mint,special,#a3e635,17,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-INFINITYCUBE-GLXY,Infinity Cube,REGULAR,cube,Galaxy Purple,special,#7c3aed,17,https://upload.wikimedia.org/wikipedia/commons/8/81/Fidget_cube_yellow_and_white.jpg
+FDG-GEARCUBE-JADE,Gear Cube,REGULAR,cube,Jade White,basic,#f5f5f0,17,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARCUBE-BLAK,Gear Cube,REGULAR,cube,Bambu Black,basic,#1a1a1d,17,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARCUBE-REDD,Gear Cube,REGULAR,cube,Bambu Red,basic,#c12e1f,17,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARCUBE-YELO,Gear Cube,REGULAR,cube,Cyber Yellow,basic,#e4bd68,17,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARCUBE-CYAN,Gear Cube,REGULAR,cube,Cyan Blue,basic,#0086d6,17,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARCUBE-MIST,Gear Cube,REGULAR,cube,Mistletoe Green,basic,#3f8e43,17,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARCUBE-MGNT,Gear Cube,REGULAR,cube,Magenta,basic,#ec008c,17,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARCUBE-PURP,Gear Cube,REGULAR,cube,Royal Purple,basic,#5e43b7,17,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARCUBE-GLOW,Gear Cube,REGULAR,cube,Glow Mint,special,#a3e635,19,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARCUBE-GLXY,Gear Cube,REGULAR,cube,Galaxy Purple,special,#7c3aed,19,https://images.pexels.com/photos/9242925/pexels-photo-9242925.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-DRAGON-JADE,Articulated Dragon,REGULAR,articulated,Jade White,basic,#f5f5f0,30,(SVG illustration)
+FDG-DRAGON-BLAK,Articulated Dragon,REGULAR,articulated,Bambu Black,basic,#1a1a1d,30,(SVG illustration)
+FDG-DRAGON-REDD,Articulated Dragon,REGULAR,articulated,Bambu Red,basic,#c12e1f,30,(SVG illustration)
+FDG-DRAGON-YELO,Articulated Dragon,REGULAR,articulated,Cyber Yellow,basic,#e4bd68,30,(SVG illustration)
+FDG-DRAGON-CYAN,Articulated Dragon,REGULAR,articulated,Cyan Blue,basic,#0086d6,30,(SVG illustration)
+FDG-DRAGON-MIST,Articulated Dragon,REGULAR,articulated,Mistletoe Green,basic,#3f8e43,30,(SVG illustration)
+FDG-DRAGON-MGNT,Articulated Dragon,REGULAR,articulated,Magenta,basic,#ec008c,30,(SVG illustration)
+FDG-DRAGON-PURP,Articulated Dragon,REGULAR,articulated,Royal Purple,basic,#5e43b7,30,(SVG illustration)
+FDG-DRAGON-GLOW,Articulated Dragon,REGULAR,articulated,Glow Mint,special,#a3e635,32,(SVG illustration)
+FDG-DRAGON-GLXY,Articulated Dragon,REGULAR,articulated,Galaxy Purple,special,#7c3aed,32,(SVG illustration)
+FDG-SNAKE-JADE,Articulated Snake,REGULAR,articulated,Jade White,basic,#f5f5f0,13,(SVG illustration)
+FDG-SNAKE-BLAK,Articulated Snake,REGULAR,articulated,Bambu Black,basic,#1a1a1d,13,(SVG illustration)
+FDG-SNAKE-REDD,Articulated Snake,REGULAR,articulated,Bambu Red,basic,#c12e1f,13,(SVG illustration)
+FDG-SNAKE-YELO,Articulated Snake,REGULAR,articulated,Cyber Yellow,basic,#e4bd68,13,(SVG illustration)
+FDG-SNAKE-CYAN,Articulated Snake,REGULAR,articulated,Cyan Blue,basic,#0086d6,13,(SVG illustration)
+FDG-SNAKE-MIST,Articulated Snake,REGULAR,articulated,Mistletoe Green,basic,#3f8e43,13,(SVG illustration)
+FDG-SNAKE-MGNT,Articulated Snake,REGULAR,articulated,Magenta,basic,#ec008c,13,(SVG illustration)
+FDG-SNAKE-PURP,Articulated Snake,REGULAR,articulated,Royal Purple,basic,#5e43b7,13,(SVG illustration)
+FDG-SNAKE-GLOW,Articulated Snake,REGULAR,articulated,Glow Mint,special,#a3e635,15,(SVG illustration)
+FDG-SNAKE-GLXY,Articulated Snake,REGULAR,articulated,Galaxy Purple,special,#7c3aed,15,(SVG illustration)
+FDG-OCTOPUS-JADE,Articulated Octopus,REGULAR,articulated,Jade White,basic,#f5f5f0,19,(SVG illustration)
+FDG-OCTOPUS-BLAK,Articulated Octopus,REGULAR,articulated,Bambu Black,basic,#1a1a1d,19,(SVG illustration)
+FDG-OCTOPUS-REDD,Articulated Octopus,REGULAR,articulated,Bambu Red,basic,#c12e1f,19,(SVG illustration)
+FDG-OCTOPUS-YELO,Articulated Octopus,REGULAR,articulated,Cyber Yellow,basic,#e4bd68,19,(SVG illustration)
+FDG-OCTOPUS-CYAN,Articulated Octopus,REGULAR,articulated,Cyan Blue,basic,#0086d6,19,(SVG illustration)
+FDG-OCTOPUS-MIST,Articulated Octopus,REGULAR,articulated,Mistletoe Green,basic,#3f8e43,19,(SVG illustration)
+FDG-OCTOPUS-MGNT,Articulated Octopus,REGULAR,articulated,Magenta,basic,#ec008c,19,(SVG illustration)
+FDG-OCTOPUS-PURP,Articulated Octopus,REGULAR,articulated,Royal Purple,basic,#5e43b7,19,(SVG illustration)
+FDG-OCTOPUS-GLOW,Articulated Octopus,REGULAR,articulated,Glow Mint,special,#a3e635,21,(SVG illustration)
+FDG-OCTOPUS-GLXY,Articulated Octopus,REGULAR,articulated,Galaxy Purple,special,#7c3aed,21,(SVG illustration)
+FDG-AXOLOTL-JADE,Articulated Axolotl,REGULAR,articulated,Jade White,basic,#f5f5f0,17,(SVG illustration)
+FDG-AXOLOTL-BLAK,Articulated Axolotl,REGULAR,articulated,Bambu Black,basic,#1a1a1d,17,(SVG illustration)
+FDG-AXOLOTL-REDD,Articulated Axolotl,REGULAR,articulated,Bambu Red,basic,#c12e1f,17,(SVG illustration)
+FDG-AXOLOTL-YELO,Articulated Axolotl,REGULAR,articulated,Cyber Yellow,basic,#e4bd68,17,(SVG illustration)
+FDG-AXOLOTL-CYAN,Articulated Axolotl,REGULAR,articulated,Cyan Blue,basic,#0086d6,17,(SVG illustration)
+FDG-AXOLOTL-MIST,Articulated Axolotl,REGULAR,articulated,Mistletoe Green,basic,#3f8e43,17,(SVG illustration)
+FDG-AXOLOTL-MGNT,Articulated Axolotl,REGULAR,articulated,Magenta,basic,#ec008c,17,(SVG illustration)
+FDG-AXOLOTL-PURP,Articulated Axolotl,REGULAR,articulated,Royal Purple,basic,#5e43b7,17,(SVG illustration)
+FDG-AXOLOTL-GLOW,Articulated Axolotl,REGULAR,articulated,Glow Mint,special,#a3e635,19,(SVG illustration)
+FDG-AXOLOTL-GLXY,Articulated Axolotl,REGULAR,articulated,Galaxy Purple,special,#7c3aed,19,(SVG illustration)
+FDG-WORM-JADE,Wiggle Worm,REGULAR,articulated,Jade White,basic,#f5f5f0,8,(SVG illustration)
+FDG-WORM-BLAK,Wiggle Worm,REGULAR,articulated,Bambu Black,basic,#1a1a1d,8,(SVG illustration)
+FDG-WORM-REDD,Wiggle Worm,REGULAR,articulated,Bambu Red,basic,#c12e1f,8,(SVG illustration)
+FDG-WORM-YELO,Wiggle Worm,REGULAR,articulated,Cyber Yellow,basic,#e4bd68,8,(SVG illustration)
+FDG-WORM-CYAN,Wiggle Worm,REGULAR,articulated,Cyan Blue,basic,#0086d6,8,(SVG illustration)
+FDG-WORM-MIST,Wiggle Worm,REGULAR,articulated,Mistletoe Green,basic,#3f8e43,8,(SVG illustration)
+FDG-WORM-MGNT,Wiggle Worm,REGULAR,articulated,Magenta,basic,#ec008c,8,(SVG illustration)
+FDG-WORM-PURP,Wiggle Worm,REGULAR,articulated,Royal Purple,basic,#5e43b7,8,(SVG illustration)
+FDG-WORM-GLOW,Wiggle Worm,REGULAR,articulated,Glow Mint,special,#a3e635,10,(SVG illustration)
+FDG-WORM-GLXY,Wiggle Worm,REGULAR,articulated,Galaxy Purple,special,#7c3aed,10,(SVG illustration)
+FDG-LIZARD-JADE,Mini Lizard,REGULAR,articulated,Jade White,basic,#f5f5f0,10,(SVG illustration)
+FDG-LIZARD-BLAK,Mini Lizard,REGULAR,articulated,Bambu Black,basic,#1a1a1d,10,(SVG illustration)
+FDG-LIZARD-REDD,Mini Lizard,REGULAR,articulated,Bambu Red,basic,#c12e1f,10,(SVG illustration)
+FDG-LIZARD-YELO,Mini Lizard,REGULAR,articulated,Cyber Yellow,basic,#e4bd68,10,(SVG illustration)
+FDG-LIZARD-CYAN,Mini Lizard,REGULAR,articulated,Cyan Blue,basic,#0086d6,10,(SVG illustration)
+FDG-LIZARD-MIST,Mini Lizard,REGULAR,articulated,Mistletoe Green,basic,#3f8e43,10,(SVG illustration)
+FDG-LIZARD-MGNT,Mini Lizard,REGULAR,articulated,Magenta,basic,#ec008c,10,(SVG illustration)
+FDG-LIZARD-PURP,Mini Lizard,REGULAR,articulated,Royal Purple,basic,#5e43b7,10,(SVG illustration)
+FDG-LIZARD-GLOW,Mini Lizard,REGULAR,articulated,Glow Mint,special,#a3e635,12,(SVG illustration)
+FDG-LIZARD-GLXY,Mini Lizard,REGULAR,articulated,Galaxy Purple,special,#7c3aed,12,(SVG illustration)
+FDG-SLIDER-JADE,Magnetic-Feel Slider,REGULAR,slider,Jade White,basic,#f5f5f0,13,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SLIDER-BLAK,Magnetic-Feel Slider,REGULAR,slider,Bambu Black,basic,#1a1a1d,13,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SLIDER-REDD,Magnetic-Feel Slider,REGULAR,slider,Bambu Red,basic,#c12e1f,13,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SLIDER-YELO,Magnetic-Feel Slider,REGULAR,slider,Cyber Yellow,basic,#e4bd68,13,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SLIDER-CYAN,Magnetic-Feel Slider,REGULAR,slider,Cyan Blue,basic,#0086d6,13,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SLIDER-MIST,Magnetic-Feel Slider,REGULAR,slider,Mistletoe Green,basic,#3f8e43,13,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SLIDER-MGNT,Magnetic-Feel Slider,REGULAR,slider,Magenta,basic,#ec008c,13,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SLIDER-PURP,Magnetic-Feel Slider,REGULAR,slider,Royal Purple,basic,#5e43b7,13,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SLIDER-GLOW,Magnetic-Feel Slider,REGULAR,slider,Glow Mint,special,#a3e635,15,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SLIDER-GLXY,Magnetic-Feel Slider,REGULAR,slider,Galaxy Purple,special,#7c3aed,15,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-JADE,Gyro Ring,REGULAR,slider,Jade White,basic,#f5f5f0,11,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-BLAK,Gyro Ring,REGULAR,slider,Bambu Black,basic,#1a1a1d,11,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-REDD,Gyro Ring,REGULAR,slider,Bambu Red,basic,#c12e1f,11,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-YELO,Gyro Ring,REGULAR,slider,Cyber Yellow,basic,#e4bd68,11,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-CYAN,Gyro Ring,REGULAR,slider,Cyan Blue,basic,#0086d6,11,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-MIST,Gyro Ring,REGULAR,slider,Mistletoe Green,basic,#3f8e43,11,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-MGNT,Gyro Ring,REGULAR,slider,Magenta,basic,#ec008c,11,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-PURP,Gyro Ring,REGULAR,slider,Royal Purple,basic,#5e43b7,11,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-GLOW,Gyro Ring,REGULAR,slider,Glow Mint,special,#a3e635,13,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GYRORING-GLXY,Gyro Ring,REGULAR,slider,Galaxy Purple,special,#7c3aed,13,https://images.pexels.com/photos/8145711/pexels-photo-8145711.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-JADE,Spinner Fidget Ring,REGULAR,slider,Jade White,basic,#f5f5f0,13,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-BLAK,Spinner Fidget Ring,REGULAR,slider,Bambu Black,basic,#1a1a1d,13,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-REDD,Spinner Fidget Ring,REGULAR,slider,Bambu Red,basic,#c12e1f,13,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-YELO,Spinner Fidget Ring,REGULAR,slider,Cyber Yellow,basic,#e4bd68,13,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-CYAN,Spinner Fidget Ring,REGULAR,slider,Cyan Blue,basic,#0086d6,13,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-MIST,Spinner Fidget Ring,REGULAR,slider,Mistletoe Green,basic,#3f8e43,13,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-MGNT,Spinner Fidget Ring,REGULAR,slider,Magenta,basic,#ec008c,13,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-PURP,Spinner Fidget Ring,REGULAR,slider,Royal Purple,basic,#5e43b7,13,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-GLOW,Spinner Fidget Ring,REGULAR,slider,Glow Mint,special,#a3e635,15,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPINNERRING-GLXY,Spinner Fidget Ring,REGULAR,slider,Galaxy Purple,special,#7c3aed,15,https://images.pexels.com/photos/14064918/pexels-photo-14064918.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ROLLINGMAZE-JADE,Rolling Ball Maze,REGULAR,slider,Jade White,basic,#f5f5f0,18,(SVG illustration)
+FDG-ROLLINGMAZE-BLAK,Rolling Ball Maze,REGULAR,slider,Bambu Black,basic,#1a1a1d,18,(SVG illustration)
+FDG-ROLLINGMAZE-REDD,Rolling Ball Maze,REGULAR,slider,Bambu Red,basic,#c12e1f,18,(SVG illustration)
+FDG-ROLLINGMAZE-YELO,Rolling Ball Maze,REGULAR,slider,Cyber Yellow,basic,#e4bd68,18,(SVG illustration)
+FDG-ROLLINGMAZE-CYAN,Rolling Ball Maze,REGULAR,slider,Cyan Blue,basic,#0086d6,18,(SVG illustration)
+FDG-ROLLINGMAZE-MIST,Rolling Ball Maze,REGULAR,slider,Mistletoe Green,basic,#3f8e43,18,(SVG illustration)
+FDG-ROLLINGMAZE-MGNT,Rolling Ball Maze,REGULAR,slider,Magenta,basic,#ec008c,18,(SVG illustration)
+FDG-ROLLINGMAZE-PURP,Rolling Ball Maze,REGULAR,slider,Royal Purple,basic,#5e43b7,18,(SVG illustration)
+FDG-ROLLINGMAZE-GLOW,Rolling Ball Maze,REGULAR,slider,Glow Mint,special,#a3e635,20,(SVG illustration)
+FDG-ROLLINGMAZE-GLXY,Rolling Ball Maze,REGULAR,slider,Galaxy Purple,special,#7c3aed,20,(SVG illustration)
+FDG-SPIKYROLLER-JADE,Spiky Sensory Roller,REGULAR,slider,Jade White,basic,#f5f5f0,13,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIKYROLLER-BLAK,Spiky Sensory Roller,REGULAR,slider,Bambu Black,basic,#1a1a1d,13,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIKYROLLER-REDD,Spiky Sensory Roller,REGULAR,slider,Bambu Red,basic,#c12e1f,13,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIKYROLLER-YELO,Spiky Sensory Roller,REGULAR,slider,Cyber Yellow,basic,#e4bd68,13,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIKYROLLER-CYAN,Spiky Sensory Roller,REGULAR,slider,Cyan Blue,basic,#0086d6,13,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIKYROLLER-MIST,Spiky Sensory Roller,REGULAR,slider,Mistletoe Green,basic,#3f8e43,13,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIKYROLLER-MGNT,Spiky Sensory Roller,REGULAR,slider,Magenta,basic,#ec008c,13,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIKYROLLER-PURP,Spiky Sensory Roller,REGULAR,slider,Royal Purple,basic,#5e43b7,13,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIKYROLLER-GLOW,Spiky Sensory Roller,REGULAR,slider,Glow Mint,special,#a3e635,15,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIKYROLLER-GLXY,Spiky Sensory Roller,REGULAR,slider,Galaxy Purple,special,#7c3aed,15,https://images.pexels.com/photos/4114512/pexels-photo-4114512.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-SPIRALCONE-JADE,Spiral Cone,REGULAR,slider,Jade White,basic,#f5f5f0,12,(SVG illustration)
+FDG-SPIRALCONE-BLAK,Spiral Cone,REGULAR,slider,Bambu Black,basic,#1a1a1d,12,(SVG illustration)
+FDG-SPIRALCONE-REDD,Spiral Cone,REGULAR,slider,Bambu Red,basic,#c12e1f,12,(SVG illustration)
+FDG-SPIRALCONE-YELO,Spiral Cone,REGULAR,slider,Cyber Yellow,basic,#e4bd68,12,(SVG illustration)
+FDG-SPIRALCONE-CYAN,Spiral Cone,REGULAR,slider,Cyan Blue,basic,#0086d6,12,(SVG illustration)
+FDG-SPIRALCONE-MIST,Spiral Cone,REGULAR,slider,Mistletoe Green,basic,#3f8e43,12,(SVG illustration)
+FDG-SPIRALCONE-MGNT,Spiral Cone,REGULAR,slider,Magenta,basic,#ec008c,12,(SVG illustration)
+FDG-SPIRALCONE-PURP,Spiral Cone,REGULAR,slider,Royal Purple,basic,#5e43b7,12,(SVG illustration)
+FDG-SPIRALCONE-GLOW,Spiral Cone,REGULAR,slider,Glow Mint,special,#a3e635,14,(SVG illustration)
+FDG-SPIRALCONE-GLXY,Spiral Cone,REGULAR,slider,Galaxy Purple,special,#7c3aed,14,(SVG illustration)
+FDG-HEXFLEXI-JADE,Hex Flexi,REGULAR,puzzle,Jade White,basic,#f5f5f0,12,(SVG illustration)
+FDG-HEXFLEXI-BLAK,Hex Flexi,REGULAR,puzzle,Bambu Black,basic,#1a1a1d,12,(SVG illustration)
+FDG-HEXFLEXI-REDD,Hex Flexi,REGULAR,puzzle,Bambu Red,basic,#c12e1f,12,(SVG illustration)
+FDG-HEXFLEXI-YELO,Hex Flexi,REGULAR,puzzle,Cyber Yellow,basic,#e4bd68,12,(SVG illustration)
+FDG-HEXFLEXI-CYAN,Hex Flexi,REGULAR,puzzle,Cyan Blue,basic,#0086d6,12,(SVG illustration)
+FDG-HEXFLEXI-MIST,Hex Flexi,REGULAR,puzzle,Mistletoe Green,basic,#3f8e43,12,(SVG illustration)
+FDG-HEXFLEXI-MGNT,Hex Flexi,REGULAR,puzzle,Magenta,basic,#ec008c,12,(SVG illustration)
+FDG-HEXFLEXI-PURP,Hex Flexi,REGULAR,puzzle,Royal Purple,basic,#5e43b7,12,(SVG illustration)
+FDG-HEXFLEXI-GLOW,Hex Flexi,REGULAR,puzzle,Glow Mint,special,#a3e635,14,(SVG illustration)
+FDG-HEXFLEXI-GLXY,Hex Flexi,REGULAR,puzzle,Galaxy Purple,special,#7c3aed,14,(SVG illustration)
+FDG-MAGICSNAKE-JADE,Magic Snake,REGULAR,puzzle,Jade White,basic,#f5f5f0,14,(SVG illustration)
+FDG-MAGICSNAKE-BLAK,Magic Snake,REGULAR,puzzle,Bambu Black,basic,#1a1a1d,14,(SVG illustration)
+FDG-MAGICSNAKE-REDD,Magic Snake,REGULAR,puzzle,Bambu Red,basic,#c12e1f,14,(SVG illustration)
+FDG-MAGICSNAKE-YELO,Magic Snake,REGULAR,puzzle,Cyber Yellow,basic,#e4bd68,14,(SVG illustration)
+FDG-MAGICSNAKE-CYAN,Magic Snake,REGULAR,puzzle,Cyan Blue,basic,#0086d6,14,(SVG illustration)
+FDG-MAGICSNAKE-MIST,Magic Snake,REGULAR,puzzle,Mistletoe Green,basic,#3f8e43,14,(SVG illustration)
+FDG-MAGICSNAKE-MGNT,Magic Snake,REGULAR,puzzle,Magenta,basic,#ec008c,14,(SVG illustration)
+FDG-MAGICSNAKE-PURP,Magic Snake,REGULAR,puzzle,Royal Purple,basic,#5e43b7,14,(SVG illustration)
+FDG-MAGICSNAKE-GLOW,Magic Snake,REGULAR,puzzle,Glow Mint,special,#a3e635,16,(SVG illustration)
+FDG-MAGICSNAKE-GLXY,Magic Snake,REGULAR,puzzle,Galaxy Purple,special,#7c3aed,16,(SVG illustration)
+FDG-TWISTPUZZLE-JADE,Twist Puzzle,REGULAR,puzzle,Jade White,basic,#f5f5f0,12,(SVG illustration)
+FDG-TWISTPUZZLE-BLAK,Twist Puzzle,REGULAR,puzzle,Bambu Black,basic,#1a1a1d,12,(SVG illustration)
+FDG-TWISTPUZZLE-REDD,Twist Puzzle,REGULAR,puzzle,Bambu Red,basic,#c12e1f,12,(SVG illustration)
+FDG-TWISTPUZZLE-YELO,Twist Puzzle,REGULAR,puzzle,Cyber Yellow,basic,#e4bd68,12,(SVG illustration)
+FDG-TWISTPUZZLE-CYAN,Twist Puzzle,REGULAR,puzzle,Cyan Blue,basic,#0086d6,12,(SVG illustration)
+FDG-TWISTPUZZLE-MIST,Twist Puzzle,REGULAR,puzzle,Mistletoe Green,basic,#3f8e43,12,(SVG illustration)
+FDG-TWISTPUZZLE-MGNT,Twist Puzzle,REGULAR,puzzle,Magenta,basic,#ec008c,12,(SVG illustration)
+FDG-TWISTPUZZLE-PURP,Twist Puzzle,REGULAR,puzzle,Royal Purple,basic,#5e43b7,12,(SVG illustration)
+FDG-TWISTPUZZLE-GLOW,Twist Puzzle,REGULAR,puzzle,Glow Mint,special,#a3e635,14,(SVG illustration)
+FDG-TWISTPUZZLE-GLXY,Twist Puzzle,REGULAR,puzzle,Galaxy Purple,special,#7c3aed,14,(SVG illustration)
+FDG-CHAIN-JADE,Bike-Chain Fidget,REGULAR,puzzle,Jade White,basic,#f5f5f0,13,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-CHAIN-BLAK,Bike-Chain Fidget,REGULAR,puzzle,Bambu Black,basic,#1a1a1d,13,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-CHAIN-REDD,Bike-Chain Fidget,REGULAR,puzzle,Bambu Red,basic,#c12e1f,13,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-CHAIN-YELO,Bike-Chain Fidget,REGULAR,puzzle,Cyber Yellow,basic,#e4bd68,13,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-CHAIN-CYAN,Bike-Chain Fidget,REGULAR,puzzle,Cyan Blue,basic,#0086d6,13,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-CHAIN-MIST,Bike-Chain Fidget,REGULAR,puzzle,Mistletoe Green,basic,#3f8e43,13,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-CHAIN-MGNT,Bike-Chain Fidget,REGULAR,puzzle,Magenta,basic,#ec008c,13,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-CHAIN-PURP,Bike-Chain Fidget,REGULAR,puzzle,Royal Purple,basic,#5e43b7,13,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-CHAIN-GLOW,Bike-Chain Fidget,REGULAR,puzzle,Glow Mint,special,#a3e635,15,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-CHAIN-GLXY,Bike-Chain Fidget,REGULAR,puzzle,Galaxy Purple,special,#7c3aed,15,https://upload.wikimedia.org/wikipedia/commons/9/9a/A_%22bike_chain%22_type_fidget_toy.jpg
+FDG-TWISTINGEGG-JADE,Twisting Egg,REGULAR,puzzle,Jade White,basic,#f5f5f0,15,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-TWISTINGEGG-BLAK,Twisting Egg,REGULAR,puzzle,Bambu Black,basic,#1a1a1d,15,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-TWISTINGEGG-REDD,Twisting Egg,REGULAR,puzzle,Bambu Red,basic,#c12e1f,15,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-TWISTINGEGG-YELO,Twisting Egg,REGULAR,puzzle,Cyber Yellow,basic,#e4bd68,15,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-TWISTINGEGG-CYAN,Twisting Egg,REGULAR,puzzle,Cyan Blue,basic,#0086d6,15,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-TWISTINGEGG-MIST,Twisting Egg,REGULAR,puzzle,Mistletoe Green,basic,#3f8e43,15,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-TWISTINGEGG-MGNT,Twisting Egg,REGULAR,puzzle,Magenta,basic,#ec008c,15,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-TWISTINGEGG-PURP,Twisting Egg,REGULAR,puzzle,Royal Purple,basic,#5e43b7,15,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-TWISTINGEGG-GLOW,Twisting Egg,REGULAR,puzzle,Glow Mint,special,#a3e635,17,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-TWISTINGEGG-GLXY,Twisting Egg,REGULAR,puzzle,Galaxy Purple,special,#7c3aed,17,https://images.pexels.com/photos/6979267/pexels-photo-6979267.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-JADE,Pocket Gear Fidget,REGULAR,gadget,Jade White,basic,#f5f5f0,13,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-BLAK,Pocket Gear Fidget,REGULAR,gadget,Bambu Black,basic,#1a1a1d,13,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-REDD,Pocket Gear Fidget,REGULAR,gadget,Bambu Red,basic,#c12e1f,13,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-YELO,Pocket Gear Fidget,REGULAR,gadget,Cyber Yellow,basic,#e4bd68,13,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-CYAN,Pocket Gear Fidget,REGULAR,gadget,Cyan Blue,basic,#0086d6,13,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-MIST,Pocket Gear Fidget,REGULAR,gadget,Mistletoe Green,basic,#3f8e43,13,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-MGNT,Pocket Gear Fidget,REGULAR,gadget,Magenta,basic,#ec008c,13,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-PURP,Pocket Gear Fidget,REGULAR,gadget,Royal Purple,basic,#5e43b7,13,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-GLOW,Pocket Gear Fidget,REGULAR,gadget,Glow Mint,special,#a3e635,15,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-GEARFIDGET-GLXY,Pocket Gear Fidget,REGULAR,gadget,Galaxy Purple,special,#7c3aed,15,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-JADE,Clicker Fidget,REGULAR,gadget,Jade White,basic,#f5f5f0,10,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-BLAK,Clicker Fidget,REGULAR,gadget,Bambu Black,basic,#1a1a1d,10,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-REDD,Clicker Fidget,REGULAR,gadget,Bambu Red,basic,#c12e1f,10,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-YELO,Clicker Fidget,REGULAR,gadget,Cyber Yellow,basic,#e4bd68,10,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-CYAN,Clicker Fidget,REGULAR,gadget,Cyan Blue,basic,#0086d6,10,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-MIST,Clicker Fidget,REGULAR,gadget,Mistletoe Green,basic,#3f8e43,10,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-MGNT,Clicker Fidget,REGULAR,gadget,Magenta,basic,#ec008c,10,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-PURP,Clicker Fidget,REGULAR,gadget,Royal Purple,basic,#5e43b7,10,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-GLOW,Clicker Fidget,REGULAR,gadget,Glow Mint,special,#a3e635,12,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-CLICKER-GLXY,Clicker Fidget,REGULAR,gadget,Galaxy Purple,special,#7c3aed,12,https://images.pexels.com/photos/776116/pexels-photo-776116.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-FIDGETBLANKE-GLXY,Sensory Fidget Blanket,REGULAR,sourced,Galaxy Purple,special,#7c3aed,47,https://images.pexels.com/photos/17219698/pexels-photo-17219698.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-FIDGETBLANKE-CYAN,Sensory Fidget Blanket,REGULAR,sourced,Cyan Blue,basic,#0086d6,45,https://images.pexels.com/photos/17219698/pexels-photo-17219698.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-FIDGETBLANKE-MGNT,Sensory Fidget Blanket,REGULAR,sourced,Magenta,basic,#ec008c,45,https://images.pexels.com/photos/17219698/pexels-photo-17219698.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-FIDGETBLANKE-YELO,Sensory Fidget Blanket,REGULAR,sourced,Cyber Yellow,basic,#e4bd68,45,https://images.pexels.com/photos/17219698/pexels-photo-17219698.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ASPINNER-ALUM,Aluminium-Effect Heavy Spinner,PREMIUM,premium,Silk Aluminium,premium,#a8b0b8,48,https://images.pexels.com/photos/34710649/pexels-photo-34710649.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ASPINNER-BRAS,Aluminium-Effect Heavy Spinner,PREMIUM,premium,Silk Brass,premium,#b8923f,48,https://images.pexels.com/photos/34710649/pexels-photo-34710649.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ASPINNER-COPP,Aluminium-Effect Heavy Spinner,PREMIUM,premium,Silk Copper,premium,#a8642a,48,https://images.pexels.com/photos/34710649/pexels-photo-34710649.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ASPINNER-MARB,Aluminium-Effect Heavy Spinner,PREMIUM,premium,Marble Swirl,premium,#e8e1d4,48,https://images.pexels.com/photos/34710649/pexels-photo-34710649.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ASPINNER-WOOD,Aluminium-Effect Heavy Spinner,PREMIUM,premium,Walnut Wood-fill,premium,#5a3a22,48,https://images.pexels.com/photos/34710649/pexels-photo-34710649.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ASPINNER-CARB,Aluminium-Effect Heavy Spinner,PREMIUM,premium,Carbon Fibre,premium,#1c1c1c,48,https://images.pexels.com/photos/34710649/pexels-photo-34710649.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACUBE-ALUM,Brass-Finish Heavy Cube,PREMIUM,premium,Silk Aluminium,premium,#a8b0b8,52,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACUBE-BRAS,Brass-Finish Heavy Cube,PREMIUM,premium,Silk Brass,premium,#b8923f,52,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACUBE-COPP,Brass-Finish Heavy Cube,PREMIUM,premium,Silk Copper,premium,#a8642a,52,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACUBE-MARB,Brass-Finish Heavy Cube,PREMIUM,premium,Marble Swirl,premium,#e8e1d4,52,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACUBE-WOOD,Brass-Finish Heavy Cube,PREMIUM,premium,Walnut Wood-fill,premium,#5a3a22,52,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACUBE-CARB,Brass-Finish Heavy Cube,PREMIUM,premium,Carbon Fibre,premium,#1c1c1c,52,https://images.pexels.com/photos/33270195/pexels-photo-33270195.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-APYRAMID-MARB,Galaxy Marble Pyramid,PREMIUM,premium,Marble Swirl,premium,#e8e1d4,42,https://images.pexels.com/photos/33270189/pexels-photo-33270189.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-APYRAMID-GLXY,Galaxy Marble Pyramid,PREMIUM,premium,Galaxy Purple,special,#7c3aed,44,https://images.pexels.com/photos/33270189/pexels-photo-33270189.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-APYRAMID-ALUM,Galaxy Marble Pyramid,PREMIUM,premium,Silk Aluminium,premium,#a8b0b8,42,https://images.pexels.com/photos/33270189/pexels-photo-33270189.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-APYRAMID-CARB,Galaxy Marble Pyramid,PREMIUM,premium,Carbon Fibre,premium,#1c1c1c,42,https://images.pexels.com/photos/33270189/pexels-photo-33270189.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-AWORRY-WOOD,Walnut Worry Stone,PREMIUM,premium,Walnut Wood-fill,premium,#5a3a22,38,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-AWORRY-BRAS,Walnut Worry Stone,PREMIUM,premium,Silk Brass,premium,#b8923f,38,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-AWORRY-COPP,Walnut Worry Stone,PREMIUM,premium,Silk Copper,premium,#a8642a,38,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-AWORRY-CARB,Walnut Worry Stone,PREMIUM,premium,Carbon Fibre,premium,#1c1c1c,38,https://images.pexels.com/photos/33633043/pexels-photo-33633043.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACOMB-BRAS,Brass Butterfly Comb,PREMIUM,premium,Silk Brass,premium,#b8923f,72,https://images.pexels.com/photos/34710662/pexels-photo-34710662.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACOMB-COPP,Brass Butterfly Comb,PREMIUM,premium,Silk Copper,premium,#a8642a,72,https://images.pexels.com/photos/34710662/pexels-photo-34710662.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACOMB-ALUM,Brass Butterfly Comb,PREMIUM,premium,Silk Aluminium,premium,#a8b0b8,72,https://images.pexels.com/photos/34710662/pexels-photo-34710662.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACOMB-WOOD,Brass Butterfly Comb,PREMIUM,premium,Walnut Wood-fill,premium,#5a3a22,72,https://images.pexels.com/photos/34710662/pexels-photo-34710662.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-ACOMB-CARB,Brass Butterfly Comb,PREMIUM,premium,Carbon Fibre,premium,#1c1c1c,72,https://images.pexels.com/photos/34710662/pexels-photo-34710662.jpeg?auto=compress&cs=tinysrgb&w=800
+FDG-BDL-STAR,Starter Pack,BUNDLE,bundle,—,—,,30,(no image)
+FDG-BDL-ARTI,Articulated Trio,BUNDLE,bundle,—,—,,35,(no image)
+FDG-BDL-SPIN,Spinner Stack,BUNDLE,bundle,—,—,,25,(no image)
+FDG-BDL-CLAS,Class Pack,BUNDLE,bundle,—,—,,40,(no image)
+FDG-BDL-MEGA,Mega Pack,BUNDLE,bundle,—,—,,80,(no image)

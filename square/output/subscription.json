@@ -1,0 +1,12 @@
+{
+  "note": "Subscription is NOT a catalog item. Create via Square Subscriptions API or Dashboard.",
+  "plan": {
+    "name": "Premium Membership",
+    "price_monthly": 5,
+    "signup_credit": 15,
+    "monthly_credit": 10,
+    "desc": "Premium tier access + $15 instant credit + $10 monthly credit. Full benefits at fidgets.com.au/v4/#premium"
+  },
+  "api_endpoint": "POST /v2/catalog/object  (with type=SUBSCRIPTION_PLAN)",
+  "docs": "https://developer.squareup.com/docs/subscriptions-api/overview"
+}
