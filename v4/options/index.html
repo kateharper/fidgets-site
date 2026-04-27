@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#000000" />
+<title>Fidgets · Premium tier — pick your approach</title>
+<meta name="description" content="Three approaches to the premium / knife-shape question for Tom's fidget shop. Pick one." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: Inter, system-ui, sans-serif; background: #000; color: #fafafa; -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; }
+  .display { letter-spacing: -0.035em; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; }
+  .ocard { transition: all 0.35s cubic-bezier(.2,.8,.2,1); border: 1px solid #1a1a1a; background: #0a0a0a; }
+  .ocard:hover { transform: translateY(-6px); box-shadow: 0 28px 56px -20px rgba(4,161,255,0.35); }
+  .ocard.a:hover { border-color: #10b981; }
+  .ocard.b:hover { border-color: #f59e0b; }
+  .ocard.c:hover { border-color: #38bdf8; }
+  .pill { padding: 4px 10px; border-radius: 999px; font-size: 11px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; }
+  .ok    { background: rgba(16,185,129,0.12); color: #34d399; border: 1px solid rgba(16,185,129,0.30); }
+  .warn  { background: rgba(245,158,11,0.12); color: #fbbf24; border: 1px solid rgba(245,158,11,0.30); }
+  .info  { background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.30); }
+  .no    { background: rgba(244,63,94,0.12); color: #fb7185; border: 1px solid rgba(244,63,94,0.30); }
+  .btn { transition: all 0.18s ease; font-weight: 600; }
+  .btn-blue  { background: #04a1ff; color: #000; }
+  .btn-blue:hover  { background: #33b5ff; transform: translateY(-1px); }
+  .btn-green { background: #10b981; color: #000; }
+  .btn-green:hover { background: #34d399; transform: translateY(-1px); }
+  .btn-amber { background: #f59e0b; color: #000; }
+  .btn-amber:hover { background: #fbbf24; transform: translateY(-1px); }
+  .btn-sky   { background: #38bdf8; color: #000; }
+  .btn-sky:hover   { background: #7dd3fc; transform: translateY(-1px); }
+</style>
+</head>
+<body>
+
+<header class="max-w-[1280px] mx-auto px-6 pt-10 pb-6 flex items-center justify-between">
+  <div class="flex items-center gap-2">
+    <a href="../" class="display font-bold text-2xl">fidgets</a>
+    <span class="mono text-electric" style="color:#04a1ff">/ V4 / OPTIONS</span>
+  </div>
+  <a href="../" class="mono text-white/60 hover:text-white">← BACK TO V4 (DEFAULT)</a>
+</header>
+
+<section class="max-w-[1280px] mx-auto px-6 pt-10 pb-16">
+  <p class="mono text-electric mb-4" style="color:#04a1ff">// HEY SIMON</p>
+  <h1 class="display font-bold text-5xl md:text-7xl leading-[0.95] mb-6 max-w-3xl">
+    Three takes on the <span style="color:#fbbf24">premium tier</span>.
+  </h1>
+  <p class="text-lg text-white/65 max-w-3xl mb-6">
+    All three options reuse the v4 INCYT design and the full <strong>30-product regular catalogue</strong> (3 loss-leaders, 22 regular, 5 premium). The only thing that varies is <strong>what's in the premium tier</strong> and <strong>how you check out</strong>.
+  </p>
+  <p class="text-sm text-amber-300/90 mb-12 bg-amber-300/5 border border-amber-300/20 rounded-lg p-4 max-w-3xl">
+    <strong>Confirmed legal facts (NSW Weapons Prohibition Act 1998 Schedule 1):</strong> butterfly knife / balisong = a "blade or spike between 2 handles" — prohibited weapon, up to 14 years max penalty. The form factor is what's banned, not the edge. So actual metal butterflies (sharp, blunt, or trainer) are <em>off the table</em> in all three options. <strong>Butterfly combs (Simon's idea — comb teeth instead of blade) are NOT covered by Schedule 1</strong> and are included in all three options.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-5 mb-14">
+
+    <!-- OPTION A -->
+    <a href="a/" class="ocard a rounded-2xl p-7 block">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="mono" style="color: #34d399">// OPTION A</span>
+        <span class="pill ok">SAFEST</span>
+      </div>
+      <h2 class="display font-bold text-3xl mb-3">No knives.</h2>
+      <p class="text-sm text-white/60 mb-5">Drop knife shapes entirely. Premium tier = 5 conventional fidgets + the Butterfly Comb (no blade, fully legal).</p>
+
+      <div class="border-t border-line2 pt-5 mb-5" style="border-color: #262626">
+        <div class="mono text-white/40 mb-3">// PREMIUM 5</div>
+        <ul class="text-xs text-white/70 space-y-1.5">
+          <li>· Aluminium-Effect Heavy Spinner — $48</li>
+          <li>· Brass Butterfly Comb — $72 <span class="pill ok ml-1">NEW</span></li>
+          <li>· Brass-Finish Heavy Cube — $52</li>
+          <li>· Galaxy Marble Pyramid — $42</li>
+          <li>· Walnut Worry Stone — $38</li>
+        </ul>
+      </div>
+
+      <div class="space-y-1.5 text-xs mb-6">
+        <div class="flex justify-between"><span class="text-white/50">School-safe</span><span class="pill ok">YES</span></div>
+        <div class="flex justify-between"><span class="text-white/50">Age verification</span><span class="pill ok">NONE</span></div>
+        <div class="flex justify-between"><span class="text-white/50">Parent acknowledgement</span><span class="pill ok">NONE</span></div>
+        <div class="flex justify-between"><span class="text-white/50">NSW legal risk</span><span class="pill ok">ZERO</span></div>
+      </div>
+
+      <span class="btn btn-green inline-block px-5 py-2 rounded text-sm">Open Option A &rarr;</span>
+    </a>
+
+    <!-- OPTION B -->
+    <a href="b/" class="ocard b rounded-2xl p-7 block">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="mono" style="color: #fbbf24">// OPTION B</span>
+        <span class="pill warn">ADULT-ONLY</span>
+      </div>
+      <h2 class="display font-bold text-3xl mb-3">Parent-to-parent.</h2>
+      <p class="text-sm text-white/60 mb-5">Karambit-shapes ship adult-only with age verification. Butterfly Comb sells normally. No metal butterfly knives.</p>
+
+      <div class="border-t border-line2 pt-5 mb-5" style="border-color: #262626">
+        <div class="mono text-white/40 mb-3">// PREMIUM 5</div>
+        <ul class="text-xs text-white/70 space-y-1.5">
+          <li>· Aluminium-Effect Heavy Spinner — $48</li>
+          <li>· Solid Brass Karambit Trainer — $75 <span class="pill warn ml-1">18+</span></li>
+          <li>· Lathed Walnut Karambit — $65 <span class="pill warn ml-1">18+</span></li>
+          <li>· Brass-Finish Heavy Cube — $52</li>
+          <li>· Brass Butterfly Comb — $72 <span class="pill ok ml-1">ANY AGE</span></li>
+        </ul>
+      </div>
+
+      <div class="space-y-1.5 text-xs mb-6">
+        <div class="flex justify-between"><span class="text-white/50">School-safe</span><span class="pill warn">CONDITIONAL</span></div>
+        <div class="flex justify-between"><span class="text-white/50">Age verification</span><span class="pill warn">YES (KARAMBIT)</span></div>
+        <div class="flex justify-between"><span class="text-white/50">Residential-only ship</span><span class="pill warn">YES</span></div>
+        <div class="flex justify-between"><span class="text-white/50">NSW legal risk</span><span class="pill warn">LOW (KARAMBIT)</span></div>
+      </div>
+
+      <span class="btn btn-amber inline-block px-5 py-2 rounded text-sm">Open Option B &rarr;</span>
+    </a>
+
+    <!-- OPTION C -->
+    <a href="c/" class="ocard c rounded-2xl p-7 block">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="mono" style="color: #38bdf8">// OPTION C</span>
+        <span class="pill info">SHIPS BLUNT</span>
+      </div>
+      <h2 class="display font-bold text-3xl mb-3">Sold blunt.</h2>
+      <p class="text-sm text-white/60 mb-5">Metal karambits ship unsharpened. Parent acknowledgement at checkout. Tom doesn't sharpen — they decide.</p>
+
+      <div class="border-t border-line2 pt-5 mb-5" style="border-color: #262626">
+        <div class="mono text-white/40 mb-3">// PREMIUM 5</div>
+        <ul class="text-xs text-white/70 space-y-1.5">
+          <li>· Aluminium-Effect Heavy Spinner — $48</li>
+          <li>· Brass Karambit (Blunt) — $70 <span class="pill info ml-1">UNSHARPENED</span></li>
+          <li>· Walnut Karambit Trainer — $65</li>
+          <li>· Brass-Finish Heavy Cube — $52</li>
+          <li>· Brass Butterfly Comb — $72 <span class="pill ok ml-1">NO BLADE</span></li>
+        </ul>
+      </div>
+
+      <div class="space-y-1.5 text-xs mb-6">
+        <div class="flex justify-between"><span class="text-white/50">School-safe</span><span class="pill info">CONDITIONAL</span></div>
+        <div class="flex justify-between"><span class="text-white/50">Age verification</span><span class="pill info">PARENT TICKBOX</span></div>
+        <div class="flex justify-between"><span class="text-white/50">Sharpening service</span><span class="pill no">NEVER</span></div>
+        <div class="flex justify-between"><span class="text-white/50">NSW legal risk</span><span class="pill info">LOW (BLUNT)</span></div>
+      </div>
+
+      <span class="btn btn-sky inline-block px-5 py-2 rounded text-sm">Open Option C &rarr;</span>
+    </a>
+
+  </div>
+
+  <!-- SUMMARY TABLE -->
+  <div class="rounded-2xl border overflow-hidden" style="border-color: #262626">
+    <div class="bg-elevated px-6 py-4 border-b" style="background:#13131a; border-color:#262626">
+      <div class="mono text-white/60">// SIDE-BY-SIDE SUMMARY</div>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="text-left">
+            <th class="px-5 py-3 mono text-white/50">Approach</th>
+            <th class="px-5 py-3 mono text-white/50">Option A</th>
+            <th class="px-5 py-3 mono text-white/50">Option B</th>
+            <th class="px-5 py-3 mono text-white/50">Option C</th>
+          </tr>
+        </thead>
+        <tbody class="text-white/85">
+          <tr class="border-t" style="border-color:#1a1a1a"><td class="px-5 py-3 text-white/55">Has butterfly comb</td><td class="px-5 py-3"><span class="pill ok">YES</span></td><td class="px-5 py-3"><span class="pill ok">YES</span></td><td class="px-5 py-3"><span class="pill ok">YES</span></td></tr>
+          <tr class="border-t" style="border-color:#1a1a1a"><td class="px-5 py-3 text-white/55">Has metal karambit</td><td class="px-5 py-3"><span class="pill no">NO</span></td><td class="px-5 py-3"><span class="pill warn">18+ ONLY</span></td><td class="px-5 py-3"><span class="pill info">BLUNT</span></td></tr>
+          <tr class="border-t" style="border-color:#1a1a1a"><td class="px-5 py-3 text-white/55">Has metal butterfly knife</td><td class="px-5 py-3"><span class="pill no">NEVER</span></td><td class="px-5 py-3"><span class="pill no">NEVER</span></td><td class="px-5 py-3"><span class="pill no">NEVER</span></td></tr>
+          <tr class="border-t" style="border-color:#1a1a1a"><td class="px-5 py-3 text-white/55">Sharpening service</td><td class="px-5 py-3"><span class="pill no">NONE</span></td><td class="px-5 py-3"><span class="pill no">NONE</span></td><td class="px-5 py-3"><span class="pill no">NONE</span></td></tr>
+          <tr class="border-t" style="border-color:#1a1a1a"><td class="px-5 py-3 text-white/55">Ships to school</td><td class="px-5 py-3"><span class="pill ok">ANY</span></td><td class="px-5 py-3"><span class="pill warn">NON-KARAMBIT ONLY</span></td><td class="px-5 py-3"><span class="pill warn">NON-KARAMBIT ONLY</span></td></tr>
+          <tr class="border-t" style="border-color:#1a1a1a"><td class="px-5 py-3 text-white/55">Effort to operate</td><td class="px-5 py-3"><span class="pill ok">LOW</span></td><td class="px-5 py-3"><span class="pill warn">HIGH (ID+SHIPPING)</span></td><td class="px-5 py-3"><span class="pill info">MED (TICKBOX)</span></td></tr>
+          <tr class="border-t" style="border-color:#1a1a1a"><td class="px-5 py-3 text-white/55">Avg premium price</td><td class="px-5 py-3 mono">$50.40</td><td class="px-5 py-3 mono">$62.40</td><td class="px-5 py-3 mono">$59.40</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="mt-10 text-sm text-white/55 max-w-3xl">
+    Click each option above to experience the full site with that policy applied. The premium tier products + section copy + checkout flow + FAQ all change per option. Once you pick, I'll wire that as the default and remove the others (or keep all three around for reference).
+  </p>
+</section>
+
+</body>
+</html>
