@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#000000" />
+<title>Fidgets · Sydney</title>
+<meta name="description" content="Premium 3D-printed fidgets, designed and made in Sydney. From $3. Premium tier $5/month." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      fontFamily: {
+        body: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+      },
+      colors: {
+        ink:       '#000000',
+        panel:     '#0a0a0a',
+        elevated:  '#13131a',
+        line:      '#1a1a1a',
+        line2:     '#262626',
+        white2:    '#fafafa',
+        muted:     '#737373',
+        electric:  '#04a1ff',
+        electric2: '#33b5ff',
+        gold:      '#e8c468',  // premium accent
+        gold2:     '#f4d68a',
+        gold3:     '#b58c2c',
+      }
+    }}
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, system-ui, sans-serif; background: #000; color: #fafafa; -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; }
+  .display { letter-spacing: -0.035em; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; letter-spacing: 0; }
+
+  .hero-bg { background: radial-gradient(at 50% 100%, rgba(4,161,255,0.30) 0%, transparent 60%), #000; }
+  .grid-overlay { background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px); background-size: 80px 80px; }
+
+  /* Premium gold treatment */
+  .gold-bg { background: linear-gradient(135deg, rgba(232,196,104,0.10) 0%, rgba(180,140,44,0.05) 100%), #0a0a0a; }
+  .gold-glow { box-shadow: 0 0 0 1px rgba(232,196,104,0.30), 0 12px 40px -10px rgba(232,196,104,0.25); }
+  .gold-text { background: linear-gradient(135deg, #f4d68a 0%, #e8c468 50%, #b58c2c 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .crown-shimmer { animation: shimmer 3s ease-in-out infinite; }
+  @keyframes shimmer { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.25); } }
+
+  /* product cards */
+  .pcard { background: #0a0a0a; border: 1px solid #1a1a1a; transition: all 0.25s ease; }
+  .pcard:hover { border-color: #04a1ff; transform: translateY(-3px); cursor: pointer; }
+  .pcard.premium { border-color: rgba(232,196,104,0.30); }
+  .pcard.premium:hover { border-color: #e8c468; }
+  .pcard.loss { border-color: rgba(4,161,255,0.30); }
+  .pcard.loss:hover { border-color: #04a1ff; }
+  .pcard-img { background: #1a1a1a; }
+  .pcard-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.4s; }
+  .pcard-img img.loaded { opacity: 1; }
+  .pcard-svg { width: 55%; height: 55%; }
+
+  .svg-stage { position: relative; }
+  .svg-stage::after { content: ''; position: absolute; inset: 0; background: var(--glow); opacity: 0.45; mix-blend-mode: screen; }
+  .svg-stage svg { position: relative; z-index: 1; }
+
+  /* buttons */
+  .btn { transition: all 0.18s ease; font-weight: 600; }
+  .btn-fill { background: #fafafa; color: #000; }
+  .btn-fill:hover { background: #fff; transform: translateY(-1px); }
+  .btn-blue { background: #04a1ff; color: #000; }
+  .btn-blue:hover { background: #33b5ff; transform: translateY(-1px); }
+  .btn-gold { background: linear-gradient(135deg, #f4d68a 0%, #e8c468 50%, #b58c2c 100%); color: #000; font-weight: 700; }
+  .btn-gold:hover { filter: brightness(1.1); transform: translateY(-1px); }
+  .btn-line { border: 1px solid #262626; color: #fafafa; background: transparent; }
+  .btn-line:hover { background: #0a0a0a; border-color: #04a1ff; }
+
+  .sw { width: 16px; height: 16px; border-radius: 999px; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.20); cursor: pointer; transition: transform 0.15s; position: relative; }
+  .sw:hover { transform: scale(1.18); }
+  .sw.selected { box-shadow: inset 0 0 0 1.5px #04a1ff, 0 0 0 2px #04a1ff; }
+  .sw.special::after { content: '✦'; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 8px; color: rgba(0,0,0,0.55); }
+
+  .tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.10em; text-transform: uppercase; }
+  .fpill { border: 1px solid #1a1a1a; background: transparent; color: #a3a3a3; transition: all 0.18s; font-size: 13px; }
+  .fpill:hover { color: #fafafa; border-color: #262626; }
+  .fpill.on { background: #04a1ff; border-color: #04a1ff; color: #000; }
+
+  @keyframes blink { 0%, 50%, 100% { opacity: 1; } 25%, 75% { opacity: 0.3; } }
+  .blink { animation: blink 2s ease-in-out infinite; }
+
+  /* Marquee for loss-leader splash */
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .marquee-track { animation: marquee 30s linear infinite; }
+
+  details summary::-webkit-details-marker { display: none; }
+  details[open] .x { transform: rotate(45deg); }
+  .x { transition: transform 0.2s; }
+
+  /* Bundle cards */
+  .accent-fuchsia { --accent: #ec4899; --accent-bg: rgba(236,72,153,0.08); }
+  .accent-lime    { --accent: #84cc16; --accent-bg: rgba(132,204,22,0.08); }
+  .accent-sky     { --accent: #38bdf8; --accent-bg: rgba(56,189,248,0.08); }
+  .accent-amber   { --accent: #fbbf24; --accent-bg: rgba(251,191,36,0.08); }
+  .accent-violet  { --accent: #a855f7; --accent-bg: rgba(168,85,247,0.08); }
+
+  .reveal { opacity: 0; transform: translateY(16px); transition: all 0.6s cubic-bezier(.2,.8,.2,1); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* Crown SVG glow */
+  .crown { filter: drop-shadow(0 0 10px rgba(232,196,104,0.6)); }
+
+  /* Modal */
+  .modal-bg { background: rgba(0,0,0,0.85); backdrop-filter: blur(12px); }
+
+  /* Loss-leader sticky badge on cards */
+  .badge-loss { background: linear-gradient(135deg, #04a1ff 0%, #33b5ff 100%); color: #000; }
+  .badge-premium { background: linear-gradient(135deg, #f4d68a 0%, #e8c468 50%, #b58c2c 100%); color: #000; }
+  .badge-new { background: rgba(4,161,255,0.15); color: #04a1ff; border: 1px solid rgba(4,161,255,0.30); }
+</style>
+</head>
+<body>
+
+<!-- TOP STRIP — loss-leader marquee -->
+<div class="bg-electric text-black overflow-hidden">
+  <div class="flex marquee-track whitespace-nowrap py-2">
+    <div class="mono text-xs flex items-center gap-6 pr-6 font-semibold">
+      <span>FIRST FIDGET FROM $3 ★</span><span>FREE SHIPPING ON ORDERS &gt; $30 ★</span><span>JOIN PREMIUM &mdash; $5/MO &mdash; $15 INSTANT CREDIT ★</span><span>REFER 5 MATES = $10 CREDIT ★</span>
+    </div>
+    <div class="mono text-xs flex items-center gap-6 pr-6 font-semibold" aria-hidden="true">
+      <span>FIRST FIDGET FROM $3 ★</span><span>FREE SHIPPING ON ORDERS &gt; $30 ★</span><span>JOIN PREMIUM &mdash; $5/MO &mdash; $15 INSTANT CREDIT ★</span><span>REFER 5 MATES = $10 CREDIT ★</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-40 backdrop-blur-xl bg-black/85 border-b border-line">
+  <div class="max-w-[1280px] mx-auto px-6 h-14 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2">
+      <span class="display font-bold text-xl">fidgets</span>
+      <span class="w-1.5 h-1.5 rounded-full bg-electric blink"></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm text-white/70">
+      <a href="#starter" class="hover:text-electric">$3 Starters</a>
+      <a href="#shop" class="hover:text-white2">Shop</a>
+      <a href="#bundles" class="hover:text-white2">Bundles</a>
+      <a href="#premium" class="gold-text font-semibold flex items-center gap-1.5"><span class="crown-shimmer">👑</span> Premium</a>
+      <a href="#refer" class="hover:text-white2">Refer</a>
+      <a href="../v3/pricing.html" class="hover:text-white2">Pricing</a>
+    </nav>
+    <a href="#starter" class="btn btn-blue px-4 py-1.5 rounded text-sm">Try $3 fidget &rarr;</a>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="hero-bg relative overflow-hidden">
+  <div class="absolute inset-0 grid-overlay" style="mask-image: radial-gradient(ellipse at 50% 60%, black 30%, transparent 75%)"></div>
+  <div class="relative max-w-[1280px] mx-auto px-6 pt-20 pb-28 md:pt-28 md:pb-40">
+    <div class="mono text-electric text-xs mb-6 flex items-center gap-2">
+      <span class="w-1 h-1 rounded-full bg-electric blink"></span>
+      <span>FIDGETS // SYDNEY // 2026</span>
+    </div>
+    <h1 class="display font-bold text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.92] mb-8 max-w-5xl">
+      Pocket-sized<br />engineering, <span class="text-electric">precisely&nbsp;tuned</span>.
+    </h1>
+    <p class="text-lg md:text-xl text-white/60 max-w-2xl mb-10">
+      35 fidgets across 3 tiers. Loss-leaders from <strong class="text-electric">$3</strong>, regulars $7&ndash;$45, premium-only $42&ndash;$72. Designed in Fusion 360, printed in Sydney, hand-tested.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <a href="#starter" class="btn btn-blue px-6 py-3.5 rounded">Try a $3 starter &rarr;</a>
+      <a href="#premium" class="btn btn-gold px-6 py-3.5 rounded">👑 Join Premium &mdash; $5/mo</a>
+      <a href="#shop" class="btn btn-line px-6 py-3.5 rounded">Browse all 35</a>
+    </div>
+
+    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl">
+      <div><div class="display font-bold text-3xl md:text-4xl">$3</div><div class="mono text-xs text-muted mt-1">FROM PRICE</div></div>
+      <div><div class="display font-bold text-3xl md:text-4xl">35</div><div class="mono text-xs text-muted mt-1">PRODUCTS</div></div>
+      <div><div class="display font-bold text-3xl md:text-4xl gold-text">5</div><div class="mono text-xs text-muted mt-1">PREMIUM-ONLY</div></div>
+      <div><div class="display font-bold text-3xl md:text-4xl">10</div><div class="mono text-xs text-muted mt-1">BAMBU COLOURS / FIDGET</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOSS-LEADER STARTER STRIP -->
+<section id="starter" class="py-16 md:py-24 border-t border-line bg-panel">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="flex items-end justify-between mb-10 flex-wrap gap-4">
+      <div>
+        <p class="mono text-electric text-xs mb-2">// THE STARTERS</p>
+        <h2 class="display font-bold text-4xl md:text-6xl">Three fidgets. <span class="text-electric">Three bucks each.</span></h2>
+        <p class="text-white/60 max-w-xl mt-4">Try one. If you like it (you will), come back for the rest. Below cost, on purpose.</p>
+      </div>
+      <div class="bg-electric text-black px-5 py-3 rounded-lg">
+        <div class="mono text-[11px] font-semibold">LOSS-LEADER</div>
+        <div class="display font-bold text-xl">100% honest pricing</div>
+      </div>
+    </div>
+    <div id="loss-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- PREMIUM SUBSCRIPTION SHOWCASE -->
+<section id="premium" class="py-20 md:py-28 border-t border-line gold-bg relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] rounded-full" style="background: radial-gradient(circle, rgba(232,196,104,0.18), transparent 60%);"></div>
+  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full" style="background: radial-gradient(circle, rgba(232,196,104,0.10), transparent 60%);"></div>
+  <div class="relative max-w-[1280px] mx-auto px-6">
+
+    <!-- Subscription pitch card -->
+    <div class="rounded-2xl border border-gold/40 bg-black/60 backdrop-blur-md p-8 md:p-12 mb-12 gold-glow">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-7">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-5xl crown crown-shimmer">👑</span>
+            <span class="mono text-xs text-gold font-semibold">// PREMIUM MEMBERSHIP</span>
+          </div>
+          <h2 class="display font-bold text-5xl md:text-7xl mb-5">
+            <span class="gold-text">Premium.</span><br />
+            <span class="text-white2">Five bucks a month.</span>
+          </h2>
+          <p class="text-lg text-white/75 mb-6 max-w-md">
+            Full access to the premium-only collection (5 limited fidgets), plus credit drops every month that more than pay for the membership.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="subscribePremium()" class="btn btn-gold px-7 py-3.5 rounded">Become Premium &rarr;</button>
+            <a href="#premium-shop" class="btn btn-line px-7 py-3.5 rounded">Browse premium shop</a>
+          </div>
+        </div>
+        <div class="md:col-span-5">
+          <ul class="space-y-3 text-sm">
+            <li class="flex gap-3 items-start"><span class="text-gold text-lg shrink-0">✓</span><span><strong class="text-gold">$15 instant credit</strong> the moment you join</span></li>
+            <li class="flex gap-3 items-start"><span class="text-gold text-lg shrink-0">✓</span><span><strong class="text-gold">$10 fresh credit every month</strong> &mdash; you net $5 just by subscribing</span></li>
+            <li class="flex gap-3 items-start"><span class="text-gold text-lg shrink-0">✓</span><span>Access to the <strong class="text-gold">5 premium fidgets</strong> &mdash; silk metallic, walnut, marble, carbon-fibre</span></li>
+            <li class="flex gap-3 items-start"><span class="text-gold text-lg shrink-0">✓</span><span>Skip-the-queue priority printing</span></li>
+            <li class="flex gap-3 items-start"><span class="text-gold text-lg shrink-0">✓</span><span>Early access to new releases (1 week before public)</span></li>
+            <li class="flex gap-3 items-start"><span class="text-gold text-lg shrink-0">✓</span><span>Free shipping on orders > $30</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Premium shop -->
+    <div id="premium-shop" class="pt-2">
+      <div class="flex items-end justify-between mb-8 flex-wrap gap-4">
+        <div>
+          <p class="mono text-gold text-xs mb-2">// PREMIUM-ONLY COLLECTION</p>
+          <h3 class="display font-bold text-3xl md:text-5xl">Five fidgets, locked behind <span class="gold-text">the crown</span>.</h3>
+        </div>
+      </div>
+      <div id="premium-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUNDLES -->
+<section id="bundles" class="py-20 md:py-28 border-t border-line">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
+      <div>
+        <p class="mono text-electric text-xs mb-2">// BUNDLES</p>
+        <h2 class="display font-bold text-4xl md:text-6xl">Save more, fidget more.</h2>
+      </div>
+      <p class="text-muted max-w-sm">Five curated packs. Discounts apply automatically &mdash; no codes.</p>
+    </div>
+    <div id="bundle-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- REGULAR SHOP -->
+<section id="shop" class="py-20 md:py-28 border-t border-line bg-panel">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="flex items-end justify-between mb-10 flex-wrap gap-6">
+      <div>
+        <p class="mono text-electric text-xs mb-2">// THE CATALOGUE</p>
+        <h2 class="display font-bold text-4xl md:text-6xl">All fidgets.</h2>
+        <p class="text-white/55 mt-3 text-sm">Click any product to pick a Bambu Lab filament colour. 10 colours per fidget &mdash; preview live before you order.</p>
+      </div>
+      <div class="flex flex-wrap gap-2" id="filters"></div>
+    </div>
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- REFERRAL PROGRAMME -->
+<section id="refer" class="py-20 md:py-28 border-t border-line">
+  <div class="max-w-[1280px] mx-auto px-6 grid md:grid-cols-12 gap-12 items-start">
+    <div class="md:col-span-5">
+      <p class="mono text-electric text-xs mb-2">// REFERRAL PROGRAMME</p>
+      <h2 class="display font-bold text-4xl md:text-6xl mb-6">Bring friends. <span class="text-electric">Earn $10.</span></h2>
+      <p class="text-white/65 mb-8">You get a unique code the first time you visit. Share it with mates &mdash; when 5 of them order their first fidget using your code, $10 lands in your account. No cap, no expiry.</p>
+
+      <div class="border border-line rounded-xl bg-panel p-6">
+        <div class="mono text-xs text-muted mb-2">YOUR CODE</div>
+        <div class="font-mono font-bold text-3xl tracking-wide mb-5" id="ref-code">—</div>
+        <div class="flex items-center justify-between mb-5 text-sm">
+          <span class="text-white/65">Friends signed up</span>
+          <span><span data-friends-count class="font-bold text-2xl">0</span><span class="text-muted"> / 5</span></span>
+        </div>
+        <div class="h-2 bg-line rounded-full overflow-hidden mb-6">
+          <div id="ref-progress" class="h-full bg-electric transition-all" style="width: 0%;"></div>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="shareReferralCode()" class="btn btn-blue px-4 py-2.5 rounded text-sm flex-1">Share my code &rarr;</button>
+          <button onclick="demoIncrementFriend()" class="btn btn-line px-4 py-2.5 rounded text-sm">Demo +1</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:col-span-7">
+      <ol class="space-y-6">
+        <li class="border-l border-line2 pl-6 py-2">
+          <div class="mono text-electric text-xs mb-1">01 / FIRST VISIT</div>
+          <div class="font-semibold mb-1">You get a code.</div>
+          <div class="text-white/60 text-sm">A unique <code class="bg-black border border-line2 px-2 py-0.5 rounded text-electric">TOM-XXXX</code> code generated the moment you land here. Saved to your device.</div>
+        </li>
+        <li class="border-l border-line2 pl-6 py-2">
+          <div class="mono text-electric text-xs mb-1">02 / SHARE IT</div>
+          <div class="font-semibold mb-1">DM, text, AirDrop, whatever.</div>
+          <div class="text-white/60 text-sm">One tap on "Share my code" opens your phone's share sheet with a pre-written message + your link.</div>
+        </li>
+        <li class="border-l border-line2 pl-6 py-2">
+          <div class="mono text-electric text-xs mb-1">03 / FRIENDS BUY</div>
+          <div class="font-semibold mb-1">They get $3 off their first order.</div>
+          <div class="text-white/60 text-sm">When they land via your link, the discount auto-applies. They check out as normal.</div>
+        </li>
+        <li class="border-l border-line2 pl-6 py-2">
+          <div class="mono text-electric text-xs mb-1">04 / YOU EARN</div>
+          <div class="font-semibold mb-1">$10 credit at 5 orders.</div>
+          <div class="text-white/60 text-sm">Stripe webhook adds credit to your account. Repeats every 5 friends &mdash; no cap.</div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- GROWTH IDEAS / EXTRAS -->
+<section class="py-20 md:py-28 border-t border-line bg-panel">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <p class="mono text-electric text-xs mb-2">// MORE WAYS TO SAVE</p>
+    <h2 class="display font-bold text-4xl md:text-5xl mb-10">Extras for regulars.</h2>
+    <div class="grid md:grid-cols-3 gap-5">
+
+      <div class="bg-ink border border-line rounded-xl p-6">
+        <div class="text-3xl mb-3">🎂</div>
+        <div class="display font-semibold text-xl mb-2">Birthday week</div>
+        <p class="text-sm text-white/60 mb-4">Register your birthday — get 50% off any one fidget in your birthday week. Auto-applied.</p>
+        <div class="mono text-xs text-electric">// FREE TO JOIN</div>
+      </div>
+
+      <div class="bg-ink border border-line rounded-xl p-6">
+        <div class="text-3xl mb-3">⚡</div>
+        <div class="display font-semibold text-xl mb-2">Friday Drops</div>
+        <p class="text-sm text-white/60 mb-4">A new colour or limited variant every Friday. 5 of each, first-come, first-served. Premium subscribers get 6h early access.</p>
+        <div class="mono text-xs text-electric">// WEEKLY</div>
+      </div>
+
+      <div class="bg-ink border border-line rounded-xl p-6">
+        <div class="text-3xl mb-3">🏆</div>
+        <div class="display font-semibold text-xl mb-2">Ambassador</div>
+        <p class="text-sm text-white/60 mb-4">10 friends signed up via your code = 1 month of Premium free. 25 friends = 3 months. 50 friends = lifetime.</p>
+        <div class="mono text-xs text-electric">// STACKS WITH REFERRAL</div>
+      </div>
+
+      <div class="bg-ink border border-line rounded-xl p-6">
+        <div class="text-3xl mb-3">📸</div>
+        <div class="display font-semibold text-xl mb-2">Show &amp; Earn</div>
+        <p class="text-sm text-white/60 mb-4">Post a clip of your fidget to school's Instagram. Tag <code class="bg-black px-1 rounded text-electric text-xs">@toms.fidgets</code>. Repost = $5 credit on us.</p>
+        <div class="mono text-xs text-electric">// VIRAL FUEL</div>
+      </div>
+
+      <div class="bg-ink border border-line rounded-xl p-6">
+        <div class="text-3xl mb-3">🔁</div>
+        <div class="display font-semibold text-xl mb-2">Loyalty multiplier</div>
+        <p class="text-sm text-white/60 mb-4">Every 5th order = +25% credit on the spend. Stacks with subscription credit. Auto-tracked.</p>
+        <div class="mono text-xs text-electric">// AUTOMATIC</div>
+      </div>
+
+      <div class="bg-ink border border-line rounded-xl p-6">
+        <div class="text-3xl mb-3">🎁</div>
+        <div class="display font-semibold text-xl mb-2">Mystery first-buy</div>
+        <p class="text-sm text-white/60 mb-4">First-time buyers get a random tiny worm in a different colour, free, in the box. (Filament cost: ~30¢. Hooks people.)</p>
+        <div class="mono text-xs text-electric">// AUTOMATIC</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="how" class="py-20 md:py-28 border-t border-line">
+  <div class="max-w-[1280px] mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
+    <div>
+      <p class="mono text-electric text-xs mb-2">// PROCESS</p>
+      <h2 class="display font-bold text-4xl md:text-6xl mb-6">From CAD to your pocket.</h2>
+      <p class="text-white/60 text-lg max-w-md">Every fidget cycles through a five-step pipeline before it ships.</p>
+    </div>
+    <ol class="space-y-6">
+      <li class="border-l border-line2 pl-5 py-2"><div class="mono text-electric text-xs mb-1">01 / DESIGN</div><div class="text-white2">Modelled in Fusion 360 with print-in-place hinges &amp; joints.</div></li>
+      <li class="border-l border-line2 pl-5 py-2"><div class="mono text-electric text-xs mb-1">02 / SLICE</div><div class="text-white2">Tuned slicing profiles per material &mdash; PLA+ for impact, PETG for flex, Silk for premium.</div></li>
+      <li class="border-l border-line2 pl-5 py-2"><div class="mono text-electric text-xs mb-1">03 / PRINT</div><div class="text-white2">0.16 mm layers on a calibrated Bambu X1C. Premium materials at 0.12 mm.</div></li>
+      <li class="border-l border-line2 pl-5 py-2"><div class="mono text-electric text-xs mb-1">04 / TEST</div><div class="text-white2">Spin, click, twist, drop. If it doesn't pass, it gets reprinted.</div></li>
+      <li class="border-l border-line2 pl-5 py-2"><div class="mono text-electric text-xs mb-1">05 / SHIP</div><div class="text-white2">Hand-packed and posted Sydney-wide. Schoolyard pickup at recess.</div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-20 md:py-28 border-t border-line bg-panel">
+  <div class="max-w-[800px] mx-auto px-6">
+    <p class="mono text-electric text-xs mb-2">// QUESTIONS</p>
+    <h2 class="display font-bold text-4xl md:text-5xl mb-10">FAQ.</h2>
+    <div class="divide-y divide-line2 border-y border-line2">
+
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">What's the deal with the $3 starters? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-white/65">They cost slightly more than that to print, package and ship. We sell them at a loss to get you to try one. The rest of the catalogue makes up the difference. Honest signal: that's why "FROM $3" is splashed everywhere.</p></details>
+
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">Is Premium worth $5/month? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-white/65">$15 instant credit. $10 every month. So you net <strong class="text-gold">$5 every month</strong> just by being a member, before any of the premium-only fidgets. As long as you spend the credit (you will), it pays for itself.</p></details>
+
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">Are the premium "knife" fidgets actually knives? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-white/65">No. The Marbled Balisong Comb has comb teeth, not a blade — it's a butterfly-knife <em>flipping motion</em> trainer/fidget, sold legally everywhere. The Walnut Karambit Trainer is a curved finger-flow trainer with no edge. Both are toy-grade and entirely school-safe. We do not sell sharpened blades — see our <a href="#" class="text-electric underline">notes</a> on why.</p></details>
+
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">How do I pay? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-white/65">Online: Apple Pay, Google Pay, card via Stripe. In person at school: tap card or phone on the Square Terminal.</p></details>
+
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">Bambu Lab colours &mdash; can I see what mine will look like? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-white/65">Yes. Click any fidget to open its colour picker. Tap a swatch and the preview updates instantly. Premium fidgets have premium materials (silk metallic, marble, walnut, carbon fibre).</p></details>
+
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">What if a friend uses my referral code? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-white/65">They land via your link → discount auto-applies → they check out → our system bumps your "friends signed up" counter. At 5 friends, $10 lands in your account. Repeat.</p></details>
+
+      <details class="group py-5"><summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">Custom orders? <span class="x text-2xl text-muted">+</span></summary><p class="mt-3 text-white/65">Email me. If I can model it, I can print it. Bulk orders for class gifts get a discount.</p></details>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 border-t border-line hero-bg">
+  <div class="max-w-[800px] mx-auto px-6 text-center">
+    <h2 class="display font-bold text-4xl md:text-6xl mb-4">Got a question?</h2>
+    <p class="text-white/60 mb-8">DM, email, or grab one in person at recess.</p>
+    <a href="mailto:hello@fidgets.example" class="btn btn-blue inline-block px-8 py-3.5 rounded">Email Tom &rarr;</a>
+  </div>
+</section>
+
+<footer class="border-t border-line py-10">
+  <div class="max-w-[1280px] mx-auto px-6 flex flex-wrap items-center justify-between gap-4 text-sm text-muted">
+    <div class="flex items-center gap-3"><span class="display font-bold text-lg text-white2">fidgets</span><span>·</span><span class="mono text-xs">SYD/AU</span></div>
+    <div class="flex items-center gap-4 mono text-xs">
+      <a href="../v3/" class="hover:text-white2">v3 variants</a>
+      <a href="../" class="hover:text-white2">v2 (legacy)</a>
+      <a href="https://github.com/kateharper/fidgets-site" class="hover:text-white2">github</a>
+      <span>· © <span id="year"></span> · MADE BY TOM</span>
+    </div>
+  </div>
+</footer>
+
+<!-- COLOUR PICKER MODAL -->
+<div id="picker" class="fixed inset-0 modal-bg hidden items-center justify-center p-5 z-50">
+  <div class="bg-elevated border border-line2 rounded-2xl max-w-2xl w-full p-7 relative">
+    <button onclick="closePicker()" class="absolute top-4 right-4 text-2xl text-muted hover:text-white2" aria-label="Close">&times;</button>
+    <div id="picker-content"></div>
+  </div>
+</div>
+
+<script src="products.js"></script>
+<script src="referral.js"></script>
+<script>
+  const ICONS = {
+    dragon: `<g fill="#fafafa"><ellipse cx="92" cy="42" rx="20" ry="16"/><path d="M76 50 Q60 64 50 50 Q40 36 26 52 Q16 64 12 80 Q22 84 30 76 Q42 64 52 78 Q62 92 76 80 Q86 70 96 76 Q104 80 110 70 L106 60 Q98 60 92 64"/><circle cx="98" cy="38" r="2.8" fill="#000"/><path d="M86 28 L92 18 L98 28 Z M100 26 L106 16 L112 26 Z"/></g>`,
+    snake: `<g fill="#fafafa"><circle cx="14" cy="60" r="9"/><circle cx="32" cy="50" r="10"/><circle cx="52" cy="62" r="10"/><circle cx="72" cy="50" r="10"/><circle cx="92" cy="62" r="10"/><circle cx="108" cy="55" r="8"/></g>`,
+    octopus: `<g fill="#fafafa"><ellipse cx="60" cy="42" rx="28" ry="22"/><path d="M40 56 Q34 80 22 92" stroke="#fafafa" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M50 60 Q42 84 38 100" stroke="#fafafa" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M60 64 Q60 86 60 102" stroke="#fafafa" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M70 60 Q78 84 82 100" stroke="#fafafa" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M80 56 Q86 80 98 92" stroke="#fafafa" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="52" cy="40" r="3" fill="#000"/><circle cx="68" cy="40" r="3" fill="#000"/></g>`,
+    axolotl: `<g fill="#fafafa"><ellipse cx="60" cy="62" rx="34" ry="22"/><path d="M30 50 Q22 42 18 50 Q22 58 30 56 Z"/><path d="M30 62 Q18 60 14 68 Q22 74 32 70 Z"/><path d="M30 74 Q22 80 22 88 Q30 88 34 80 Z"/><circle cx="74" cy="58" r="3" fill="#000"/><circle cx="86" cy="58" r="3" fill="#000"/><path d="M76 70 Q82 76 88 70" stroke="#000" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>`,
+    worm: `<path d="M14 76 Q26 56 42 70 Q58 86 74 64 Q90 44 106 60" stroke="#fafafa" stroke-width="14" fill="none" stroke-linecap="round"/>`,
+    lizard: `<g fill="#fafafa"><ellipse cx="62" cy="60" rx="26" ry="14"/><circle cx="86" cy="56" r="9"/><path d="M40 60 Q26 56 16 64" stroke="#fafafa" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M52 50 Q44 38 38 38" stroke="#fafafa" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M72 50 Q78 38 84 38" stroke="#fafafa" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M52 72 Q44 86 38 86" stroke="#fafafa" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M72 72 Q78 86 84 86" stroke="#fafafa" stroke-width="5" fill="none" stroke-linecap="round"/></g>`,
+    maze: `<circle cx="60" cy="60" r="36" fill="#fafafa"/><path d="M40 50 H80 V60 H50 V70 H80" stroke="#000" stroke-width="3" fill="none"/><circle cx="44" cy="74" r="4" fill="#000"/>`,
+    hex: `<g fill="#fafafa"><polygon points="60,16 88,32 88,64 60,80 32,64 32,32"/><polygon points="60,32 76,40 76,56 60,64 44,56 44,40" fill="#000" opacity="0.7"/></g>`,
+    magicsnake: `<g fill="#fafafa"><polygon points="14,70 30,54 46,70 30,86"/><polygon points="46,70 62,54 78,70 62,86"/><polygon points="78,70 94,54 110,70 94,86"/></g>`,
+    twist: `<path d="M30 60 Q30 30 60 30 Q90 30 90 60 Q90 90 60 90 Q30 90 30 60 Z" stroke="#fafafa" stroke-width="10" fill="none"/><path d="M40 60 Q40 40 60 40 Q80 40 80 60" stroke="#fafafa" stroke-width="8" fill="none" opacity="0.55"/>`,
+    spiral: `<path d="M60 60 m-32 0 a 32 32 0 1 1 64 0 a 26 26 0 1 1 -52 0 a 20 20 0 1 1 40 0 a 14 14 0 1 1 -28 0 a 8 8 0 1 1 16 0" stroke="#fafafa" stroke-width="4" fill="none" stroke-linecap="round"/>`,
+  };
+
+  function svgFor(p) { const ico = ICONS[p.icon]; return ico ? `<svg viewBox="0 0 120 120" class="pcard-svg">${ico}</svg>` : ''; }
+  function stageHTML(p) {
+    if (p.image) return `<div class="pcard-img aspect-square overflow-hidden relative"><img src="${p.image}" alt="${p.name}" loading="lazy" onload="this.classList.add('loaded')" /></div>`;
+    return `<div class="pcard-img svg-stage aspect-square overflow-hidden flex items-center justify-center relative" style="--glow:${p.glow || ''}">${svgFor(p)}</div>`;
+  }
+
+  function badgeFor(p) {
+    if (p.tier === 'loss') return `<span class="badge-loss tag absolute top-3 left-3 px-2.5 py-1 rounded">$${p.price} STARTER</span>`;
+    if (p.tier === 'premium') return `<span class="badge-premium tag absolute top-3 left-3 px-2.5 py-1 rounded">👑 PREMIUM</span>`;
+    return `<span class="tag absolute top-3 left-3 bg-black/75 text-white2 px-2.5 py-1 rounded backdrop-blur-md">${p.cat}</span>`;
+  }
+
+  function renderProductCard(p) {
+    const tierClass = p.tier === 'premium' ? 'premium' : p.tier === 'loss' ? 'loss' : '';
+    return `<article class="pcard ${tierClass} rounded-xl overflow-hidden flex flex-col" data-id="${p.id}" onclick="openPicker('${p.id}')">
+      <div class="relative">${stageHTML(p)}${badgeFor(p)}</div>
+      <div class="p-5 flex-1 flex flex-col">
+        <div class="flex items-start justify-between gap-3 mb-1.5">
+          <h3 class="font-semibold text-base leading-snug">${p.name}</h3>
+          <div class="font-bold text-base whitespace-nowrap ${p.tier==='premium' ? 'gold-text' : p.tier==='loss' ? 'text-electric' : ''}">$${p.price}</div>
+        </div>
+        <p class="text-sm text-muted mb-4 flex-1">${p.blurb}</p>
+        <div class="flex items-center gap-1.5 mb-4">
+          ${(p.bambu_colors || []).slice(0,5).map(cid => {
+            const c = window.BAMBU_PALETTE[cid]; if (!c) return '';
+            const sp = c.tier === 'special' ? ' special' : '';
+            return `<span class="sw${sp}" style="background:${c.hex}" title="${c.name}"></span>`;
+          }).join('')}
+          ${(p.bambu_colors || []).length > 5 ? `<span class="mono text-xs text-muted ml-1">+${p.bambu_colors.length - 5}</span>` : ''}
+        </div>
+        <button class="btn ${p.tier==='premium'?'btn-gold':'btn-fill'} w-full py-2.5 rounded text-sm">${p.tier==='premium'?'Members add &rarr;':'Pick colour &rarr;'}</button>
+      </div>
+    </article>`;
+  }
+
+  function renderProducts(filter='all') {
+    const list = (filter === 'all' ? window.PRODUCTS.filter(p => p.tier === 'regular') : window.PRODUCTS.filter(p => p.tier === 'regular' && p.cat === filter));
+    document.getElementById('product-grid').innerHTML = list.map(renderProductCard).join('');
+  }
+
+  function renderLossLeaders() {
+    const list = window.PRODUCTS.filter(p => p.tier === 'loss');
+    document.getElementById('loss-grid').innerHTML = list.map(renderProductCard).join('');
+  }
+
+  function renderPremium() {
+    const list = window.PRODUCTS.filter(p => p.tier === 'premium');
+    document.getElementById('premium-grid').innerHTML = list.map(renderProductCard).join('');
+  }
+
+  function renderBundles() {
+    document.getElementById('bundle-grid').innerHTML = window.BUNDLES.map(b => `
+      <article class="accent-${b.accent} rounded-xl overflow-hidden flex flex-col p-6 relative" style="background: linear-gradient(180deg, var(--accent-bg) 0%, transparent 70%); border: 1px solid var(--accent);">
+        ${b.pop ? `<div class="tag absolute top-4 right-4" style="color: var(--accent);">${b.pop}</div>` : ''}
+        <div class="tag mb-2" style="color: var(--accent);">${b.contents}</div>
+        <h3 class="display font-bold text-2xl mb-2">${b.name}</h3>
+        <p class="text-muted text-sm mb-6 flex-1">${b.blurb}</p>
+        <div class="flex items-baseline gap-3 mb-5">
+          <div class="display font-bold text-3xl">$${b.price}</div>
+          <div class="text-muted text-sm line-through">$${b.retail}</div>
+          <div class="tag" style="color: var(--accent);">SAVE $${b.retail - b.price}</div>
+        </div>
+        <button onclick="alert('Bundle checkout — Stripe Payment Link not yet wired. See SETUP.md.')" class="btn btn-line w-full py-2.5 rounded text-sm">Add bundle &rarr;</button>
+      </article>
+    `).join('');
+  }
+
+  function renderFilters() {
+    const cats = ['all', ...new Set(window.PRODUCTS.filter(p => p.tier === 'regular').map(p => p.cat))];
+    const labels = { all: 'All', spinner: 'Spinners', cube: 'Cubes', articulated: 'Articulated', slider: 'Sliders', puzzle: 'Puzzles', gadget: 'Gadgets', sourced: 'Sewn' };
+    const f = document.getElementById('filters');
+    f.innerHTML = cats.map((c,i) => `<button class="fpill ${i===0?'on':''} px-3.5 py-1.5 rounded" data-filter="${c}">${labels[c]||c}</button>`).join('');
+    f.querySelectorAll('.fpill').forEach(btn => btn.addEventListener('click', () => {
+      f.querySelectorAll('.fpill').forEach(b => b.classList.remove('on'));
+      btn.classList.add('on');
+      renderProducts(btn.dataset.filter);
+    }));
+  }
+
+  // Colour picker modal
+  function openPicker(productId) {
+    const p = window.PRODUCTS.find(x => x.id === productId);
+    if (!p) return;
+    const firstColor = p.bambu_colors[0];
+    const c = window.BAMBU_PALETTE[firstColor];
+    const isPhoto = !!p.image;
+
+    const previewHtml = isPhoto
+      ? `<div id="preview-stage" class="aspect-square rounded-xl overflow-hidden relative bg-elevated">
+          <img src="${p.image}" alt="" class="w-full h-full object-cover" id="preview-img" />
+          <div class="absolute inset-0 mix-blend-color transition-colors duration-200" id="preview-tint" style="background: ${c.hex};"></div>
+        </div>`
+      : `<div id="preview-stage" class="aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-elevated relative">
+          <svg viewBox="0 0 120 120" class="w-3/5 h-3/5"><g id="preview-svg" style="fill: ${c.hex};">${(ICONS[p.icon]||'').replace(/fill="#fafafa"/g, '').replace(/stroke="#fafafa"/g, `stroke="${c.hex}"`)}</g></svg>
+          <div class="absolute inset-0" style="background: var(--glow); opacity:0.4; mix-blend-mode: screen; --glow: ${p.glow || ''};"></div>
+        </div>`;
+
+    const swatchesHtml = p.bambu_colors.map((cid, i) => {
+      const col = window.BAMBU_PALETTE[cid];
+      const sp = col.tier === 'special' ? ' special' : '';
+      const sel = i === 0 ? ' selected' : '';
+      const extra = col.extra ? ` <span class="mono text-xs text-electric">(${col.extra})</span>` : '';
+      return `<button class="text-left bg-panel border border-line2 hover:border-electric rounded-lg p-3 transition-colors" data-color="${cid}" onclick="selectColor('${productId}','${cid}')">
+        <div class="sw${sp}${sel}" style="background:${col.hex}; width: 28px; height: 28px;"></div>
+        <div class="text-xs mt-2">${col.name}${extra}</div>
+        <div class="mono text-[10px] text-muted">${col.tier.toUpperCase()}</div>
+      </button>`;
+    }).join('');
+
+    document.getElementById('picker-content').innerHTML = `
+      <div class="grid md:grid-cols-2 gap-7">
+        <div>
+          ${previewHtml}
+          <div class="mono text-xs text-muted mt-3" id="preview-label">${c.name} · ${c.tier.toUpperCase()}</div>
+        </div>
+        <div>
+          ${p.tier === 'premium' ? `<div class="badge-premium tag inline-block px-2.5 py-1 rounded mb-3">👑 PREMIUM</div>` : ''}
+          <h3 class="display font-bold text-2xl mb-2">${p.name}</h3>
+          <div class="font-bold text-3xl mb-3 ${p.tier==='premium'?'gold-text':''}">$${p.price}</div>
+          <p class="text-sm text-white/65 mb-5">${p.blurb}</p>
+          <div class="mono text-xs text-electric mb-2">// PICK A BAMBU FILAMENT</div>
+          <div class="grid grid-cols-2 gap-2 mb-6 max-h-72 overflow-y-auto">${swatchesHtml}</div>
+          <button onclick="addToCart('${productId}')" class="btn ${p.tier==='premium'?'btn-gold':'btn-fill'} w-full py-3 rounded">${p.tier==='premium' ? '👑 Add (members only)' : 'Add to cart &rarr;'}</button>
+          ${p.tier==='premium' ? `<div class="mono text-[10px] text-muted text-center mt-3">REQUIRES PREMIUM SUBSCRIPTION</div>` : ''}
+        </div>
+      </div>`;
+
+    const m = document.getElementById('picker');
+    m.classList.remove('hidden'); m.classList.add('flex');
+  }
+
+  window.selectColor = function(productId, colorId) {
+    const c = window.BAMBU_PALETTE[colorId];
+    const tint = document.getElementById('preview-tint');
+    if (tint) tint.style.background = c.hex;
+    const svg = document.getElementById('preview-svg');
+    if (svg) svg.style.fill = c.hex;
+    const lbl = document.getElementById('preview-label');
+    if (lbl) lbl.textContent = `${c.name} · ${c.tier.toUpperCase()}`;
+    document.querySelectorAll('#picker .sw').forEach(s => s.classList.remove('selected'));
+    document.querySelectorAll(`#picker [data-color="${colorId}"] .sw`).forEach(s => s.classList.add('selected'));
+  };
+
+  window.addToCart = function(productId) {
+    const p = window.PRODUCTS.find(x => x.id === productId);
+    if (p.tier === 'premium') {
+      const yes = confirm(`👑 ${p.name} — $${p.price}\n\nPremium subscribers only. Subscribe now ($5/mo, $15 instant credit)?`);
+      if (yes) subscribePremium();
+      return;
+    }
+    alert(`${p.name} — $${p.price}\n\nStripe checkout not yet configured. See SETUP.md.`);
+  };
+
+  window.subscribePremium = function() {
+    alert(`👑 Premium Subscription — $5/month\n\nIncludes:\n• $15 instant credit\n• $10 monthly credit\n• Premium-only fidget access\n• Free shipping > $30\n\nStripe Subscription product not yet wired. See SETUP.md for go-live steps.`);
+  };
+
+  window.closePicker = function() { const m = document.getElementById('picker'); m.classList.add('hidden'); m.classList.remove('flex'); };
+  document.getElementById('picker').addEventListener('click', e => { if (e.target.id === 'picker') closePicker(); });
+
+  // Init
+  document.getElementById('year').textContent = new Date().getFullYear();
+  renderLossLeaders();
+  renderPremium();
+  renderBundles();
+  renderFilters();
+  renderProducts('all');
+
+  // Referral
+  document.getElementById('ref-code').textContent = window.getReferralCode();
+  const friends = window.getFriendsCount();
+  document.querySelectorAll('[data-friends-count]').forEach(el => el.textContent = friends);
+  document.getElementById('ref-progress').style.width = (friends / 5 * 100) + '%';
+
+  window.captureIncomingReferral();
+  window.maybeGreetWithCode();
+</script>
+
+</body>
+</html>
